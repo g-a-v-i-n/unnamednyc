@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('../../assets/fonts/NimbusSansDOT-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('../../assets/fonts/NimbusSansDOT-BoldExte.otf') format('opentype');
+  font-weight: 800;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('../../assets/fonts/NimbusSansDOT-Regu.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nimbus Sans';
+  src: url('../../assets/fonts/NimbusSansDOT-ReguItal.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+body, html{
+  font-family: 'Nimbus Sans';
+  font-size: 36px;
+  font-weight: 500;
+  font-style: normal;
+  padding :0;
+  margin:0;
+  height: auto;
+  white-space: nowrap;
+  overflow-x: hidden;
+
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  font-family: 'Nimbus Sans';
+  font-weight: 800;
+}
+
+h2{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nimbus Sans';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 42px;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nimbus Sans';
+  font-weight: 700;
+  font-size: 32px;
+}
+
+p{
+  margin-top: 48px;
+  line-height: 48px;
+  padding: 0;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.genericTransition{
+  transition: 100ms;
+}
+
+.genericOpacity{
+  opacity: 0.5;
+}
+
+.topSpaceWrapper{
+  color: #006e94;
+  width: 80vw;
+  min-height: 100vh;
+  position: absolute;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  z-index: 4;
+  /* use GPU acceleration */
+  transform: translate3d(0,0,0);
+  pointer-events:none;
+
+}
+
+.bottomSpaceWrapper{
+  color: #006e94;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  overflow-x: hidden;
+
+}
+
+/*============================================================
+Main Menu
+============================================================*/
+
+.mainMenu{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 3vw;
+  width: 80vw;
+}
+
+
+.siteTitle{
+  position: absolute;
+  top:0;
+  z-index: 99;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 106px;
+  width: 40vw;
+  min-width: 300px;
+  cursor: pointer;
+
+  background-color: #f7f7f7;
+}
+
+.location{
+  z-index: 80;
+  position: absolute;
+  width: 40vw;
+  height: 100px;
+  min-width: 300px;
+  border-top: 3px solid  #006e94;
+
+  background-color: #f7f7f7;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 150ms;
+  /* use GPU acceleration */
+  transform: translate3d(0,0,0);
+}
+
+.location:last-child{
+  border-bottom: 3px solid  #006e94;
+}
+
+.location:hover h2, .siteTitle:hover h1{
+  opacity: 0.7;
+}
+
+.location a, .location h2{
+  text-decoration: none;
+  color: #006e94;
+  cursor: pointer;
+}
+
+
+/*============================================================
+Header
+============================================================*/
+
+.header{
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.beamBox{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 0;
+}
+
+.beam{
+  display: block;
+  height: 6px;
+  width: 100%;
+  border: 3px solid #006e94;
+
+}
+
+.beamOff{
+  background: #f7f7f7;
+}
+
+.beamOn{
+  background:  #006e94;
+}
+
+.arrowBox{
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  padding-top:0;
+}
+
+.headerArrowContainer{
+  width: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerArrowContainer:hover{
+  opacity: 0.7;
+}
+
+.headerArrow-rotate{
+  transform: rotateZ(90deg);
+}
+
+.pillar{
+  border: 3px solid #006e94;
+  border-top: none;
+  display: block;
+  height: 64px;
+  width: 6px;
+}
+
+/*============================================================
+Main Page
+============================================================*/
+
+.topSpace{
+  border-right: 3px solid #006e94;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  transform-origin: top left;
+  transition:  500ms;
+  box-sizing: border-box;
+  pointer-events:auto;
+
+}
+
+.bottomSpace{
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 80%;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+.topSpaceOpen{
+    width: 100%;
+}
+
+.topSpaceClosed{
+    width: 25%;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width:80vw;
+}
+
+.contentArrowContainer{
+  position: absolute;
+  width: 80vw;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contentArrow{
+  margin-right: 10%;
+}
+
+.contentArrow:hover{
+  opacity: 0.7;
+}
+
+.coverImageHome{
+  height: 66vh;
+}
+
+.coverImageHome figure, .coverImageHome img{
+  height: 66vh;
+}
+
+
+/*============================================================
+bottomSpace Page
+============================================================*/
+
+.wrap{
+  width: 60vw;
+  max-width: 1000px;
+  white-space: normal;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+.text{
+}
+
+.logoAbout{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.wrap section {
+  margin-top: 48px;
+}
+
+.contact{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.connectList{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.connect a{
+  display: inline-block;
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+.contact a {
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+.contact p, .connect p{
+  border-bottom: 3px solid #006e94;
+  font-style: italic;
+  margin-right: 48px;
+}
+
+.locationItem{
+  border-top: 3px solid #006e94;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.locationItem a {
+  color: inherit;
+  background: transparent;
+  text-decoration: none;
+}
+
+.locationItem:first-child{
+  border-top: none;
+}

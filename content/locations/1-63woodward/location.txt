@@ -1,0 +1,18 @@
+title: Photography Studio
+
+----
+
+menuTitle: 63 Woodward Ave
+
+----
+
+comingSoon: false
+
+----
+
+address:
+  63 Woodward Ave, Ridgewood, NY 11385
+
+----
+
+type: Photography Studio

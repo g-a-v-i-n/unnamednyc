@@ -1,0 +1,13 @@
+Title: Unnamed Studios
+
+----
+
+Author: Gavin Atkinson, Philippe Cao
+
+----
+
+Description: This is the Unnamed Studios site
+
+----
+
+Copyright: © (date: Year) (link: http://unnamednyc.com text: Idex Object Limited Liability Company )

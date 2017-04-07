@@ -1,0 +1,38 @@
+title: Home
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  textarea
+
+  text:
+    label: Text
+    type:  textarea
+
+  coverimage:
+    label: Cover Image
+    type: image
+
+  contactoptions:
+    label: Contact Options
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+      text:
+        label: Text
+        type: text
+      url:
+        label: URL
+        type: text
+      linktext:
+        label: Link Text
+        type: text
