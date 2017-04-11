@@ -73,25 +73,30 @@ function handleMainMenu(container, menuState) {
 }
 
 function handleMoveGallery(galleryOffset, dir) {
-  newGalleryOffset = 0;
+  newGalleryOffset = galleryOffset;
 
-  console.log($('div.galleryMover').length, index)
-    if (dir === 'left'){
+    if (dir === 'left' && index !== 0){
       index--
       newGalleryOffset = galleryOffset + (window.innerWidth * 0.8)
-    } else if (dir === 'right' && index < $('div.galleryMover').length) {
+    } else if (dir === 'right' && index < $('div.galleryMover').length + 1) {
       index++
       newGalleryOffset = galleryOffset - (window.innerWidth * 0.8)
     } else {
     }
 
-      $('.galleryMover').css({'transform': 'translateX(' + newGalleryOffset + 'px)' })
-      if (newGalleryOffset === 0){
-        $(".galleryArrowLeft").addClass("visuallyHidden");
-      } else {
-        $(".galleryArrowLeft").removeClass("visuallyHidden");
-      }
-    return newGalleryOffset;
+    $('.galleryMover').css({'transform': 'translateX(' + newGalleryOffset + 'px)' })
+    if (newGalleryOffset === 0){
+      $(".galleryArrowLeft").addClass("visuallyHidden");
+    } else {
+      $(".galleryArrowLeft").removeClass("visuallyHidden");
+    }
+
+    if (index === $('div.galleryMover').length + 1){
+      $(".galleryArrowRight").addClass("visuallyHidden");
+    } else {
+      $(".galleryArrowRight").removeClass("visuallyHidden");
+    }
+  return newGalleryOffset;
 }
 
 // open top space menu
@@ -114,4 +119,13 @@ $('.bottomSpace .siteTitle').click(function(e){
 $('.bottomSpace .headerArrowContainer').click(function(e){
   bottomMenuState = handleMainMenu('.bottomSpace', bottomMenuState)
   e.stopPropagation();
+});
+
+//map scroll disable
+$('.map').click(function () {
+    $('.map iframe').css("pointer-events", "auto");
+});
+
+$( ".map" ).mouseleave(function() {
+  $('.map iframe').css("pointer-events", "none");
 });
