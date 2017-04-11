@@ -1,5 +1,7 @@
 <?php if($image = $item->coverimage()->toFile()): ?>
-  <figure>
-    <img src="<?= $image->url() ?>" alt="" />
-  </figure>
+  <div class='frame'>
+    <div class="imgWrapper">
+      <img src="<?= $image->url() ?>" alt="" />
+    </div>
+  </div>
 <?php endif ?>

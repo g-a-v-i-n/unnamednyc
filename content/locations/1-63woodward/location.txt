@@ -11,8 +11,77 @@ comingSoon: false
 ----
 
 address:
-  63 Woodward Ave, Ridgewood, NY 11385
+  63 Woodward Ave
+  Ridgewood, NY 11385
 
 ----
 
 type: Photography Studio
+
+----
+
+text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and video production. The studio is available both for hourly rental and by monthly membership. You can choose from three distinct shooting spaces that will accommodate your needs for any project.
+
+----
+
+spaces:
+
+-
+  title: Studio E
+  description: Cyclorama wall (22’w x 22’d x 12’h)
+-
+  title: Studio R
+  description: 400 square-foot shooting area stocked with 107” background paper
+-
+  title: Studio S
+  description: Tabletop Still-life Studio
+
+----
+
+rates:
+
+- title: Standard Rate
+  rate: $50/hr
+- title: Half Day
+  rate:  $150
+- title: Full Day
+  rate: $400
+
+----
+
+memberships:
+-
+  heading: 6 month-commitment
+  title1: 10 hours / month
+  rate1: $50/hr
+  title2: 10 hours / month
+  rate2: $50/hr
+-
+  heading: Month-to-month
+  title1: 10 hours / month
+  rate1: $275 / month
+  title2: 10 hours / month
+  rate2: $350 / month
+
+----
+
+Equipment:
+  Strobes
+  Modifiers
+  Light Stands
+  Pocket Wizards
+  107” Seamless Background Paper (selected colors)
+  10’ x 24’ Green Screen Backdrop
+  Sand Bags
+  Step Stools
+  Steamer
+  Wifi
+  Bluetooth Speaker
+
+----
+
+Cameras:
+  Hasselblad 500c/m (film/digital backs)
+  Nikon D810
+  Nikon F5 35mm
+  Wista SP 4x5 Camera

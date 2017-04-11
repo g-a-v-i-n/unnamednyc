@@ -70,6 +70,14 @@ p{
   padding: 0;
 }
 
+.visuallyHidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+}
+
 .disable-select {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -77,20 +85,12 @@ p{
   user-select: none;
 }
 
-.genericTransition{
-  transition: 100ms;
-}
-
-.genericOpacity{
-  opacity: 0.5;
-}
-
 .topSpaceWrapper{
-  color: #006e94;
+  color: black;
   width: 80vw;
-  min-height: 100vh;
+  height: 100vh;
   position: absolute;
-  overflow-x: hidden;
+  overflow: hidden;
   backface-visibility: hidden;
   z-index: 4;
   /* use GPU acceleration */
@@ -100,13 +100,13 @@ p{
 }
 
 .bottomSpaceWrapper{
-  color: #006e94;
+  color: black;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: flex-end;
   overflow-x: hidden;
-
+  position: absolute;
 }
 
 /*============================================================
@@ -114,35 +114,38 @@ Main Menu
 ============================================================*/
 
 .mainMenu{
-  position: absolute;
   display: flex;
   justify-content: center;
-  top: 3vw;
-  width: 80vw;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
 }
 
 
 .siteTitle{
-  position: absolute;
   top:0;
   z-index: 99;
+  overflow-x: hidden;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   height: 106px;
-  width: 40vw;
+  width: 59vw;
   min-width: 300px;
   cursor: pointer;
-
   background-color: #f7f7f7;
+
+}
+
+.bottomSpace .siteTitle {
+  border-bottom: 3px solid #006e94;
+
 }
 
 .location{
-  z-index: 80;
   position: absolute;
-  width: 40vw;
+  width: 59vw;
   height: 100px;
   min-width: 300px;
   border-top: 3px solid  #006e94;
@@ -177,14 +180,17 @@ Header
 ============================================================*/
 
 .header{
-  width: 100%;
-  overflow: hidden;
+  width: 80vw;
   box-sizing: border-box;
+  position: absolute;
+  height: auto;
+  background-color: #f7f7f7;
 }
 
 .beamBox{
   box-sizing: border-box;
-  width: 100%;
+  overflow: hidden;
+  width: 80vw;
   padding: 30px;
   padding-bottom: 0;
 }
@@ -194,7 +200,6 @@ Header
   height: 6px;
   width: 100%;
   border: 3px solid #006e94;
-
 }
 
 .beamOff{
@@ -210,6 +215,8 @@ Header
   width: 100%;
   padding: 30px;
   padding-top:0;
+  padding-bottom:0;
+
 }
 
 .headerArrowContainer{
@@ -236,32 +243,22 @@ Header
 }
 
 /*============================================================
-Main Page
+Top Page
 ============================================================*/
 
 .topSpace{
   border-right: 3px solid #006e94;
   background-color: #f7f7f7;
-  min-height: 100vh;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
+  position: relative;
   z-index: 1;
-  overflow-x: hidden;
+  overflow: hidden;
   transform-origin: top left;
   transition:  500ms;
   box-sizing: border-box;
   pointer-events:auto;
-
 }
 
-.bottomSpace{
-  background-color: #f7f7f7;
-  box-sizing: border-box;
-  min-height: 100%;
-  width: 80%;
-  z-index: 0;
-  overflow-x: hidden;
-}
 
 .topSpaceOpen{
     width: 100%;
@@ -271,48 +268,115 @@ Main Page
     width: 25%;
 }
 
-.content{
+.topSpace .content{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+  overflow: hidden;
   width:80vw;
+  height: 100vh;
 }
 
 .contentArrowContainer{
   position: absolute;
   width: 80vw;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.contentArrow{
+.galleryArrowRight{
   margin-right: 10%;
 }
 
-.contentArrow:hover{
+.galleryArrowLeft{
+  transform: rotateZ(180deg);
+  margin-left: 10%;
+
+}
+
+.galleryArrowRight:hover,
+.galleryArrowLeft:hover {
   opacity: 0.7;
+  transition: 300ms;
 }
 
-.coverImageHome{
+
+
+.gallery{
+  height: 66vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-sizing: border-box;
+
+  width: 80vw;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.galleryMover{
+  width: 100%;
+  transition: 400ms;
+}
+
+.gallery img{
   height: 66vh;
 }
 
-.coverImageHome figure, .coverImageHome img{
+.frame {
+  display: inline-block;
+  min-width: 80vw;
   height: 66vh;
+  margin: 0;
+  padding: 0;
 }
 
+.frame:first-child {
+  /*margin-left: 15vw;*/
+}
+
+.frame:last-child {
+  /*margin-right: 15vw;*/
+}
+
+.imgWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
 
 /*============================================================
 bottomSpace Page
 ============================================================*/
 
+.bottomSpace{
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+  width: 80%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bottomSpace .content {
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  width:80vw;
+  height: 100%;
+}
+
 .wrap{
-  width: 60vw;
+  padding-top: 250px;
+  width: 59vw;
   max-width: 1000px;
   white-space: normal;
-  margin-top: 15px;
-  margin-bottom: 80px;
+  margin-bottom: 180px;
 }
 
 .text{
@@ -376,4 +440,8 @@ bottomSpace Page
 
 .locationItem:first-child{
   border-top: none;
+}
+
+.spacer {
+  height: 100px;
 }

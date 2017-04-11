@@ -16,3 +16,63 @@ address:
 ----
 
 type: Workroom
+
+----
+
+test: Unnamed Workroom is a multidisciplinary workspace tailored to the needs of individual artists and small creative companies. It will provide a shop for wood and metal-working, mold-making and casting; a clean room for finishing and photographing; an office and meeting space.
+
+Workroom will also house unnamed | Gallery.
+
+----
+
+spaces:
+
+-
+  title: Studio E
+  description: Cyclorama wall (22’w x 22’d x 12’h)
+-
+  title: Studio R
+  description: 400 square-foot shooting area stocked with 107” background paper
+-
+  title: Studio S
+  description: Tabletop Still-life Studio
+
+----
+
+hourlyBooking:
+  standardRate: $50/hr
+  …
+  halfDay: $150
+  …
+  fullDay: $400
+
+----
+
+Membership:
+  6month@10hrs: $275/month
+  6month@15hrs: $350/month
+  m2m@10hrs: $300/month
+  m2m@15hrs: $380/month
+
+----
+
+Equipment:
+  Strobes
+  Modifiers
+  Light Stands
+  Pocket Wizards
+  107” Seamless Background Paper (selected colors)
+  10’ x 24’ Green Screen Backdrop
+  Sand Bags
+  Step Stools
+  Steamer
+  Wifi
+  Bluetooth Speaker
+
+----
+
+Cameras:
+  Hasselblad 500c/m (film/digital backs)
+  Nikon D810
+  Nikon F5 35mm
+  Wista SP 4x5 Camera

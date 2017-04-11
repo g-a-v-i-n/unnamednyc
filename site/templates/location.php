@@ -12,7 +12,7 @@
       <div class="bottomSpace">
         <?php snippet('header', $page) ?>
         <section class="content">
-          <?php snippet('about', $page) ?>
+          <?php snippet('location', $page) ?>
         </section>
       </div>
     </div>

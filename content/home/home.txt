@@ -2,10 +2,6 @@ Title: Home
 
 ----
 
-Coverimage: main.jpg
-
-----
-
 Intro:
 
 ----
