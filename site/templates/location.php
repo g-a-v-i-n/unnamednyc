@@ -1,5 +1,5 @@
 <?php snippet('htmlheader') ?>
-  <body>
+  <body id=<?= $page->cid() ?>>
     <div class="topSpaceWrapper">
       <div class="topSpace topSpaceOpen">
         <?php snippet('header', $page) ?>

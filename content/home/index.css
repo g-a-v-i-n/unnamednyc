@@ -1,0 +1,69 @@
+/*
+location colors:
+primary: #006e94
+bg: #f7f7f7
+*/
+
+.mainMenu{
+  background-color: #f7f7f7;
+}
+
+.siteTitle{
+  background-color: #f7f7f7;
+}
+
+.bottomSpace .siteTitle {
+  border-bottom: 3px solid #006e94;
+}
+
+.location {
+  border-top: 3px solid  #006e94;
+  background-color: #f7f7f7;
+}
+
+.location:last-child{
+  border-bottom: 3px solid  #006e94;
+}
+
+.header {
+  background-color: #f7f7f7;
+}
+
+.beam {
+   border: 3px solid #006e94;
+}
+
+.beamOff{
+  background: #f7f7f7;
+}
+
+.beamOn{
+  background:  #006e94;
+
+}
+
+.pillar{
+  border: 3px solid #006e94;
+  border-top: 0;
+}
+
+.topSpace{
+  border-right: 3px solid #006e94;
+  background: #f7f7f7;
+}
+
+.bottomSpace{
+  background-color: #f7f7f7;
+}
+
+.optionItem{
+  border-bottom: 3px solid #006e94;
+}
+
+.locationItem{
+  border-top: 3px solid #006e94;
+}
+
+.listItem{
+  border-bottom: 3px solid #006e94;
+}

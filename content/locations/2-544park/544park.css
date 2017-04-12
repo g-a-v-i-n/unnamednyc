@@ -1,0 +1,70 @@
+/*
+location colors:
+primary: #a2331d
+bg: #f6f0eD
+*/
+
+.mainMenu{
+  background-color: #f6f0eD;
+}
+
+.siteTitle{
+  background-color: #f6f0eD;
+}
+
+.bottomSpace .siteTitle {
+  border-bottom: 3px solid #a2331d;
+}
+
+.location {
+  border-top: 3px solid  #a2331d;
+  background-color: #f6f0eD;
+}
+
+.location:last-child{
+  border-bottom: 3px solid  #a2331d;
+}
+
+.header {
+  background-color: #f6f0eD;
+}
+
+.beam {
+   border: 3px solid #a2331d;
+}
+
+.beamOff{
+  background: #f6f0eD;
+}
+
+.beamOn{
+  background:  #a2331d;
+
+}
+
+.pillar{
+  border: 3px solid #a2331d;
+  border-top: 0;
+
+}
+
+.topSpace{
+  border-right: 3px solid #a2331d;
+  background: #f6f0eD;
+}
+
+.bottomSpace{
+  background-color: #f6f0eD;
+}
+
+.optionItem{
+  border-bottom: 3px solid #a2331d;
+}
+
+.locationItem{
+  border-top: 3px solid #a2331d;
+}
+
+.listItem{
+  border-bottom: 3px solid #a2331d;
+}

@@ -7,6 +7,7 @@ $( document ).ready(function() {
   $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
   $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
   $(".galleryArrowLeft").addClass("visuallyHidden");
+
 });
 
 // open or close bottomSpace page

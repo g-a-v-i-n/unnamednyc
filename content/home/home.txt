@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Text: 
+Text:
 
 Too often, artists are forced to compromise their work due to the limitations of their studio. We founded Unnamed to solve this problem. Unnamed believes that space and equipment should adapt to the needs of artists, not the other way around.
 
@@ -31,3 +31,7 @@ Instagram: https://www.instagram.com/unnamed_nyc/
 ----
 
 Facebook: https://www.facebook.com/unnamednyc
+
+----
+
+cid: cid000

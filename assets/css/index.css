@@ -125,7 +125,6 @@ Main Menu
 .mainMenu{
   display: flex;
   justify-content: center;
-  background-color: #f7f7f7;
   box-sizing: border-box;
 }
 
@@ -143,13 +142,6 @@ Main Menu
   width: 59vw;
   min-width: 300px;
   cursor: pointer;
-  background-color: #f7f7f7;
-
-}
-
-.bottomSpace .siteTitle {
-  border-bottom: 3px solid #006e94;
-
 }
 
 .location{
@@ -157,10 +149,6 @@ Main Menu
   width: 59vw;
   height: 100px;
   min-width: 300px;
-  border-top: 3px solid  #006e94;
-
-  background-color: #f7f7f7;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,17 +157,13 @@ Main Menu
   transform: translate3d(0,0,0);
 }
 
-.location:last-child{
-  border-bottom: 3px solid  #006e94;
-}
-
 .location:hover h2, .siteTitle:hover h1{
   opacity: 0.7;
 }
 
 .location a, .location h2{
   text-decoration: none;
-  color: #006e94;
+  color: black;
   cursor: pointer;
 }
 
@@ -193,7 +177,6 @@ Header
   box-sizing: border-box;
   position: absolute;
   height: auto;
-  background-color: #f7f7f7;
 }
 
 .beamBox{
@@ -208,15 +191,6 @@ Header
   display: block;
   height: 6px;
   width: 100%;
-  border: 3px solid #006e94;
-}
-
-.beamOff{
-  background: #f7f7f7;
-}
-
-.beamOn{
-  background:  #006e94;
 }
 
 .arrowBox{
@@ -234,7 +208,6 @@ Header
   align-items: center;
   justify-content: center;
   transition: opacity 300ms;
-
 }
 
 .headerArrowContainer:hover{
@@ -246,7 +219,6 @@ Header
 }
 
 .pillar{
-  border: 3px solid #006e94;
   border-top: none;
   display: block;
   height: 64px;
@@ -258,8 +230,6 @@ Top Page
 ============================================================*/
 
 .topSpace{
-  border-right: 3px solid #006e94;
-  background-color: #f7f7f7;
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -363,7 +333,6 @@ bottomSpace Page
 ============================================================*/
 
 .bottomSpace{
-  background-color: #f7f7f7;
   box-sizing: border-box;
   height: 100vh;
   position: relative;
@@ -425,13 +394,12 @@ bottomSpace Page
 }
 
 .contact p, .connect p{
-  border-bottom: 3px solid #006e94;
+  border-bottom: 3px solid black;
   font-style: italic;
   margin-right: 48px;
 }
 
 .locationItem{
-  border-top: 3px solid #006e94;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -451,15 +419,12 @@ bottomSpace Page
   height: 100px;
 }
 
-
-
 .optionList{
   margin-bottom: 60px;
 }
 
 .optionItem{
   display: flex;
-  border-bottom: 3px solid #006e94;
   justify-content: space-between;
   align-items: center;
   height: 94px;
@@ -473,7 +438,6 @@ bottomSpace Page
   display: flex;
   align-items: center;
 
-  border-bottom: 3px solid #006e94;
   height: 94px;
 }
 
