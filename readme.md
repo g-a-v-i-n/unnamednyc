@@ -8,12 +8,13 @@
 - [x] color system
 - [ ] main menu title needs to change header on page change
 - [ ] drop down lists hide items after certain number
+- [ ] add photo captions
 
 ### Cosmetics
 - [ ]  booking css
 - [x]  text is black
-- [ ]  add more photos
-- [ ]  icon styling
+- [x]  add more photos
+- [x]  icon styling
 
 ### Mobile
 - [ ]  what widths do things start to be goofy – breakpoints : 768
@@ -23,17 +24,19 @@
 
 
 ### Adjustments
-- [ ] no link on email
+- [x] no link on email
 
 ### Bugs
-- [ ] gallery removes z-index
-- [ ] make menu height smaller so it doesn't cover top of image gallery
+- [x] gallery removes z-index
+- [x] make menu height smaller so it doesn't cover top of image gallery
 - [ ] header appears of the righthand vertical scrollbar
-- [ ] gallery can go beyond last item index = 2
-- [ ] logo does not appear on project pages
+- [x] gallery can go beyond last item index = 2
+- [x] logo does not appear on project pages
 
 ### Tests
 - [ ] add page
 - [ ] edit page
 
 ### Outstanding Items
+- [ ] equipment list UI could be better for long lists
+- [ ]

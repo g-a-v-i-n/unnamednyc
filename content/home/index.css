@@ -4,6 +4,22 @@ primary: #006e94
 bg: #f7f7f7
 */
 
+#logo-svg {
+  stroke: #006e94;
+}
+
+.arrowOn {
+  fill: #006e94;
+}
+
+.arrowOff {
+  fill: #f7f7f7;
+}
+
+#arrow-outline {
+  stroke: #006e94;
+}
+
 .mainMenu{
   background-color: #f7f7f7;
 }

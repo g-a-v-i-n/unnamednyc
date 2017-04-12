@@ -4,6 +4,22 @@ primary: #a2331d
 bg: #f6f0eD
 */
 
+#logo-svg {
+  stroke: #a2331d;
+}
+
+.arrowOn {
+  fill: #a2331d;
+}
+
+.arrowOff {
+  fill: #f6f0eD;
+}
+
+#arrow-outline {
+  stroke: #a2331d;
+}
+
 .mainMenu{
   background-color: #f6f0eD;
 }
@@ -39,7 +55,6 @@ bg: #f6f0eD
 
 .beamOn{
   background:  #a2331d;
-
 }
 
 .pillar{

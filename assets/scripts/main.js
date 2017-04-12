@@ -2,11 +2,20 @@ var topMenuState = false;
 var bottomMenuState = false;
 var galleryOffset = 0;
 var index = 0;
+var galleryLength = $('.galleryMover .frame').length
+
 
 $( document ).ready(function() {
   $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
+  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn")
+
   $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
-  $(".galleryArrowLeft").addClass("visuallyHidden");
+  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff")
+
+  $(".galleryArrowLeft #arrow-outline").addClass("arrowOff");
+  $(".galleryArrowRight #arrow-outline").addClass("arrowOn");
+
+  $(".galleryArrowLeft").addClass("arrowOff");
 
 });
 
@@ -35,8 +44,8 @@ $('.galleryArrowLeft').click(function(e){
 
 function opentopSpace() {
   // change header menu arrow
-  // $(".bottomSpace .headerArrow, .content .contentArrow").attr("src","assets/images/arrow-off.svg");
-  // $(".topSpace .headerArrow, .content .contentArrow").attr("src","assets/images/arrow-on.svg");
+  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
+  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
   // change width of topSpace element
   $(".topSpace").addClass("topSpaceOpen").removeClass("topSpaceClosed");
   // turn topSpace header elements to ON state
@@ -46,27 +55,27 @@ function opentopSpace() {
 };
 
 function openbottomSpace() {
-    // change header menu arrow
-    // $(".bottomSpace .headerArrow, .content .contentArrow").attr("src","assets/images/arrow-on.svg");
-    // $(".topSpace .headerArrow, .content .contentArrow").attr("src","assets/images/arrow-off.svg");
-    // change width of topSpace element
-    $(".topSpace").addClass("topSpaceClosed").removeClass("topSpaceOpen")
-    // // turn topSpace header elements to OFF state
-    $(".topSpace .beam, .topSpace .pillar").addClass("beamOff").removeClass("beamOn")
-    // turn bottomSpace header elements to ON state
-    $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOn").removeClass("beamOff")
-  };
+  // change header menu arrow
+  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
+  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
+  // change width of topSpace element
+  $(".topSpace").addClass("topSpaceClosed").removeClass("topSpaceOpen")
+  // // turn topSpace header elements to OFF state
+  $(".topSpace .beam, .topSpace .pillar").addClass("beamOff").removeClass("beamOn")
+  // turn bottomSpace header elements to ON state
+  $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOn").removeClass("beamOff")
+};
 
 
 function handleMainMenu(container, menuState) {
   if (!menuState) {
-    $(container + ' ' + ".headerArrow").addClass("headerArrow-rotate");
+    $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-minus90").removeClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
     for (i = 0; i < $('div.location').length / 2; i++) {
       $(container + ' ' + '.menuItem_' + i).css({'transform': 'translateY(' + ((i * 100) + 106) + 'px)' })
     };
   } else {
-    $(container + ' ' + "img.headerArrow").removeClass("headerArrow-rotate");
+    $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
     for (i = 0; i < $('div.location').length / 2; i++) {
       $(container + ' ' + '.menuItem_' + i).css({'transform': 'translateY(0)' })
     };
@@ -80,7 +89,7 @@ function handleMoveGallery(galleryOffset, dir) {
     if (dir === 'left' && index !== 0){
       index--
       newGalleryOffset = galleryOffset + (window.innerWidth * 0.8)
-    } else if (dir === 'right' && index < $('div.galleryMover').length + 1) {
+    } else if (dir === 'right' && index < galleryLength - 1) {
       index++
       newGalleryOffset = galleryOffset - (window.innerWidth * 0.8)
     } else {
@@ -88,15 +97,15 @@ function handleMoveGallery(galleryOffset, dir) {
 
     $('.galleryMover').css({'transform': 'translateX(' + newGalleryOffset + 'px)' })
     if (newGalleryOffset === 0){
-      $(".galleryArrowLeft").addClass("visuallyHidden");
+      $(".galleryArrowLeft #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
     } else {
-      $(".galleryArrowLeft").removeClass("visuallyHidden");
+      $(".galleryArrowLeft #arrow-outline").removeClass("arrowOff").addClass("arrowOn");
     }
 
-    if (index === $('div.galleryMover').length + 1){
-      $(".galleryArrowRight").addClass("visuallyHidden");
+    if (index === galleryLength - 1){
+      $(".galleryArrowRight #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
     } else {
-      $(".galleryArrowRight").removeClass("visuallyHidden");
+      $(".galleryArrowRight #arrow-outline").removeClass("arrowOff").addClass("arrowOn");
     }
   return newGalleryOffset;
 }
