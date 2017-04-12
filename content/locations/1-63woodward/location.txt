@@ -10,10 +10,6 @@ comingSoon: false
 
 ----
 
-map: location.png
-
-----
-
 address:
   63 Woodward Ave
   Ridgewood, NY 11385
@@ -56,39 +52,70 @@ rates:
 
 ----
 
-memberships:
+membershipType1Heading: Month-to-month
+
+----
+
+membershipType1:
+
 -
-  heading: 6 month-commitment
-  title1: 10 hours / month
-  rate1: $50/hr
-  title2: 10 hours / month
-  rate2: $50/hr
+  commitment: 10 hours / month
+  rate: $275 / hr
 -
-  heading: Month-to-month
-  title1: 10 hours / month
-  rate1: $275 / month
-  title2: 10 hours / month
-  rate2: $350 / month
+  commitment: 15 hours / month
+  rate: $350 / hr
+
+----
+
+membershipType2Heading: Year long
+
+----
+
+membershipType2:
+
+-
+  commitment: 10 hours / month
+  rate: $275 / month
+-
+  commitment: 15 hours / month
+  rate: $350 / month
 
 ----
 
 Equipment:
-  [Strobes,
-  Modifiers,
-  Light Stands,
-  Pocket Wizards,
-  107” Seamless Background Paper (selected colors),
-  10’ x 24’ Green Screen Backdrop,
-  Sand Bags,
-  Step Stools,
-  Steamer,
-  Wifi,
-  Bluetooth Speaker]
+
+-
+  item: Strobes
+-
+  item: Modifiers
+-
+  item: Light Stands
+-
+  item: Pocket Wizards
+-
+  item: 107” Seamless Background Paper (selected colors)
+-
+  item: 10’ x 24’ Green Screen Backdrop
+-
+  item: Sand Bags
+-
+  item: Step Stools
+-
+  item: Steamer
+-
+  item: Wifi
+-
+  item: Bluetooth Speaker
 
 ----
 
 Cameras:
-  [Hasselblad 500c/m (film/digital backs),
-  Nikon D810,
-  Nikon F5 35mm,
-  Wista SP 4x5 Camera]
+
+-
+  item: Hasselblad 500c/m (film/digital backs)
+-
+  item: Nikon D810
+-
+  item: Nikon F5 35mm
+-
+  item: Wista SP 4x5 Camera

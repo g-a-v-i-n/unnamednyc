@@ -1,5 +1,9 @@
 title: Home
 
+files: true
+
+deletable: false
+
 pages: false
 
 fields:
@@ -7,32 +11,34 @@ fields:
     label: Title
     type:  text
 
-  intro:
-    label: Intro
-    type:  textarea
-
   text:
-    label: Text
+    label: Body Text
     type:  textarea
 
-  coverimage:
-    label: Cover Image
-    type: image
+  signature:
+    label: signature
+    type: text
 
-  contactoptions:
-    label: Contact Options
-    type: structure
-    style: table
-    fields:
-      title:
-        label: Title
-        type: text
-      text:
-        label: Text
-        type: text
-      url:
-        label: URL
-        type: text
-      linktext:
-        label: Link Text
-        type: text
+  email:
+    label: Email
+    type:  text
+
+  phone:
+    label: Phone Number
+    type:  text
+    width: 1/2
+
+  PhoneNoExtraCharacters:
+    label: Phone Number (with just the numbers and no spaces)
+    type:  text
+    width: 1/2
+
+  Instagram:
+    label: Instagram
+    type:  url
+    width: 1/2
+
+  Facebook:
+    label: Facebook
+    type:  url
+    width: 1/2

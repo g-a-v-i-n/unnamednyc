@@ -1,27 +1,26 @@
-title: Workroom #1
+title: Work Room #1
 
 ----
 
-menuTitle: 544 Park Ave
+menuTitle: 544 Park
 
 ----
 
-comingSoon: false
+comingSoon: true
 
 ----
 
 address:
-  544 Park Ave, Brooklyn, NY 11205
+  63 Woodward Ave
+  Ridgewood, NY 11385
 
 ----
 
-type: Workroom
+type: Photography Studio
 
 ----
 
-test: Unnamed Workroom is a multidisciplinary workspace tailored to the needs of individual artists and small creative companies. It will provide a shop for wood and metal-working, mold-making and casting; a clean room for finishing and photographing; an office and meeting space.
-
-Workroom will also house unnamed | Gallery.
+text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and video production. The studio is available both for hourly rental and by monthly membership. You can choose from three distinct shooting spaces that will accommodate your needs for any project.
 
 ----
 
@@ -39,40 +38,84 @@ spaces:
 
 ----
 
-hourlyBooking:
-  standardRate: $50/hr
-  …
-  halfDay: $150
-  …
-  fullDay: $400
+rates:
+
+-
+  title: Standard Rate
+  rate: $50/hr
+-
+  title: Half Day
+  rate:  $150
+-
+  title: Full Day
+  rate: $400
 
 ----
 
-Membership:
-  6month@10hrs: $275/month
-  6month@15hrs: $350/month
-  m2m@10hrs: $300/month
-  m2m@15hrs: $380/month
+membershipType1Heading: Month-to-month
+
+----
+
+membershipType1:
+
+-
+  commitment: 10 hours / month
+  rate: $275 / hr
+-
+  commitment: 15 hours / month
+  rate: $350 / hr
+
+----
+
+membershipType2Heading: Year long
+
+----
+
+membershipType2:
+
+-
+  commitment: 10 hours / month
+  rate: $275 / month
+-
+  commitment: 15 hours / month
+  rate: $350 / month
 
 ----
 
 Equipment:
-  Strobes
-  Modifiers
-  Light Stands
-  Pocket Wizards
-  107” Seamless Background Paper (selected colors)
-  10’ x 24’ Green Screen Backdrop
-  Sand Bags
-  Step Stools
-  Steamer
-  Wifi
-  Bluetooth Speaker
+
+-
+  item: Strobes
+-
+  item: Modifiers
+-
+  item: Light Stands
+-
+  item: Pocket Wizards
+-
+  item: 107” Seamless Background Paper (selected colors)
+-
+  item: 10’ x 24’ Green Screen Backdrop
+-
+  item: Sand Bags
+-
+  item: Step Stools
+-
+  item: Steamer
+-
+  item: Wifi
+-
+  item: Bluetooth Speaker
 
 ----
 
 Cameras:
-  Hasselblad 500c/m (film/digital backs)
-  Nikon D810
-  Nikon F5 35mm
-  Wista SP 4x5 Camera
+
+-
+  item: Hasselblad 500c/m (film/digital backs)
+-
+  item: Nikon D810
+-
+  item: Nikon F5 35mm
+-
+  item: Wista SP 4x5 Camera

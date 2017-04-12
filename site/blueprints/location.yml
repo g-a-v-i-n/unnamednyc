@@ -1,0 +1,107 @@
+title: Home
+
+files: true
+  sortable: true
+
+deletable: true
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  menuTitle:
+    label: Title for Menu
+    type:  text
+
+  comingSoon:
+    label: Is this Location Coming Soon?
+    type: checkbox
+
+  address:
+    label: Address
+    type: textarea
+
+  text:
+    label: Body Text
+    type:  textarea
+
+  spaces:
+    label: Spaces in the Location
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+      description:
+        label: Description
+        type: text
+
+  rates:
+    label: Rates
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+      rate:
+        label: Rate
+        type: text
+
+  membershipType1Heading:
+    label: Membership Type 1 Title
+    type:  text
+
+  membershipType1:
+    label: Membership Type 1 Details
+    type: structure
+    style: table
+    fields:
+      commitment:
+        label: Commitment
+        type: text
+      rate:
+        label: Rate
+        type: text
+
+  fields:
+  line:
+    type: line
+
+  membershipType2Heading:
+    label: Membership Type 2 Title
+    type:  text
+
+  membershipType2:
+    label: Membership Type 2 Details
+    type: structure
+    style: table
+    fields:
+      commitment:
+        label: Commitment
+        type: text
+      rate:
+        label: Rate
+        type: text
+
+  equipment:
+    label: Equipment
+    type: structure
+    style: table
+    fields:
+      item:
+        label: Item Name
+        type: text
+
+  cameras:
+    label: Cameras
+    type: structure
+    style: table
+    fields:
+      item:
+        label: Camera Name
+        type: text

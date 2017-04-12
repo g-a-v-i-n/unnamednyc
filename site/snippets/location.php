@@ -43,19 +43,24 @@
   <section>
     <h3>MEMBERSHIP</h3>
     <div class='list'>
-      <?php foreach($page->memberships()->yaml() as $option): ?>
-          <p><?php echo $option['heading'] ?>:</p>
-          <div class='optionList'>
-            <div class="optionItem">
-              <div class="option"><h4><?php echo $option['title1'] ?></h4></div>
-              <div class="option"><h4><?php echo $option['rate1'] ?></h4></div>
-            </div>
-            <div class="optionItem">
-              <div class="option"><h4><?php echo $option['title2'] ?></h4></div>
-              <div class="option"><h4><?php echo $option['rate2'] ?></h4></div>
-            </div>
+      <div class='optionList'>
+        <p><?php echo $page->membershipType1Heading() ?>:</p>
+        <?php foreach($page->membershipType1()->yaml() as $option): ?>
+          <div class="optionItem">
+            <div class="option"><h4><?php echo $option['commitment'] ?></h4></div>
+            <div class="option"><h4><?php echo $option['rate'] ?></h4></div>
           </div>
-      <?php endforeach ?>
+        <?php endforeach ?>
+      </div>
+      <div class='optionList'>
+        <p><?php echo $page->membershipType2Heading() ?>:</p>
+        <?php foreach($page->membershipType2()->yaml() as $option): ?>
+          <div class="optionItem">
+            <div class="option"><h4><?php echo $option['commitment'] ?></h4></div>
+            <div class="option"><h4><?php echo $option['rate'] ?></h4></div>
+          </div>
+        <?php endforeach ?>
+      </div>
     </div>
   </section>
 
@@ -64,7 +69,7 @@
     <div class='list'>
       <?php foreach($page->Equipment()->yaml() as $item): ?>
         <div class="listItem">
-          <h4><?php echo $item ?></h4>
+          <h4><?php echo $item['item'] ?></h4>
         </div>
       <?php endforeach ?>
     </div>
@@ -75,7 +80,7 @@
     <div class='list'>
       <?php foreach($page->Cameras()->yaml() as $item): ?>
         <div class="listItem">
-          <h4><?php echo $item ?></h4>
+          <h4><?php echo $item['item'] ?></h4>
         </div>
       <?php endforeach ?>
     </div>

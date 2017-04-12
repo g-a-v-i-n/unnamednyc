@@ -112,7 +112,6 @@ section{
 .bottomSpaceWrapper{
   color: black;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: flex-end;
   overflow-x: hidden;
@@ -234,6 +233,8 @@ Header
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 300ms;
+
 }
 
 .headerArrowContainer:hover{
@@ -289,6 +290,7 @@ Top Page
 
 .contentArrowContainer{
   position: absolute;
+  margin-top: 50px;
   width: 80vw;
   display: flex;
   justify-content: space-between;
@@ -301,28 +303,24 @@ Top Page
 .galleryArrowLeft{
   transform: rotateZ(180deg);
   margin-left: 10%;
-
 }
 
 .galleryArrowRight:hover,
 .galleryArrowLeft:hover {
-  opacity: 0.7;
-  transition: 300ms;
+  cursor: pointer;
 }
 
-
-
 .gallery{
+  margin-top: 100px;
   height: 66vh;
   overflow-x: scroll;
   overflow-y: hidden;
   box-sizing: border-box;
-
   width: 80vw;
 }
 
 .gallery::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .galleryMover{

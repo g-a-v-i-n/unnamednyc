@@ -2,6 +2,7 @@ var topMenuState = false;
 var bottomMenuState = false;
 var galleryOffset = 0;
 var index = 0;
+
 $( document ).ready(function() {
   $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
   $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
