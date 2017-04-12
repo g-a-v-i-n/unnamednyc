@@ -1,5 +1,6 @@
 var topMenuState = false;
 var bottomMenuState = false;
+var topIsOpen = true;
 var galleryOffset = 0;
 var index = 0;
 var galleryLength = $('.galleryMover .frame').length
@@ -32,17 +33,22 @@ $('.topSpace').click(function(e){
 
 // operate image gallery
 $('.galleryArrowRight').click(function(e){
-  galleryOffset = handleMoveGallery(galleryOffset, 'right')
+  if (topIsOpen) {
+    galleryOffset = handleMoveGallery(galleryOffset, 'right')
+  }
   e.stopPropagation();
 });
 
 $('.galleryArrowLeft').click(function(e){
-  galleryOffset = handleMoveGallery(galleryOffset, 'left')
+  if (topIsOpen) {
+    galleryOffset = handleMoveGallery(galleryOffset, 'left')
+  }
   e.stopPropagation();
 });
 
 
 function opentopSpace() {
+  topIsOpen = true
   // change header menu arrow
   $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
   $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
@@ -55,6 +61,7 @@ function opentopSpace() {
 };
 
 function openbottomSpace() {
+  topIsOpen = false
   // change header menu arrow
   $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
   $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
@@ -67,9 +74,9 @@ function openbottomSpace() {
 };
 
 
-function handleMainMenu(container, menuState) {
-  if (!menuState) {
-    $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-minus90").removeClass("headerArrow-rotate-90");
+function toggleMainMenu(container, menuState) {
+  if (menuState === false) {
+    $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
     for (i = 0; i < $('div.location').length / 2; i++) {
       $(container + ' ' + '.menuItem_' + i).css({'transform': 'translateY(' + ((i * 100) + 106) + 'px)' })
@@ -111,24 +118,18 @@ function handleMoveGallery(galleryOffset, dir) {
 }
 
 // open top space menu
-$('.topSpace .siteTitle').click(function(e){
-  topMenuState = handleMainMenu('.topSpace', topMenuState)
-  e.stopPropagation();
-});
-
-$('.topSpace .headerArrowContainer').click(function(e){
-  topMenuState = handleMainMenu('.topSpace', topMenuState)
+$('.topSpace .siteTitle, .topSpace .headerArrowContainer').click(function(e){
+  if (topIsOpen) {
+    topMenuState = toggleMainMenu('.topSpace', topMenuState)
+  }
   e.stopPropagation();
 });
 
 // open bottom space menu
-$('.bottomSpace .siteTitle').click(function(e){
-  bottomMenuState = handleMainMenu('.bottomSpace', bottomMenuState)
-  e.stopPropagation();
-});
-
-$('.bottomSpace .headerArrowContainer').click(function(e){
-  bottomMenuState = handleMainMenu('.bottomSpace', bottomMenuState)
+$('.bottomSpace .siteTitle, .bottomSpace .headerArrowContainer').click(function(e){
+  if (!topIsOpen) {
+    bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
+  }
   e.stopPropagation();
 });
 

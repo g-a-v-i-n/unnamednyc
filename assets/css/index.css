@@ -205,18 +205,27 @@ Header
 
 .headerArrowContainer{
   width: 7vw;
+  height: 67px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: opacity 300ms;
 }
 
-.headerArrowContainer:hover{
-  opacity: 0.7;
-}
-
 .headerArrow{
   transition: 200ms;
+}
+
+/*.arrowOn{
+  transition: 400ms;
+}
+
+.arrowOff{
+  transition: 400ms;
+}*/
+
+.arrowOn:hover{
+  opacity: 0.5
 }
 
 .headerArrow-rotate-90{

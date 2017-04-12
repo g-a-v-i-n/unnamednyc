@@ -8,7 +8,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
 
 <div class="mainMenu disable-select">
   <div class="siteTitle ">
-    <h1><?= $site->title()->html() ?></h1>
+    <h1><?= $page->menuTitle()->html() ?></h1>
   </div>
 
   <?php foreach($locations as $location): ?>

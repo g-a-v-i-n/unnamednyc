@@ -6,9 +6,11 @@
 - [x]  blueprints and panel support
 - [x]  photo galleries
 - [x] color system
-- [ ] main menu title needs to change header on page change
+- [x] main menu title needs to change header on page change
+- [ ] there needs to be a home page link in the menu on sub pages
 - [ ] drop down lists hide items after certain number
 - [ ] add photo captions
+- [ ] hide / show bottom menu border on scroll
 
 ### Cosmetics
 - [ ]  booking css
@@ -32,6 +34,10 @@
 - [ ] header appears of the righthand vertical scrollbar
 - [x] gallery can go beyond last item index = 2
 - [x] logo does not appear on project pages
+- [x] arrow in menu does not rotate
+- [x] menu on top / bottom space needs to be disabled when user is on the other page
+- [x] header arrow element height
+
 
 ### Tests
 - [ ] add page
