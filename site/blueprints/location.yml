@@ -2,6 +2,10 @@ title: Home
 
 files: true
   sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
 
 deletable: true
 

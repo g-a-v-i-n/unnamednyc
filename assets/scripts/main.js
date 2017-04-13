@@ -68,6 +68,13 @@ function opentopSpace() {
   $(".topSpace .beam, .topSpace .pillar").addClass("beamOn").removeClass("beamOff");
   // turn bottomSpace header elements to OFF state
   $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff").removeClass("beamOn");
+
+  if (index !== 0 ) {
+    $(".galleryArrowLeft #arrow-outline").removeClass("arrowOff");
+  }
+  if (index < galleryLength -1 ) {
+    $(".galleryArrowRight #arrow-outline").removeClass("arrowOff");
+  }
 };
 
 function openbottomSpace() {
@@ -75,6 +82,9 @@ function openbottomSpace() {
   if (topMenuState === true) {
     topMenuState = toggleMainMenu('.topSpace', topMenuState)
   }
+  $(".galleryArrowLeft #arrow-outline, .galleryArrowRight #arrow-outline").addClass("arrowOff");
+
+  $(".galleryArrowLeft").addClass("arrowOff");
   // change header menu arrow
   $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
   $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");

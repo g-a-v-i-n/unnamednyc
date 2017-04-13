@@ -7,7 +7,11 @@ $index = 0;
 
 <div class="mainMenu disable-select">
   <div class="siteTitle">
-    <h1><?= $page->menuTitle()->html() ?></h1>
+    <?php if($page->Comingsoon()->bool()): ?>
+      <h1><?= $page->menuTitle()->html() ?> (Coming Soon)</h1>
+    <?php else: ?>
+      <h1><?= $page->menuTitle()->html() ?></h1>
+    <?php endif ?>
   </div>
   <?php if($page->isHomePage() === false): $index = 1; ?>
     <div class="location menuItem_0" id="menuItem_0">

@@ -1,7 +1,7 @@
 <div class="wrap">
   <div class="logoAbout">
     <svg width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Mocks" stroke="none" stroke-width="1" fill="transparent" fill-rule="evenodd" stroke-linecap="square">
             <g id="logo-svg" transform="translate(-786.000000, -166.000000)" stroke="#006e94" stroke-width="8">
                 <g id="logo" transform="translate(790.500000, 170.000000)">
                     <path d="M38.6013986,0.41958042 L38.6013986,48.3693806" id="Line"></path>

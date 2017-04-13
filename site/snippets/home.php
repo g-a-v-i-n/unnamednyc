@@ -27,7 +27,10 @@ if(isset($limit)) $locations = $locations->limit($limit);
       <div class='frame'>
         <div class="imgWrapper">
           <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <div class="caption"><?php echo $image->caption() ?>
+          </div>
         </div>
+
       </div>
     <?php $index++; endforeach ?>
 </div>
@@ -41,7 +44,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
           </mask>
       </defs>
       <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="#FF9E9E">
+          <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="transparent">
               <use id="arrow" mask="url(#mask-2)" transform="translate(14.000000, 14.000000) rotate(-90.000000) translate(-14.000000, -14.000000) " xlink:href="#path-1"></use>
           </g>
       </g>
@@ -54,7 +57,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
           </mask>
       </defs>
       <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-          <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="#FF9E9E">
+          <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="transparent">
               <use id="arrow" mask="url(#mask-2)" transform="translate(14.000000, 14.000000) rotate(-90.000000) translate(-14.000000, -14.000000) " xlink:href="#path-1"></use>
           </g>
       </g>

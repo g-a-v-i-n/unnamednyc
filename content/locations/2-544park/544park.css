@@ -1,15 +1,15 @@
 /*
 location colors:
-primary: #a2331d
-bg: #f6f0eD
+primary: #3C7344
+bg: #EBF1EC
 */
 
 #logo-svg {
-  stroke: #a2331d;
+  stroke: #3C7344;
 }
 
 .arrowOn {
-  fill: #a2331d;
+  fill: #3C7344;
   cursor: pointer;
 }
 
@@ -19,74 +19,74 @@ bg: #f6f0eD
 }
 
 #arrow-outline {
-  stroke: #a2331d;
+  stroke: #3C7344;
 }
 
 .mainMenu{
-  background-color: #f6f0eD;
+  background-color: #EBF1EC;
 }
 
 .siteTitle{
-  background-color: #f6f0eD;
+  background-color: #EBF1EC;
 }
 
 .menuBorderOn{
-  border-bottom: 3px solid #a2331d;
+  border-bottom: 3px solid #3C7344;
   transition: 300ms;
 }
 
 .menuBorderOff{
-  border-bottom: 3px solid #f6f0eD;
+  border-bottom: 3px solid #EBF1EC;
   transition: 200ms;
 }
 
 .location {
-  border-top: 3px solid  #a2331d;
-  background-color: #f6f0eD;
+  border-top: 3px solid  #3C7344;
+  background-color: #EBF1EC;
 }
 
 .location:last-child{
-  border-bottom: 3px solid  #a2331d;
+  border-bottom: 3px solid  #3C7344;
 }
 
 .header {
-  background-color: #f6f0eD;
+  background-color: #EBF1EC;
 }
 
 .beam {
-   border: 3px solid #a2331d;
+   border: 3px solid #3C7344;
 }
 
 .beamOff{
-  background: #f6f0eD;
+  background: #EBF1EC;
 }
 
 .beamOn{
-  background:  #a2331d;
+  background:  #3C7344;
 }
 
 .pillar{
-  border: 3px solid #a2331d;
+  border: 3px solid #3C7344;
   border-top: 0;
 }
 
 .topSpace{
-  border-right: 3px solid #a2331d;
-  background: #f6f0eD;
+  border-right: 3px solid #3C7344;
+  background: #EBF1EC;
 }
 
 .bottomSpace{
-  background-color: #f6f0eD;
+  background-color: #EBF1EC;
 }
 
 .optionItem{
-  border-bottom: 3px solid #a2331d;
+  border-bottom: 3px solid #3C7344;
 }
 
 .locationItem{
-  border-top: 3px solid #a2331d;
+  border-top: 3px solid #3C7344;
 }
 
 .listItem{
-  border-bottom: 3px solid #a2331d;
+  border-bottom: 3px solid #3C7344;
 }

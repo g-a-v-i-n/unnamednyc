@@ -12,7 +12,7 @@
               </mask>
           </defs>
           <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="#FF9E9E">
+              <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="transparent">
                   <use id="arrow" mask="url(#mask-2)" transform="translate(14.000000, 14.000000) rotate(-90.000000) translate(-14.000000, -14.000000) " xlink:href="#path-1"></use>
               </g>
           </g>
