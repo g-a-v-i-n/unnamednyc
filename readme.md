@@ -4,8 +4,10 @@
 
 ### Features
 - [ ] drop down lists hide items after certain number
-- [ ] add photo captions
+- [ ] close menu on click anywhere
+- [ ] booking unique to location
 
+- [x] add photo captions
 - [x] blueprints and panel support
 - [x] photo galleries
 - [x] color system
@@ -15,7 +17,6 @@
 - [x] close menu on open subpage
 - [x] turn arrows on inactive slideshow to off state
 - [x] add coming soon to header menu title if coming soon
-- [ ] close menu on click anywhere
 
 ### Cosmetics
 - [ ]  booking css
@@ -26,14 +27,16 @@
 
 ### Mobile
 - [ ]  what widths do things start to be goofy – breakpoints : 768
-- [ ]  responsive refactoring - mostly header, image gallery
-- [ ]  photo gallery mobile
+- [x]  responsive refactoring - image gallery
+- [ ]  responsive refactoring - header
+- [x]  photo gallery mobile
 
 - [x]  menu refactor - full width
 
 ### Adjustments
 - [x] no link on email
 - [x] refactor membership options
+- [x] revert menu
 
 ### Bugs
 - [ ] header appears of the righthand vertical scrollbar

@@ -32,12 +32,12 @@ bg: #EBF1EC
 
 .menuBorderOn{
   border-bottom: 3px solid #3C7344;
-  transition: 300ms;
+  transition: border-bottom 300ms;
 }
 
 .menuBorderOff{
   border-bottom: 3px solid #EBF1EC;
-  transition: 200ms;
+  transition: border-bottom 200ms;
 }
 
 .location {

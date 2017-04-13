@@ -8,10 +8,10 @@ var galleryLength = $('.galleryMover .frame').length
 
 $( document ).ready(function() {
   $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
-  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn")
+  $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn")
 
   $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
-  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff")
+  $(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff")
 
   $(".galleryArrowLeft #arrow-outline").addClass("arrowOff");
   $(".galleryArrowRight #arrow-outline").addClass("arrowOn");
@@ -60,8 +60,8 @@ function opentopSpace() {
     bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
   }
   // change header menu arrow
-  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
-  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
+  $(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
+  $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
   // change width of topSpace element
   $(".topSpace").addClass("topSpaceOpen").removeClass("topSpaceClosed");
   // turn topSpace header elements to ON state
@@ -86,8 +86,8 @@ function openbottomSpace() {
 
   $(".galleryArrowLeft").addClass("arrowOff");
   // change header menu arrow
-  $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
-  $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
+  $(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
+  $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
   // change width of topSpace element
   $(".topSpace").addClass("topSpaceClosed").removeClass("topSpaceOpen")
   // // turn topSpace header elements to OFF state
@@ -141,7 +141,7 @@ function handleMoveGallery(galleryOffset, dir) {
 }
 
 // open top space menu
-$('.topSpace .siteTitle, .topSpace .headerArrowContainer').click(function(e){
+$('.topSpace .siteTitle, .topSpace .headerPillarAndIcon').click(function(e){
   if (topIsOpen) {
     topMenuState = toggleMainMenu('.topSpace', topMenuState)
   }
@@ -149,7 +149,7 @@ $('.topSpace .siteTitle, .topSpace .headerArrowContainer').click(function(e){
 });
 
 // open bottom space menu
-$('.bottomSpace .siteTitle, .bottomSpace .headerArrowContainer').click(function(e){
+$('.bottomSpace .siteTitle, .bottomSpace .headerPillarAndIcon').click(function(e){
   if (!topIsOpen) {
     bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
   }

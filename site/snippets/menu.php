@@ -13,14 +13,7 @@ $index = 0;
       <h1><?= $page->menuTitle()->html() ?></h1>
     <?php endif ?>
   </div>
-  <?php if($page->isHomePage() === false): $index = 1; ?>
-    <div class="location menuItem_0" id="menuItem_0">
-      <a href="<?= $site->homePage()->url() ?>" >
-        <h2 ><?= $site->homePage()->menuTitle() ?></h2>
-      </a>
-    </div>
 
-  <?php endif ?>
 
   <?php foreach($locations as $location): ?>
     <?php if($location->isOpen() === false): ?>
@@ -31,6 +24,12 @@ $index = 0;
           <?php else: ?>
             <h2 ><?= $location->menuTitle() ?></h2>
           <?php endif ?>
+        </a>
+      </div>
+    <?php $index++; else: ?>
+      <div class="location menuItem_<?= $index?>" id="menuItem_<?= $index?>">
+        <a href="<?= $site->homePage()->url() ?>" >
+          <h2 ><?= $site->homePage()->menuTitle() ?></h2>
         </a>
       </div>
     <?php $index++; endif ?>

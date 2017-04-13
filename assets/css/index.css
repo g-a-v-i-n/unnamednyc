@@ -36,7 +36,6 @@ body, html{
   height: auto;
   white-space: nowrap;
   overflow-x: hidden;
-
 }
 
 h1{
@@ -84,9 +83,14 @@ section{
   margin-bottom: 100px;
 }
 
+img{
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
+}
 .visuallyHidden {
   opacity: 0;
-  transition: 200ms;
+  transition: opacity 200ms;
 }
 
 .disable-select {
@@ -124,6 +128,7 @@ Main Menu
 ============================================================*/
 
 .mainMenu{
+  width: 60vw;
   display: flex;
   justify-content: center;
   box-sizing: border-box;
@@ -141,20 +146,18 @@ Main Menu
   justify-content: center;
 
   height: 106px;
-  width: 59vw;
-  min-width: 300px;
+  width: 60vw;
   cursor: pointer;
 }
 
 .location{
   position: absolute;
-  width: 59vw;
+  width: 60vw;
   height: 100px;
-  min-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 150ms;
+  transition: transform 150ms;
   /* use GPU acceleration */
   transform: translate3d(0,0,0);
 }
@@ -204,17 +207,25 @@ Header
 
 }
 
-.headerArrowContainer{
-  width: 7vw;
+.headerPillarAndIcon{
+  width: calc(10vw - 30px);
   height: 67px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   transition: opacity 300ms;
 }
 
+.headerArrowContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .headerArrow{
-  transition: 200ms;
+  transition: transform 200ms;
 }
 
 /*.arrowOn{
@@ -233,9 +244,8 @@ Header
   transform: rotateZ(90deg);
 }
 
-.headerArrow-rotate-minus90{
-  transform: rotateZ(-90);
-  transition: 200ms;
+.pillarBox{
+
 }
 
 .pillar{
@@ -254,7 +264,7 @@ Top Page
   z-index: 1;
   overflow: hidden;
   transform-origin: top left;
-  transition:  300ms;
+  transition:  width 300ms;
   box-sizing: border-box;
   pointer-events:auto;
 }
@@ -279,23 +289,45 @@ Top Page
 
 .contentArrowContainer{
   position: absolute;
-  margin-top: 50px;
+  transform: translateY(50px);
   width: 80vw;
   display: flex;
   justify-content: space-between;
 }
 
-.galleryArrowRight{
+.contentArrowContainer h2{
+    display: none;
+  }
+
+.galleryArrowLeftContainer{
+  margin-left: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+
+}
+
+.galleryArrowRightContainer{
   margin-right: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.galleryArrowRight{
 }
 
 .galleryArrowLeft{
   transform: rotateZ(180deg);
-  margin-left: 10%;
 }
 
 .gallery{
-  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  margin-top: 142px;
   height: 76vh;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -308,20 +340,26 @@ Top Page
 }
 
 .galleryMover{
-  transition: 400ms;
+  transition: transform 400ms;
   font-size: 0;
+  display: flex;
 }
 
 .gallery img{
-  height: 66vh;
+  max-width: 50vw;
+  max-height:60vh;
+  width: auto;
+  height: auto;
 }
 
 .frame {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 0;
   width: 80vw;
   height: 66vh;
-  margin: 0;
-  padding: 0;
 }
 
 .caption{
@@ -373,7 +411,7 @@ bottomSpace Page
 
 .wrap{
   padding-top: 250px;
-  width: 59vw;
+  width: 60vw;
   max-width: 1000px;
   white-space: normal;
   margin-bottom: 180px;
@@ -479,10 +517,97 @@ bottomSpace Page
 }
 
 .mapFix{
-    background:transparent;
+  background:transparent;
    position:relative;
    width:100%;
    height:500px; /* your iframe height */
    top:500px;  /* your iframe height */
    margin-top:-500px;  /* your iframe height */
+}
+
+@media only screen and (max-width: 769px) {
+  h1{
+    font-size: 28px;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+
+  h3{
+    margin-bottom: 23px;
+    font-size: 28px;
+  }
+
+  h4{
+    font-style: italic;
+    font-size: 28px;
+  }
+
+  /* Style copied in captions*/
+  p{
+    line-height: 30px;
+    font-size: 28px;
+  }
+
+  section{
+    margin-bottom: 75px;
+  }
+
+  .contentArrowContainer{
+    transform: translateY(30vh);
+  }
+
+  .contentArrowContainer h2{
+    line-height: 0px;
+    display: block;
+    }
+
+  .galleryArrowRight{
+    transform: scale(0.5)
+  }
+
+  .galleryArrowLeft{
+    transform: rotateZ(180deg) scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1{
+    font-size: 14px;
+  }
+
+  h2{
+    font-size: 14px;
+  }
+
+  h3{
+    margin-bottom: 23px;
+    font-size: 14px;
+  }
+
+  h4{
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  /* Style copied in captions*/
+  p{
+    line-height: 16px;
+    font-size: 14px;
+  }
+
+  section{
+    margin-bottom: 50px;
+  }
+
+  .caption{
+    font-size: 14px;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
 }

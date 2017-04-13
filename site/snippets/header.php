@@ -3,7 +3,8 @@
     <div class="beam"> </div>
   </div>
   <div class="arrowBox">
-    <div class="headerArrowContainer">
+    <div class="headerPillarAndIcon">
+      <div class="headerArrowContainer">
       <svg class="headerArrow" width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
               <polygon id="path-1" points="2 -3.55271368e-15 26 -3.55271368e-15 14 28"></polygon>
@@ -18,10 +19,9 @@
           </g>
       </svg>
     </div>
-
-    <div class="pillar"> </div>
+      <div class="pillar"> </div>
+    </div>
     <?php snippet("menu") ?>
-
-  </div>
+</div>
 
 </div>

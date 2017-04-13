@@ -30,12 +30,12 @@ bg: #f7f7f7
 
 .menuBorderOn{
   border-bottom: 3px solid #006e94;
-  transition: 300ms;
+  transition: border-bottom 300ms;
 }
 
 .menuBorderOff{
   border-bottom: 3px solid #f7f7f7;
-  transition: 200ms;
+  transition: border-bottom 200ms;
 }
 
 .location {
