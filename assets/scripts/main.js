@@ -17,7 +17,14 @@ $( document ).ready(function() {
   $(".galleryArrowRight #arrow-outline").addClass("arrowOn");
 
   $(".galleryArrowLeft").addClass("arrowOff");
+});
 
+$(".content").scroll(function() {
+  if($(this).scrollTop() > 10) {
+    $(".bottomSpace .mainMenu").addClass("menuBorderOn").removeClass("menuBorderOff");
+  } else {
+    $(".bottomSpace .mainMenu").addClass("menuBorderOff").removeClass("menuBorderOn");
+  }
 });
 
 // open or close bottomSpace page
@@ -49,6 +56,9 @@ $('.galleryArrowLeft').click(function(e){
 
 function opentopSpace() {
   topIsOpen = true
+  if (bottomMenuState === true) {
+    bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
+  }
   // change header menu arrow
   $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
   $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
@@ -62,6 +72,9 @@ function opentopSpace() {
 
 function openbottomSpace() {
   topIsOpen = false
+  if (topMenuState === true) {
+    topMenuState = toggleMainMenu('.topSpace', topMenuState)
+  }
   // change header menu arrow
   $(".bottomSpace .headerArrowContainer #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
   $(".topSpace .headerArrowContainer #arrow-outline").addClass("arrowOff").removeClass("arrowOn");

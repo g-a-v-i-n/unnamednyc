@@ -253,7 +253,7 @@ Top Page
   z-index: 1;
   overflow: hidden;
   transform-origin: top left;
-  transition:  400ms;
+  transition:  300ms;
   box-sizing: border-box;
   pointer-events:auto;
 }

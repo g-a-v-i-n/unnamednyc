@@ -10,7 +10,7 @@ Comingsoon: 0
 
 ----
 
-Address: 
+Address:
 
 63 Woodward Ave
   Ridgewood, NY 11385
@@ -25,106 +25,62 @@ Text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and
 
 ----
 
-Spaces: 
+Spaces:
 
-- 
+-
   title: Studio E
   description: >
     Cyclorama wall (22’w x 22’d x
     12’h)
-- 
+-
   title: Studio R
   description: >
     400 square-foot shooting area stocked
     with 107” background paper
-- 
+-
   title: Studio S
   description: Tabletop Still-life Studio
 
 ----
 
-Rates: 
+Equipment:
 
-- 
-  title: Standard Rate
-  rate: $50/hr
-- 
-  title: Half Day
-  rate: $150
-- 
-  title: Full Day
-  rate: $400
-
-----
-
-Membershiptype1heading: Month-to-month
-
-----
-
-Membershiptype1: 
-
-- 
-  commitment: 10 hours / month
-  rate: $275 / hr
-- 
-  commitment: 15 hours / month
-  rate: $350 / hr
-
-----
-
-Membershiptype2heading: Year long
-
-----
-
-Membershiptype2: 
-
-- 
-  commitment: 10 hours / month
-  rate: $275 / month
-- 
-  commitment: 15 hours / month
-  rate: $350 / month
-
-----
-
-Equipment: 
-
-- 
+-
   item: Strobes
-- 
+-
   item: Modifiers
-- 
+-
   item: Light Stands
-- 
+-
   item: Pocket Wizards
-- 
+-
   item: >
     107” Seamless Background Paper
     (selected colors)
-- 
+-
   item: 10’ x 24’ Green Screen Backdrop
-- 
+-
   item: Sand Bags
-- 
+-
   item: Step Stools
-- 
+-
   item: Steamer
-- 
+-
   item: Wifi
-- 
+-
   item: Bluetooth Speaker
 
 ----
 
-Cameras: 
+Cameras:
 
-- 
+-
   item: Hasselblad 500c/m (film/digital backs)
-- 
+-
   item: Nikon D810
-- 
+-
   item: Nikon F5 35mm
-- 
+-
   item: Wista SP 4x5 Camera
 
 ----
@@ -133,4 +89,33 @@ Cid: cid001
 
 ----
 
-Fields: 
+Membershiptypes:
+
+-
+  membershiptype: 6-Month-Commitment
+  commitment: 10 Hours of Booked Time
+  rate: $275/month
+-
+  membershiptype: 6-Month-Commitment
+  commitment: 15 Hours of Booked Time
+  rate: $350/month
+-
+  membershiptype: Month-to-Month
+  commitment: 10 Hours of Booked Time
+  rate: $300/month
+-
+  membershiptype: Month-to-Month
+  commitment: 15 Hours of Booked Time
+  rate: $380/month
+-
+  membershiptype: Hourly
+  commitment: Standard Rate
+  rate: $50/Hour
+-
+  membershiptype: Hourly
+  commitment: Half Day
+  rate: $150/Half Day
+-
+  membershiptype: Hourly
+  commitment: Full Day
+  rate: $400/day

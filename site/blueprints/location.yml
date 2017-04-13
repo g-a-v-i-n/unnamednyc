@@ -52,37 +52,20 @@ fields:
         label: Rate
         type: text
 
-  membershipType1Heading:
-    label: Membership Type 1 Title
-    type:  text
-
-  membershipType1:
-    label: Membership Type 1 Details
+  membershiptypes:
+    label: Membership Types
     type: structure
     style: table
     fields:
+      membershiptype:
+        label: Type of Membership
+        type: select
+        options:
+          6-Month-Commitment: 6 Month Commitment
+          Month-to-Month: Month-to-Month
+          Hourly: Hourly
       commitment:
-        label: Commitment
-        type: text
-      rate:
-        label: Rate
-        type: text
-
-  fields:
-  line:
-    type: line
-
-  membershipType2Heading:
-    label: Membership Type 2 Title
-    type:  text
-
-  membershipType2:
-    label: Membership Type 2 Details
-    type: structure
-    style: table
-    fields:
-      commitment:
-        label: Commitment
+        label: Commitment (title)
         type: text
       rate:
         label: Rate

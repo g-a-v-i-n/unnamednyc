@@ -40,10 +40,11 @@
   <section>
     <h3>HOURLY BOOKING</h3>
     <div class='list'>
-      <?php foreach($page->rates()->yaml() as $rate): ?>
+      <?php $hourly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Hourly'); ?>
+      <?php foreach($hourly as $item): ?>
         <div class="optionItem">
-          <h4><?php echo $rate['title'] ?></h4>
-          <h4><?php echo $rate['rate'] ?></h4>
+          <h4><?php echo $item->commitment() ?></h4>
+          <h4><?php echo $item->rate() ?></h4>
         </div>
       <?php endforeach ?>
     </div>
@@ -53,20 +54,23 @@
     <h3>MEMBERSHIP</h3>
     <div class='list'>
       <div class='optionList'>
-        <p><?php echo $page->membershipType1Heading() ?>:</p>
-        <?php foreach($page->membershipType1()->yaml() as $option): ?>
+        <?php $monthly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Month-to-Month'); ?>
+        <?php $halfyear = $page->membershiptypes()->toStructure()->filterBy('membershiptype', '6-Month-Commitment'); ?>
+
+        <p>Month-to-Month:</p>
+        <?php foreach($monthly as $item): ?>
           <div class="optionItem">
-            <div class="option"><h4><?php echo $option['commitment'] ?></h4></div>
-            <div class="option"><h4><?php echo $option['rate'] ?></h4></div>
+            <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+            <div class="option"><h4><?php echo $item->rate() ?></h4></div>
           </div>
         <?php endforeach ?>
       </div>
       <div class='optionList'>
-        <p><?php echo $page->membershipType2Heading() ?>:</p>
-        <?php foreach($page->membershipType2()->yaml() as $option): ?>
+        <p>6-Month Commitment:</p>
+        <?php foreach($halfyear as $item): ?>
           <div class="optionItem">
-            <div class="option"><h4><?php echo $option['commitment'] ?></h4></div>
-            <div class="option"><h4><?php echo $option['rate'] ?></h4></div>
+            <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+            <div class="option"><h4><?php echo $item->rate() ?></h4></div>
           </div>
         <?php endforeach ?>
       </div>

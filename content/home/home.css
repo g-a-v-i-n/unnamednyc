@@ -28,8 +28,14 @@ bg: #f7f7f7
   background-color: #f7f7f7;
 }
 
-.bottomSpace .siteTitle {
+.menuBorderOn{
   border-bottom: 3px solid #006e94;
+  transition: 300ms;
+}
+
+.menuBorderOff{
+  border-bottom: 3px solid #f7f7f7;
+  transition: 200ms;
 }
 
 .location {
