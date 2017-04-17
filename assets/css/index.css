@@ -83,11 +83,6 @@ section{
   margin-bottom: 100px;
 }
 
-img{
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.32);
-}
 .visuallyHidden {
   opacity: 0;
   transition: opacity 200ms;
@@ -523,6 +518,14 @@ bottomSpace Page
    height:500px; /* your iframe height */
    top:500px;  /* your iframe height */
    margin-top:-500px;  /* your iframe height */
+}
+
+/* Iframe Booking Feature
+*/
+
+label .select-item {
+  border: none;
+  border-top: 3px solid black;
 }
 
 @media only screen and (max-width: 769px) {

@@ -1,8 +1,7 @@
 <?php
-
 $locations = page('locations')->children()->visible();
-if(isset($limit)) $locations = $locations->limit($limit);
-$index = 0;
+  if(isset($limit)) $locations = $locations->limit($limit);
+  $index = 0;
 ?>
 
 <div class="mainMenu disable-select">
@@ -18,7 +17,7 @@ $index = 0;
   <?php foreach($locations as $location): ?>
     <?php if($location->isOpen() === false): ?>
       <div class="location menuItem_<?= $index?>" id="menuItem_<?= $index?>">
-        <a href="<?= $location->url() ?>" >
+        <a href="<?php echo $location->url() ?>" >
           <?php if($location->Comingsoon()->bool()): ?>
             <h2 ><?= $location->menuTitle() ?> (Coming Soon)</h2>
           <?php else: ?>

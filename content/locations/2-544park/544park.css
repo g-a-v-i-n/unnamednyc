@@ -1,7 +1,7 @@
 /*
 location colors:
 primary: #3C7344
-bg: #EBF1EC
+bg: #FAFAFA
 */
 
 #logo-svg {
@@ -23,11 +23,11 @@ bg: #EBF1EC
 }
 
 .mainMenu{
-  background-color: #EBF1EC;
+  background-color: #FAFAFA;
 }
 
 .siteTitle{
-  background-color: #EBF1EC;
+  background-color: #FAFAFA;
 }
 
 .menuBorderOn{
@@ -36,13 +36,13 @@ bg: #EBF1EC
 }
 
 .menuBorderOff{
-  border-bottom: 3px solid #EBF1EC;
+  border-bottom: 3px solid #FAFAFA;
   transition: border-bottom 200ms;
 }
 
 .location {
   border-top: 3px solid  #3C7344;
-  background-color: #EBF1EC;
+  background-color: #FAFAFA;
 }
 
 .location:last-child{
@@ -50,7 +50,7 @@ bg: #EBF1EC
 }
 
 .header {
-  background-color: #EBF1EC;
+  background-color: #FAFAFA;
 }
 
 .beam {
@@ -58,7 +58,7 @@ bg: #EBF1EC
 }
 
 .beamOff{
-  background: #EBF1EC;
+  background: #FAFAFA;
 }
 
 .beamOn{
@@ -72,11 +72,11 @@ bg: #EBF1EC
 
 .topSpace{
   border-right: 3px solid #3C7344;
-  background: #EBF1EC;
+  background: #FAFAFA;
 }
 
 .bottomSpace{
-  background-color: #EBF1EC;
+  background-color: #FAFAFA;
 }
 
 .optionItem{

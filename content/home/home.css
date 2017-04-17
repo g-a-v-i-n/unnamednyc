@@ -1,7 +1,7 @@
 /*
 location colors:
 primary: #006e94
-bg: #f7f7f7
+bg: #FAFAFA
 */
 
 #logo-svg {
@@ -21,11 +21,11 @@ bg: #f7f7f7
 }
 
 .mainMenu{
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .siteTitle{
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .menuBorderOn{
@@ -34,13 +34,13 @@ bg: #f7f7f7
 }
 
 .menuBorderOff{
-  border-bottom: 3px solid #f7f7f7;
+  border-bottom: 3px solid #FAFAFA;
   transition: border-bottom 200ms;
 }
 
 .location {
   border-top: 3px solid  #006e94;
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .location:last-child{
@@ -48,7 +48,7 @@ bg: #f7f7f7
 }
 
 .header {
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .beam {
@@ -56,7 +56,7 @@ bg: #f7f7f7
 }
 
 .beamOff{
-  background: #f7f7f7;
+  background: #FAFAFA;
 }
 
 .beamOn{
@@ -71,11 +71,11 @@ bg: #f7f7f7
 
 .topSpace{
   border-right: 3px solid #006e94;
-  background: #f7f7f7;
+  background: #FAFAFA;
 }
 
 .bottomSpace{
-  background-color: #f7f7f7;
+  background-color: #FAFAFA;
 }
 
 .optionItem{
