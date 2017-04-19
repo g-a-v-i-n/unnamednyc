@@ -27,63 +27,10 @@ Text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and
 
 Spaces:
 
--
-  title: Studio E
-  description: >
-    Cyclorama wall (22’w x 22’d x
-    12’h)
--
-  title: Studio R
-  description: >
-    400 square-foot shooting area stocked
-    with 107” background paper
--
-  title: Studio S
-  description: Tabletop Still-life Studio
 
 ----
 
-Rates:
-
--
-  title: Standard Rate
-  rate: $50/hr
--
-  title: Half Day
-  rate: $150
--
-  title: Full Day
-  rate: $400
-
-----
-
-Membershiptype1heading: Month-to-month
-
-----
-
-Membershiptype1:
-
--
-  commitment: 10 hours / month
-  rate: $275 / hr
--
-  commitment: 15 hours / month
-  rate: $350 / hr
-
-----
-
-Membershiptype2heading: Year long
-
-----
-
-Membershiptype2:
-
--
-  commitment: 10 hours / month
-  rate: $275 / month
--
-  commitment: 15 hours / month
-  rate: $350 / month
+hasBooking: 0
 
 ----
 

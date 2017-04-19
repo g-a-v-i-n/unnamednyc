@@ -188,8 +188,9 @@ Header
 }
 
 .beam{
+  box-sizing: border-box;
   display: block;
-  height: 6px;
+  height: 13px;
   width: 100%;
 }
 
@@ -244,9 +245,12 @@ Header
 }
 
 .pillar{
+  transform: translateY(-3px);
+  box-sizing: border-box;
   display: block;
-  height: 64px;
-  width: 6px;
+  height: 100%;
+  width: 13px;
+  z-index: 100;
 }
 
 /*============================================================
@@ -324,7 +328,7 @@ Top Page
   align-items: center;
   margin-top: 142px;
   height: 76vh;
-  overflow-x: scroll;
+  overflow-x: hidden;
   overflow-y: hidden;
   box-sizing: border-box;
   width: 80vw;
@@ -553,6 +557,10 @@ label .select-item {
     font-size: 28px;
   }
 
+  .wrap{
+    padding-top: 150px;
+  }
+
   section{
     margin-bottom: 75px;
   }
@@ -573,9 +581,36 @@ label .select-item {
   .galleryArrowLeft{
     transform: rotateZ(180deg) scale(0.5);
   }
+
+  .headerArrow{
+    transform: scale(0.5)
+  }
+
+  .pillar{
+    width: 5px;
+  }
+
+  .beam{
+    height: 5px;
+  }
+
+  .gallery img{
+    max-width: 75vw;
+    max-height:70vh;
+    width: auto;
+    height: auto;
+  }
+
+  .logoAbout{
+    height: 80px;
+  }
+  .logoAboutSVG{
+    transform: scale(0.5)
+
+  }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   h1{
     font-size: 14px;
   }

@@ -46,7 +46,21 @@ $('.galleryArrowRight').click(function(e){
   e.stopPropagation();
 });
 
+$(".gallery").on("swipeleft",function(){
+  if (topIsOpen) {
+    galleryOffset = handleMoveGallery(galleryOffset, 'right')
+  }
+  e.stopPropagation();
+});
+
 $('.galleryArrowLeft').click(function(e){
+  if (topIsOpen) {
+    galleryOffset = handleMoveGallery(galleryOffset, 'left')
+  }
+  e.stopPropagation();
+});
+
+$(".gallery").on("swipeRight",function(){
   if (topIsOpen) {
     galleryOffset = handleMoveGallery(galleryOffset, 'left')
   }
@@ -102,12 +116,12 @@ function toggleMainMenu(container, menuState) {
     $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
     for (i = 0; i < $('div.location').length / 2; i++) {
-      $(container + ' ' + '.menuItem_' + i).css({'transform': 'translateY(' + ((i * 100) + 106) + 'px)' })
+      $(container + ' ' + '.menuItem_' + i).css({'webkit-transform': 'translateY(' + ((i * 100) + 106) + 'px)' })
     };
   } else {
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
     for (i = 0; i < $('div.location').length / 2; i++) {
-      $(container + ' ' + '.menuItem_' + i).css({'transform': 'translateY(0)' })
+      $(container + ' ' + '.menuItem_' + i).css({'webkit-transform': 'translateY(0)' })
     };
   };
   return !menuState;

@@ -1,6 +1,6 @@
 <div class="wrap">
   <div class="logoAbout">
-    <svg width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg class="logoAboutSVG" width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Mocks" stroke="none" stroke-width="1" fill="transparent" fill-rule="evenodd" stroke-linecap="square">
             <g id="logo-svg" transform="translate(-786.000000, -166.000000)" stroke="#006e94" stroke-width="8">
                 <g id="logo" transform="translate(790.500000, 170.000000)">
@@ -30,25 +30,27 @@
       src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhdPiaKRewokRD002Pd8kz3E&key=AIzaSyAhOx7zVO-qQPa9eq_6oqSKLgafIlgIavQ" allowfullscreen></iframe>
       </div>
   </section>
+  <?php if($page->hasBooking() === true): ?>
+    <section>
+      <h3>BOOK</h3>
+      <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13336369" width="100%" height="800" frameBorder="0"></iframe>
+      <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
+    </section>
+  <?php endif ?>
 
-  <section>
-    <h3>BOOK</h3>
-    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13336369" width="100%" height="800" frameBorder="0"></iframe>
-    <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
-  </section>
+    <section>
+      <h3>HOURLY BOOKING</h3>
+      <div class='list'>
+        <?php $hourly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Hourly'); ?>
+        <?php foreach($hourly as $item): ?>
+          <div class="optionItem">
+            <h4><?php echo $item->commitment() ?></h4>
+            <h4><?php echo $item->rate() ?></h4>
+          </div>
+        <?php endforeach ?>
+      </div>
+    </section>
 
-  <section>
-    <h3>HOURLY BOOKING</h3>
-    <div class='list'>
-      <?php $hourly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Hourly'); ?>
-      <?php foreach($hourly as $item): ?>
-        <div class="optionItem">
-          <h4><?php echo $item->commitment() ?></h4>
-          <h4><?php echo $item->rate() ?></h4>
-        </div>
-      <?php endforeach ?>
-    </div>
-  </section>
 
   <section>
     <h3>MEMBERSHIP</h3>

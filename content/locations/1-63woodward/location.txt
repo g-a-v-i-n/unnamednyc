@@ -89,6 +89,10 @@ Cid: cid001
 
 ----
 
+hasBooking: 1
+
+----
+
 Membershiptypes:
 
 -

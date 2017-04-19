@@ -2,15 +2,26 @@
 
 ## To Do
 
-
-
 ### Features
-- [ ] drop down lists hide items after certain number
-- [ ] close menu on click anywhere
-- [ ] booking unique to location && add swipe support on mobile
-- [ ] booking css
-- [ ] disable swipe events on gallery && add swipe support for mobile
+- [ ] reduce main font size
+- [ ] polish spacing
 
+- [ ] drop down lists hide items after certain number
+
+- [x] swipable gallery ( must test)
+
+- [ ] booking css
+
+- [ ] cross browser audit esp safari bug fixes
+- [ ] mobile audit
+
+- [ ] close menu on click anywhere
+- [ ] larger arrows for slideshow ( phil )
+- [ ] google maps illo ( phil )
+
+- [X] booking can be turned on or off per project
+- [x] remove outline on pillar / beam interesection
+- [x] debug swipe events on gallery
 - [x] add photo captions
 - [x] blueprints and panel support
 - [x] photo galleries
@@ -31,12 +42,7 @@
 - [x]  menu refactor - full width
 
 ### Cosmetics
-- [ ] polish spacing
-- [ ] remove drop shadow
-- [ ] revise spacing
-- [ ] reduce main font size
-- [ ] New gallery arrow icons
-
+- [X] remove drop shadow
 - [x]  text is black
 - [x]  add more photos
 - [x]  icon styling
@@ -64,13 +70,3 @@
 
 ### Outstanding Items
 - [ ] equipment list UI could be better for long lists
-
-
-### from Unnamed
-- [ ] only need cal for 1 space :)
-- [ ] try to hide acuitiy watermark
-- [ ] clickable area bigger for gallery
-- [ ] swipable gallery
-- [ ] outline on beam and pillar remove center line thingy
-- [ ] try to hide unwanted western beef
-- [ ] show train stop
