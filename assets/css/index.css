@@ -123,15 +123,16 @@ Main Menu
 ============================================================*/
 
 .mainMenu{
+  margin-left: calc(10vw - 30px);
+  position: absolute;
   width: 60vw;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
   z-index:98;
 }
 
 
 .siteTitle{
+  position: absolute;
+
   top:0;
   z-index: 99;
   overflow-x: hidden;
@@ -141,13 +142,15 @@ Main Menu
   justify-content: center;
 
   height: 106px;
-  width: 60vw;
+  width: 100%;
   cursor: pointer;
 }
 
 .location{
   position: absolute;
-  width: 60vw;
+
+  /*width: 60vw;*/
+  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
@@ -158,7 +161,6 @@ Main Menu
 }
 
 .location:hover h2, .siteTitle:hover h1{
-  opacity: 0.7;
 }
 
 .location a, .location h2{
@@ -195,7 +197,7 @@ Header
 }
 
 .arrowBox{
-  display: flex;
+  position: relative;
   width: 100%;
   padding: 30px;
   padding-top:0;
@@ -204,6 +206,8 @@ Header
 }
 
 .headerPillarAndIcon{
+  z-index: 200;
+  position: absolute;
   width: calc(10vw - 30px);
   height: 67px;
   display: flex;
@@ -233,7 +237,7 @@ Header
 }*/
 
 .arrowOn:hover{
-  opacity: 0.5
+
 }
 
 .headerArrow-rotate-90{
@@ -279,24 +283,40 @@ Top Page
 
 .topSpace .content{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+
+
   overflow: hidden;
   width:80vw;
   height: 100vh;
 }
 
-.contentArrowContainer{
-  position: absolute;
-  transform: translateY(50px);
+.gallery{
+  position:absolute;
+  left:0;
+  top:25vh;
+  /*transform: translateY(25%);*/
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
   width: 80vw;
+}
+
+.contentArrowContainer{
+  position:absolute;
+  left:0;
+  top:53%;
   display: flex;
   justify-content: space-between;
+  height: 0;
+  width: 80vw;
+  z-index: 300;
 }
 
 .contentArrowContainer h2{
     display: none;
   }
+
 
 .galleryArrowLeftContainer{
   margin-left: 10%;
@@ -308,14 +328,6 @@ Top Page
 
 }
 
-.galleryArrowRightContainer{
-  margin-right: 10%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .galleryArrowRight{
 }
 
@@ -323,15 +335,12 @@ Top Page
   transform: rotateZ(180deg);
 }
 
-.gallery{
+.galleryArrowRightContainer{
+  margin-right: 10%;
+  width: 50%;
   display: flex;
   align-items: center;
-  margin-top: 142px;
-  height: 76vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  box-sizing: border-box;
-  width: 80vw;
+  justify-content: flex-end;
 }
 
 .gallery::-webkit-scrollbar {
@@ -407,6 +416,7 @@ bottomSpace Page
   width:80vw;
   height: 100%;
 }
+
 
 .wrap{
   padding-top: 250px;
@@ -534,27 +544,27 @@ label .select-item {
 
 @media only screen and (max-width: 769px) {
   h1{
-    font-size: 28px;
+    font-size: 26px;
   }
 
   h2{
-    font-size: 28px;
+    font-size: 26px;
   }
 
   h3{
     margin-bottom: 23px;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   h4{
     font-style: italic;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   /* Style copied in captions*/
   p{
     line-height: 30px;
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .wrap{
@@ -604,13 +614,31 @@ label .select-item {
   .logoAbout{
     height: 80px;
   }
+
   .logoAboutSVG{
     transform: scale(0.5)
-
   }
+
+  .siteTitle{
+    height: 86px;
+  }
+
+  .location{
+    height: 80px;
+  }
+
+  .mainMenu{
+    width: calc(80vw - 60px);
+    margin-left: 0;
+  }
+
+  .frame {
+    align-items: flex-end;
+  }
+
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   h1{
     font-size: 14px;
   }

@@ -116,12 +116,26 @@ function toggleMainMenu(container, menuState) {
     $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
     for (i = 0; i < $('div.location').length / 2; i++) {
-      $(container + ' ' + '.menuItem_' + i).css({'webkit-transform': 'translateY(' + ((i * 100) + 106) + 'px)' })
+      // this is calced like this bc the title has to be a little bigger thatn the menu items to cover the bottom border
+      var menuItemOffset = 'translateY(' + ((i * $('div.location').height() ) + $('div.siteTitle').height()) + 'px)'
+      $(container + ' ' + '.menuItem_' + i).css({
+        '-webkit-transform': menuItemOffset,
+        '-ms-transform': menuItemOffset,
+        '-moz-transform': menuItemOffset,
+        '-o-transform': menuItemOffset,
+        'transform': menuItemOffset
+      })
     };
   } else {
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
     for (i = 0; i < $('div.location').length / 2; i++) {
-      $(container + ' ' + '.menuItem_' + i).css({'webkit-transform': 'translateY(0)' })
+      $(container + ' ' + '.menuItem_' + i).css({
+        '-webkit-transform': 'translateY(0)',
+        '-ms-transform': 'translateY(0)',
+        '-moz-transform': 'translateY(0)',
+        '-o-transform': 'translateY(0)',
+        'transform': 'translateY(0)'
+      })
     };
   };
   return !menuState;
@@ -129,7 +143,6 @@ function toggleMainMenu(container, menuState) {
 
 function handleMoveGallery(galleryOffset, dir) {
   newGalleryOffset = galleryOffset;
-
     if (dir === 'left' && index !== 0){
       index--
       newGalleryOffset = galleryOffset + (window.innerWidth * 0.8)
