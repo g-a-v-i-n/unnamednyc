@@ -11,9 +11,9 @@
         </g>
     </svg>
     </div>
-  <header>
+  <section>
     <div class="intro text"> <?= $page->text()->kirbytext() ?></div>
-  </header>
+  </section>
 
   <section>
       <?php foreach($page->spaces()->yaml() as $space): ?>
@@ -59,7 +59,7 @@
         <?php $monthly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Month-to-Month'); ?>
         <?php $halfyear = $page->membershiptypes()->toStructure()->filterBy('membershiptype', '6-Month-Commitment'); ?>
 
-        <p>Month-to-Month:</p>
+        <h5>Month-to-Month:</h5>
         <?php foreach($monthly as $item): ?>
           <div class="optionItem">
             <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
@@ -68,7 +68,7 @@
         <?php endforeach ?>
       </div>
       <div class='optionList'>
-        <p>6-Month Commitment:</p>
+        <h5>6-Month Commitment:</h5>
         <?php foreach($halfyear as $item): ?>
           <div class="optionItem">
             <div class="option"><h4><?php echo $item->commitment() ?></h4></div>

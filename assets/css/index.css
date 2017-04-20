@@ -28,7 +28,7 @@
 
 body, html{
   font-family: 'Nimbus Sans';
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 500;
   font-style: normal;
   padding :0;
@@ -41,42 +41,49 @@ body, html{
 h1{
   margin: 0;
   padding: 0;
-  font-size: 42px;
-  font-family: 'Nimbus Sans';
+  font-size: 36px;
   font-weight: 800;
 }
 
 h2{
   margin: 0;
   padding: 0;
-  font-family: 'Nimbus Sans';
   font-weight: 500;
   font-style: italic;
-  font-size: 42px;
+  font-size: 36px;
 }
 
 h3{
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
-  font-family: 'Nimbus Sans';
+  margin-bottom: 10px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
 }
 
 h4{
   margin: 0;
   padding: 0;
-  font-family: 'Nimbus Sans';
   font-weight: 500;
   font-style: italic;
-  font-size: 32px;
+  font-size: 28px;
+}
+
+h5{
+  line-height: 48px;
+  font-size: 28px;
+  padding: 0;
+  margin:0;
+  font-weight: 500;
+  font-style: normal;
 }
 
 /* Style copied in captions*/
 p{
   line-height: 48px;
   padding: 0;
+  margin-bottom: 28px;
+  margin-top:0;
 }
 
 section{
@@ -226,23 +233,21 @@ Header
 
 .headerArrow{
   transition: transform 200ms;
+  transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -webkit-transform-origin: 50%% 50%%; /* Chrome, Safari, Opera */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
-/*.arrowOn{
-  transition: 400ms;
-}
-
-.arrowOff{
-  transition: 400ms;
-}*/
-
-.arrowOn:hover{
-
-}
 
 .headerArrow-rotate-90{
-  transform: rotateZ(90deg);
+  transform: rotate3d(0, 0, 1, 90deg);
+  -moz-transform: rotate3d(0, 0, 1, 90deg);
+  -webkit-transform: rotate3d(0, 0, 1, 90deg);
 }
+
 
 .pillarBox{
 
@@ -284,7 +289,7 @@ Top Page
 .topSpace .content{
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
 
   overflow: hidden;
   width:80vw;
@@ -292,14 +297,11 @@ Top Page
 }
 
 .gallery{
-  position:absolute;
+  padding-top: 160px;
   left:0;
-  top:25vh;
-  /*transform: translateY(25%);*/
-  overflow-x: hidden;
-  overflow-y: hidden;
   box-sizing: border-box;
   width: 80vw;
+  height: auto;
 }
 
 .contentArrowContainer{
@@ -355,7 +357,7 @@ Top Page
 
 .gallery img{
   max-width: 50vw;
-  max-height:60vh;
+  max-height:70vh;
   width: auto;
   height: auto;
 }
@@ -489,7 +491,7 @@ bottomSpace Page
 }
 
 .optionList{
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .optionItem{

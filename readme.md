@@ -6,6 +6,7 @@
 - [ ] reduce main font size
 - [ ] polish spacing
 
+
 - [ ] drop down lists hide items after certain number
 
 - [x] swipable gallery ( must test)
@@ -19,6 +20,7 @@
 - [ ] larger arrows for slideshow ( phil )
 - [ ] google maps illo ( phil )
 
+- [X] arrow svg issue - 1hr LOL
 - [X] booking can be turned on or off per project
 - [x] remove outline on pillar / beam interesection
 - [x] debug swipe events on gallery
