@@ -79,18 +79,20 @@
     </div>
   </section>
 
-  <section>
+  <section class='equipmentList'>
     <h3>EQUIPMENT (INCLUDED IN RENTAL)</h3>
     <div class='list'>
       <?php foreach($page->Equipment()->yaml() as $item): ?>
-        <div class="listItem">
+        <div class="listItem listHider">
           <h4><?php echo $item['item'] ?></h4>
         </div>
       <?php endforeach ?>
     </div>
+    <div class='expandButton'><h5>See More</h5></div>
+
   </section>
 
-  <section>
+  <section class='cameraList'>
     <h3>CAMERAS FOR RENT</h3>
     <div class='list'>
       <?php foreach($page->Cameras()->yaml() as $item): ?>
@@ -99,6 +101,8 @@
         </div>
       <?php endforeach ?>
     </div>
+    <div class='expandButton'><h5>See More</h5></div>
+
   </section>
 
   <section class="spacer">

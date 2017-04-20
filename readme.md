@@ -3,23 +3,19 @@
 ## To Do
 
 ### Features
-- [ ] reduce main font size
-- [ ] polish spacing
-
-
-- [ ] drop down lists hide items after certain number
-
-- [x] swipable gallery ( must test)
-
 - [ ] booking css
-
-- [ ] cross browser audit esp safari bug fixes
 - [ ] mobile audit
+- [ ] hide see more see less if the list is less than x items long
 
 - [ ] close menu on click anywhere
 - [ ] larger arrows for slideshow ( phil )
 - [ ] google maps illo ( phil )
 
+- [x] swipable gallery ( must test)
+- [x] reduce main font size
+- [x] polish spacing
+- [X] cross browser audit esp safari bug fixes
+- [X] drop down lists hide items after certain number
 - [X] arrow svg issue - 1hr LOL
 - [X] booking can be turned on or off per project
 - [x] remove outline on pillar / beam interesection
@@ -36,9 +32,6 @@
 - [x] add coming soon to header menu title if coming soon
 
 ### Mobile
-- [ ]  define breakpoints
-- [ ]  responsive refactoring - header
-
 - [x]  responsive refactoring - image gallery
 - [x]  photo gallery mobile
 - [x]  menu refactor - full width

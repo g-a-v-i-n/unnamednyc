@@ -3,6 +3,8 @@ var bottomMenuState = false;
 var topIsOpen = true;
 var galleryOffset = 0;
 var index = 0;
+var camListState = false;
+var eqListState = false;
 var galleryLength = $('.galleryMover .frame').length
 
 
@@ -19,11 +21,13 @@ $( document ).ready(function() {
   $(".galleryArrowLeft").addClass("arrowOff");
 });
 
+
+
 $(".content").scroll(function() {
   if($(this).scrollTop() > 10) {
-    $(".bottomSpace .mainMenu").addClass("menuBorderOn").removeClass("menuBorderOff");
+    $(".bottomSpace .siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
   } else {
-    $(".bottomSpace .mainMenu").addClass("menuBorderOff").removeClass("menuBorderOn");
+    $(".bottomSpace .siteTitle").addClass("menuBorderOff").removeClass("menuBorderOn");
   }
 });
 
@@ -113,6 +117,7 @@ function openbottomSpace() {
 
 function toggleMainMenu(container, menuState) {
   if (menuState === false) {
+    $(container + " " + ".siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
     $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
     for (i = 0; i < $('div.location').length / 2; i++) {
@@ -127,6 +132,9 @@ function toggleMainMenu(container, menuState) {
       })
     };
   } else {
+    if ($(".bottomSpace .content").scrollTop() < 10){
+      $(container + " " + ".siteTitle").removeClass("menuBorderOn").addClass("menuBorderOff");
+    }
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
     for (i = 0; i < $('div.location').length / 2; i++) {
       $(container + ' ' + '.menuItem_' + i).css({
@@ -166,6 +174,33 @@ function handleMoveGallery(galleryOffset, dir) {
     }
   return newGalleryOffset;
 }
+
+function toggleCollapsableList(container, state) {
+  if (state === true) {
+    $(container + ' ' + "div.listItem").addClass("listHider");
+    $(container + ' ' + ".expandButton" ).html( "<h5>See More</h5>" );
+  } else {
+    $(container + ' ' + "div.listItem").removeClass("listHider");
+    $(container + ' ' + ".expandButton" ).html( "<h5>See Less</h5>" );
+  };
+  return !state;
+}
+
+// open collapsable list
+$('.cameraList .expandButton').click(function(e){
+  if (!topIsOpen) {
+    camListState = toggleCollapsableList('.cameraList', camListState)
+  }
+  e.stopPropagation();
+});
+
+// open collapsable list
+$('.equipmentList .expandButton').click(function(e){
+  if (!topIsOpen) {
+    eqListState = toggleCollapsableList('.equipmentList', eqListState)
+  }
+  e.stopPropagation();
+});
 
 // open top space menu
 $('.topSpace .siteTitle, .topSpace .headerPillarAndIcon').click(function(e){
