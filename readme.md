@@ -3,14 +3,29 @@
 ## To Do
 
 ### Features
+
+#### CSS Fixes
 - [ ] booking css
-- [ ] mobile audit
+- [ ] type size headings on desktop
+- [ ] black fill hover state
+- [ ] better gallery margin-top on ipad
+- [ ] ipad - match margin dims on menu/header and gallery img
+- [ ] bottom align arrows on ipad/mobile
+- [ ] larger arrows for slideshow ( phil ) – enlarge height of arrow container element
+
+#### PHP Fixes
+- [ ] debug hide/show booker
+- [ ] if coming soon, display coming soon svg in gallery
+
+#### JS Fixes
 - [ ] hide see more see less if the list is less than x items long
 
+#### Final stuff
+- [ ] google maps hide location or illos
+- [ ] better handling of setting default styles, not in JS preferably
 - [ ] close menu on click anywhere
-- [ ] larger arrows for slideshow ( phil )
-- [ ] google maps illo ( phil )
 
+#### Completed
 - [x] swipable gallery ( must test)
 - [x] reduce main font size
 - [x] polish spacing
@@ -48,8 +63,7 @@
 - [x] revert menu
 
 ### Bugs
-- [ ] header appears of the righthand vertical scrollbar
-- [ ] better handling of setting default styles, not in JS preferably
+- [X] header appears of the righthand vertical scrollbar
 
 - [x] gallery removes z-index
 - [x] make menu height smaller so it doesn't cover top of image gallery
@@ -61,7 +75,3 @@
 
 ### Tests
 - [ ] add page
-- [ ] edit page
-
-### Outstanding Items
-- [ ] equipment list UI could be better for long lists
