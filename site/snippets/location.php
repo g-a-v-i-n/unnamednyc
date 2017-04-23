@@ -30,7 +30,7 @@
       src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhdPiaKRewokRD002Pd8kz3E&key=AIzaSyAhOx7zVO-qQPa9eq_6oqSKLgafIlgIavQ" allowfullscreen></iframe>
       </div>
   </section>
-  <?php if($page->hasBooking() === true): ?>
+  <?php if($page->hasBooking()->bool() === true): ?>
     <section>
       <h3>BOOK</h3>
       <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13336369" width="100%" height="800" frameBorder="0"></iframe>

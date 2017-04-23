@@ -6,7 +6,7 @@
 
 #### CSS Fixes
 - [ ] booking css
-- [ ] type size headings on desktop
+- [ ] responsive booking css
 - [ ] black fill hover state
 - [ ] better gallery margin-top on ipad
 - [ ] ipad - match margin dims on menu/header and gallery img
@@ -26,6 +26,7 @@
 - [ ] close menu on click anywhere
 
 #### Completed
+- [X] type size headings on desktop
 - [x] swipable gallery ( must test)
 - [x] reduce main font size
 - [x] polish spacing

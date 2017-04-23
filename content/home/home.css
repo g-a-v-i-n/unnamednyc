@@ -10,14 +10,25 @@ bg: #FAFAFA
 
 .arrowOn {
   fill: #006e94;
+  pointer-events: all;
+}
+
+.arrowOn:hover {
+  fill: black;
+  cursor: pointer;
 }
 
 .arrowOff {
   fill: transparent;
+  pointer-events: none;
 }
 
 #arrow-outline {
   stroke: #006e94;
+}
+
+#arrow-outline:hover {
+  stroke: black;
 }
 
 .mainMenu{
