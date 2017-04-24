@@ -93,7 +93,7 @@ hasBooking: 1
 
 ----
 
-Membershiptypes:
+membershipTypes:
 
 -
   membershiptype: 6-Month-Commitment
@@ -121,5 +121,22 @@ Membershiptypes:
   rate: $150/Half Day
 -
   membershiptype: Hourly
+  commitment: Full Day
+  rate: $400/day
+
+----
+
+bookingTypes:
+
+-
+  bookingtype: Hourly
+  commitment: Standard Rate
+  rate: $50/Hour
+-
+  bookingtype: Hourly
+  commitment: Half Day
+  rate: $150/Half Day
+-
+  bookingtype: Hourly
   commitment: Full Day
   rate: $400/day

@@ -56,7 +56,24 @@ fields:
         label: Rate
         type: text
 
-  membershiptypes:
+  bookingTypes:
+    label: Booking Types
+    type: structure
+    style: table
+    fields:
+      bookingtype:
+        label: Type of Booking
+        type: select
+        options:
+          Hourly: Hourly
+      commitment:
+        label: Commitment (title)
+        type: text
+      rate:
+        label: Rate
+        type: text
+
+  membershipTypes:
     label: Membership Types
     type: structure
     style: table
@@ -67,7 +84,6 @@ fields:
         options:
           6-Month-Commitment: 6 Month Commitment
           Month-to-Month: Month-to-Month
-          Hourly: Hourly
       commitment:
         label: Commitment (title)
         type: text

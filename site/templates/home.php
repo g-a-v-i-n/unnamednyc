@@ -3,9 +3,7 @@
     <div class="topSpaceWrapper">
       <div class="topSpace topSpaceOpen">
         <?php snippet('header', $page) ?>
-        <section class="content">
-          <?php snippet('home', $page) ?>
-        </section>
+        <?php snippet('home', $page) ?>
       </div>
     </div>
     <div class="bottomSpaceWrapper">

@@ -4,31 +4,20 @@ primary: #006e94
 bg: #FAFAFA
 */
 
-#logo-svg {
-  stroke: #006e94;
-}
-
 .arrowOn {
   fill: #006e94;
-  pointer-events: all;
 }
 
 .arrowOn:hover {
-  fill: black;
   cursor: pointer;
 }
 
-.arrowOff {
+.arrowOff #logo-svg  {
   fill: transparent;
-  pointer-events: none;
 }
 
 #arrow-outline {
   stroke: #006e94;
-}
-
-#arrow-outline:hover {
-  stroke: black;
 }
 
 .mainMenu{

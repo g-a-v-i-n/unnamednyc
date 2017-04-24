@@ -21,51 +21,58 @@ if(isset($limit)) $locations = $locations->limit($limit);
 ?>
 
 
-<div class="gallery">
-  <div class="galleryMover">
-    <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-      <div class='frame'>
-        <div class="imgWrapper">
-          <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
-          <div class="caption"><?php echo $image->caption() ?>
-          </div>
-        </div>
 
+    <?php if ($page->Comingsoon()->bool()): ?>
+
+      <div class="gallery disable-select">
+      	<div class="arrowPositioner">
+      	</div>
+      	<div class="galleryMover">
+      		<div class='frame'>
+      			<div class="imgWrapper">
+      				<div class="SVGWrapper">
+
+
+      					<svg id='comingSoonSVG' height="100%" version="1.1" viewbox="0 0 600 400" width="100%" xmlns="http://www.w3.org/2000/svg">
+      					<defs>
+      						<rect height="400" vector-effect="non-scaling-stroke" id="path-12" width="600" x="0" y="0"></rect>
+      						<mask fill="white" height="100%" id="mask-22" maskcontentunits="userSpaceOnUse" maskunits="objectBoundingBox" width="100%" x="0" y="0">
+      							<use xlink:href="#path-12" ></use>
+      						</mask>
+      					</defs>
+      					<g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1" vector-effect="non-scaling-stroke">
+      						<g id="comingSoonSVG" stroke="#FF0000" vector-effect="non-scaling-stroke">
+      							<use id="Rectangle" mask="url(#mask-22)" stroke-width="6" xlink:href="#path-12" vector-effect="non-scaling-stroke"></use>
+                    <path d="M3,2 L597,398" id="Line" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+                    <path d="M597,2 L3,398" id="Line" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+      						</g>
+      					</g>
+              </svg>
+      				</div>
+      			</div>
+            <div class="caption"><h3>Coming Soon<h3/></div>
+
+      		</div>
+      	</div>
       </div>
-    <?php $index++; endforeach ?>
-</div>
-</div>
-<div class="contentArrowContainer">
-  <div class='galleryArrowLeftContainer'>
-    <h2> Left </h2>
-    <svg class='galleryArrowLeft' width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-            <polygon id="path-1" points="2 -3.55271368e-15 26 -3.55271368e-15 14 28"></polygon>
-            <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="28" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-        </defs>
-        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="transparent">
-                <use id="arrow" mask="url(#mask-2)" transform="translate(14.000000, 14.000000) rotate(-90.000000) translate(-14.000000, -14.000000) " xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </svg>
-  </div>
-  <div class='galleryArrowRightContainer'>
-    <h2> Right </h2>
-    <svg class='galleryArrowRight' width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <defs>
-            <polygon id="path-1" points="2 -3.55271368e-15 26 -3.55271368e-15 14 28"></polygon>
-            <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="28" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-        </defs>
-        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="arrow-outline" stroke="#1E1E1E" stroke-width="6" fill="transparent">
-                <use id="arrow" mask="url(#mask-2)" transform="translate(14.000000, 14.000000) rotate(-90.000000) translate(-14.000000, -14.000000) " xlink:href="#path-1"></use>
-            </g>
-        </g>
-    </svg>
-  </div>
-</div>
+
+
+    <?php else: ?>
+      <div class="gallery disable-select">
+      	<div class="arrowPositioner">
+      		<?php snippet('galleryArrows') ?>
+      	</div>
+      	<div class="galleryMover">
+          <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+            <div class='frame'>
+              <div class="imgWrapper">
+                <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+                </div>
+                <div class="caption"><h3><?php echo $image->caption() ?><h3/>
+              </div>
+            </div>
+          <?php $index++; endforeach ?>
+      	</div>
+      </div>
+
+    <?php endif ?>

@@ -4,6 +4,11 @@ primary: #3C7344
 bg: #FAFAFA
 */
 
+.SVGWrapper #comingSoonSVG {
+  stroke: #3C7344;
+
+}
+
 #logo-svg {
   stroke: #3C7344;
 }

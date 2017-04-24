@@ -12,12 +12,12 @@ Comingsoon: 1
 
 Address:
 
-63 Woodward Ave
-Ridgewood, NY 11385
+544 Park Ave
+Bushwick, NY 11385
 
 ----
 
-Type: Photography Studio
+Type: Workroom
 
 ----
 
@@ -27,52 +27,18 @@ Text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and
 
 Spaces:
 
-
 ----
 
-hasBooking: 0
+Hasbooking: 0
 
 ----
 
 Equipment:
 
--
-  item: Strobes
--
-  item: Modifiers
--
-  item: Light Stands
--
-  item: Pocket Wizards
--
-  item: >
-    107” Seamless Background Paper
-    (selected colors)
--
-  item: 10’ x 24’ Green Screen Backdrop
--
-  item: Sand Bags
--
-  item: Step Stools
--
-  item: Steamer
--
-  item: Wifi
--
-  item: Bluetooth Speaker
-
 ----
 
 Cameras:
 
--
-  item: Hasselblad 500c/m (film/digital backs)
--
-  item: Nikon D810
--
-  item: Nikon F5 35mm
--
-  item: Wista SP 4x5 Camera
 
 ----
 
@@ -82,9 +48,10 @@ Cid: cid001
 
 Membershiptypes:
 
--
-  membershiptype: monthly
-  commitment: ""
-  rate: ""
--
-  membershiptype: yearly
+----
+
+Rates:
+
+----
+
+Bookingtypes:

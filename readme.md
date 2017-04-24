@@ -5,17 +5,15 @@
 ### Features
 
 #### CSS Fixes
-- [ ] booking css
-- [ ] responsive booking css
-- [ ] black fill hover state
-- [ ] better gallery margin-top on ipad
-- [ ] ipad - match margin dims on menu/header and gallery img
-- [ ] bottom align arrows on ipad/mobile
+- [ ] responsive line thicknesses in color system css
+- [ ] unnamed logo uniform stroke width
 - [ ] larger arrows for slideshow ( phil ) – enlarge height of arrow container element
 
+- [ ] booking css
+- [ ] responsive booking css
+- [ ] fix gallery arrow mobile
+
 #### PHP Fixes
-- [ ] debug hide/show booker
-- [ ] if coming soon, display coming soon svg in gallery
 
 #### JS Fixes
 - [ ] hide see more see less if the list is less than x items long
@@ -23,9 +21,17 @@
 #### Final stuff
 - [ ] google maps hide location or illos
 - [ ] better handling of setting default styles, not in JS preferably
-- [ ] close menu on click anywhere
 
 #### Completed
+- [X] empty field conditionals
+- [X] if coming soon, display coming soon svg in gallery
+- [X] close menu on click anywhere
+- [X] menu links work in full rectangle
+- [X] debug arrows on bottomSpaceOpen()
+- [X] debug hide/show booker
+- [X] better gallery margin-top on ipad
+- [X] ipad - match margin dims on menu/header and gallery img
+- [X] bottom align arrows on ipad/mobile
 - [X] type size headings on desktop
 - [x] swipable gallery ( must test)
 - [x] reduce main font size
@@ -73,6 +79,3 @@
 - [x] arrow in menu does not rotate
 - [x] menu on top / bottom space needs to be disabled when user is on the other page
 - [x] header arrow element height
-
-### Tests
-- [ ] add page

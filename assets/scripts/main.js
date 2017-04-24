@@ -8,42 +8,49 @@ var eqListState = false;
 var galleryLength = $('.galleryMover .frame').length
 
 
-$( document ).ready(function() {
-  $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
-  $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn")
+$(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
+$(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn")
 
-  $(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
-  $(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff")
+$(".bottomSpace .beam, .bottomSpace .pillar").addClass("beamOff");
+$(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff")
 
-  $(".galleryArrowLeft #arrow-outline").addClass("arrowOff");
-  $(".galleryArrowRight #arrow-outline").addClass("arrowOn");
+$(".galleryArrowLeft #arrow-outline").addClass("arrowOff");
+$(".galleryArrowRight #arrow-outline").addClass("arrowOn");
 
-  $(".galleryArrowLeft").addClass("arrowOff");
-});
+$(".galleryArrowLeft").addClass("arrowOff");
 
 
 
 $(".content").scroll(function() {
   if($(this).scrollTop() > 10) {
     $(".bottomSpace .siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
-  } else {
+  } else if (!bottomMenuState) {
     $(".bottomSpace .siteTitle").addClass("menuBorderOff").removeClass("menuBorderOn");
   }
 });
 
 // open or close bottomSpace page
 $('.bottomSpace').click(function(e){
-  openbottomSpace();
-  e.stopPropagation();
+  if (topIsOpen === true) {
+    openbottomSpace();
+  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && bottomMenuState === true) {
+    bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
+
+  }
 });
 
 $('.topSpace').click(function(e){
-  opentopSpace();
-  e.stopPropagation();
+  if (topIsOpen === false) {
+    opentopSpace();
+
+  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && topMenuState === true) {
+    topMenuState = toggleMainMenu('.topSpace', topMenuState)
+
+  }
 });
 
 // operate image gallery
-$('.galleryArrowRight').click(function(e){
+$('.galleryArrowRightContainer').click(function(e){
   if (topIsOpen) {
     galleryOffset = handleMoveGallery(galleryOffset, 'right')
   }
@@ -57,9 +64,11 @@ $(".gallery").on("swipeleft",function(){
   e.stopPropagation();
 });
 
-$('.galleryArrowLeft').click(function(e){
+$('.galleryArrowLeftContainer').click(function(e){
   if (topIsOpen) {
     galleryOffset = handleMoveGallery(galleryOffset, 'left')
+  } else {
+    opentopSpace();
   }
   e.stopPropagation();
 });
@@ -120,9 +129,9 @@ function toggleMainMenu(container, menuState) {
     $(container + " " + ".siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
     $(container + ' ' + "svg.headerArrow").addClass("headerArrow-rotate-90");
     // operate menu: 1) count # of location classes ( there are technically 4 but only need 2 bc of dup menu)
-    for (i = 0; i < $('div.location').length / 2; i++) {
+    for (i = 0; i < $('.location').length / 2; i++) {
       // this is calced like this bc the title has to be a little bigger thatn the menu items to cover the bottom border
-      var menuItemOffset = 'translateY(' + ((i * $('div.location').height() ) + $('div.siteTitle').height()) + 'px)'
+      var menuItemOffset = 'translateY(' + ((i * $('.location').height() ) + $('.siteTitle').height()) + 'px)'
       $(container + ' ' + '.menuItem_' + i).css({
         '-webkit-transform': menuItemOffset,
         '-ms-transform': menuItemOffset,
@@ -136,7 +145,7 @@ function toggleMainMenu(container, menuState) {
       $(container + " " + ".siteTitle").removeClass("menuBorderOn").addClass("menuBorderOff");
     }
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
-    for (i = 0; i < $('div.location').length / 2; i++) {
+    for (i = 0; i < $('a.location').length / 2; i++) {
       $(container + ' ' + '.menuItem_' + i).css({
         '-webkit-transform': 'translateY(0)',
         '-ms-transform': 'translateY(0)',
@@ -226,3 +235,12 @@ $('.map').click(function () {
 $( ".map" ).mouseleave(function() {
   $('.map iframe').css("pointer-events", "none");
 });
+
+
+if ($('.equipmentList .listItem').length < 6) {
+  $('.equipmentList .expandButton').css("display", "none");
+}
+
+if ($('.cameraList .listItem').length < 6) {
+  $('.cameraList .expandButton').css("display", "none");
+}

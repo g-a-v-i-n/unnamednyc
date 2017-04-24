@@ -49,7 +49,7 @@ h2{
   padding: 0;
   font-weight: 500;
   font-style: italic;
-  font-size: 28px;
+  font-size: 36px;
 }
 
 h3{
@@ -85,6 +85,11 @@ p{
   margin-top:0;
 }
 
+a{
+  text-decoration: none;
+  font-size: inherit;
+}
+
 section{
   margin-bottom: 100px;
 }
@@ -95,6 +100,7 @@ section{
 }
 
 .disable-select {
+  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -161,6 +167,7 @@ Main Menu
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: auto;
   transition: transform 150ms;
   /* use GPU acceleration */
   transform: translate3d(0,0,0);
@@ -183,8 +190,7 @@ Header
 .header{
   width: 80vw;
   box-sizing: border-box;
-  position: absolute;
-  height: auto;
+  z-index: 80;
 }
 
 .beamBox{
@@ -208,10 +214,15 @@ Header
   padding: 30px;
   padding-top:0;
   padding-bottom:0;
+  height: 90px; /*set to a little more than the height of the siteTitle*/
+}
 
+.arrowOn:hover{
+  cursor: pointer;
 }
 
 .headerPillarAndIcon{
+  min-width: 30px;
   z-index: 200;
   position: absolute;
   width: calc(10vw - 30px);
@@ -273,6 +284,9 @@ Top Page
   transition:  width 300ms;
   box-sizing: border-box;
   pointer-events:auto;
+
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -284,48 +298,45 @@ Top Page
     width: 25%;
 }
 
-.topSpace .content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  overflow: hidden;
-  width:80vw;
-  height: 100vh;
-}
 
 .gallery{
-  padding-top: 160px;
-  left:0;
-  box-sizing: border-box;
+  flex-grow: 1;
+  position: relative;
   width: 80vw;
-  height: auto;
 }
 
-.contentArrowContainer{
-  position:absolute;
-  left:0;
-  top:53%;
+
+.galleryArrowContainer{
+  position: absolute;
+  /*margin-top: 105px;*/
   display: flex;
   justify-content: space-between;
-  height: 0;
+  align-items: center;
   width: 80vw;
-  z-index: 300;
+  pointer-events: auto;
+  z-index: 50;
+  height: 100%;
 }
 
-.contentArrowContainer h2{
+.arrowPositioner{
+  position: absolute;
+  display: flex;
+  height: 100%;
+}
+
+.galleryArrowContainer h2{
     display: none;
   }
 
 
 .galleryArrowLeftContainer{
-  margin-left: 10%;
-  width: 50%;
+  padding-left: 10%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row-reverse;
-
+  height: 100%;
 }
 
 .galleryArrowRight{
@@ -336,11 +347,12 @@ Top Page
 }
 
 .galleryArrowRightContainer{
-  margin-right: 10%;
-  width: 50%;
+  padding-right: 10%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  height: 100%;
 }
 
 .gallery::-webkit-scrollbar {
@@ -350,7 +362,10 @@ Top Page
 .galleryMover{
   transition: transform 400ms;
   font-size: 0;
+  position: absolute;
   display: flex;
+  height: 100%;
+
 }
 
 .gallery img{
@@ -362,18 +377,17 @@ Top Page
 
 .frame {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   flex-grow: 0;
   width: 80vw;
-  height: 66vh;
+  /*height: 66vh;*/
 }
 
 .caption{
-  height: 10vh;
   width: 100%;
-  font-size: 24px;
   font-style: italic;
   text-align: center;
   margin-top: 20px;
@@ -395,6 +409,11 @@ Top Page
   width: 100%;
   box-sizing: border-box;
 }
+
+.SVGWrapper{
+  width: 45vw;
+  height: auto;
+  }
 
 /*============================================================
 bottomSpace Page
@@ -419,7 +438,6 @@ bottomSpace Page
 
 
 .wrap{
-  padding-top: 250px;
   width: 60vw;
   max-width: 1000px;
   white-space: normal;
@@ -512,6 +530,7 @@ bottomSpace Page
 
 .expandButton h5{
   border-bottom: 3px solid black;
+  cursor: pointer;
 }
 
 .listItem {
@@ -578,6 +597,11 @@ label .select-item {
     font-size: 26px;
   }
 
+  h5{
+    font-size: 26px;
+    margin-top: 26px;
+  }
+
   /* Style copied in captions*/
   p{
     line-height: 30px;
@@ -585,7 +609,8 @@ label .select-item {
   }
 
   .wrap{
-    padding-top: 150px;
+    width: calc(80vw - 65px);
+    margin-bottom: 130px;
   }
 
   section{
@@ -593,7 +618,7 @@ label .select-item {
   }
 
   .contentArrowContainer{
-    transform: translateY(30vh);
+    transform: translateY(35vh);
   }
 
   .contentArrowContainer h2{
@@ -610,7 +635,6 @@ label .select-item {
   }
 
   .headerArrow{
-    transform: scale(0.5)
   }
 
   .pillar{
@@ -622,7 +646,7 @@ label .select-item {
   }
 
   .gallery img{
-    max-width: 75vw;
+    max-width: calc(80vw - 60px);
     max-height:70vh;
     width: auto;
     height: auto;
@@ -630,6 +654,7 @@ label .select-item {
 
   .logoAbout{
     height: 80px;
+    margin-bottom: 100px;
   }
 
   .logoAboutSVG{
@@ -638,6 +663,10 @@ label .select-item {
 
   .siteTitle{
     height: 86px;
+  }
+
+  .header{
+    height: 90px;
   }
 
   .location{
@@ -650,12 +679,14 @@ label .select-item {
   }
 
   .frame {
-    align-items: flex-end;
+    align-items: center;
   }
+
+
 
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 550px) {
   h1{
     font-size: 14px;
   }
@@ -673,6 +704,11 @@ label .select-item {
     font-size: 14px;
   }
 
+  h5{
+    font-size: 14px;
+    margin-top: 14px;
+  }
+
   /* Style copied in captions*/
   p{
     line-height: 16px;
@@ -684,12 +720,79 @@ label .select-item {
   }
 
   .caption{
-    font-size: 14px;
+    font-size: 18px;
+  }
+
+  .beamBox{
+    width: 80vw;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+
+  .beam{
+    display: block;
+    height: 3px;
+    width: 100%;
+  }
+
+  .pillar{
+    width: 3px;
+  }
+
+  .arrowBox{
+    padding: 10px;
+    padding-top:0;
+    padding-bottom:0;
+  }
+
+  .headerPillarAndIcon{
+    width: calc(10vw - 30px);
+    height: 40px;
+  }
+
+  .header{
+    height: 45px;
+  }
+
+  .mainMenu{
+    box-sizing: border-box;
+    width: calc(80vw - 20px);
+    height: 46px;
+  }
+
+  .siteTitle {
+    height: 46px;
+  }
+
+  .location{
+    height: 40px;
+
   }
 
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 350px) {
+  h1{
+    font-size: 11px;
+  }
 
+  h2{
+    font-size: 11px;
+  }
+
+  h3{
+    font-size: 11px;
+  }
+
+  h4{
+    font-style: italic;
+    font-size: 11px;
+  }
+
+  /* Style copied in captions*/
+  p{
+    line-height: 14px;
+    font-size: 11px;
+  }
 }
