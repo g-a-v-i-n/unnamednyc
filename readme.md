@@ -12,6 +12,10 @@
 - [ ] booking css
 - [ ] responsive booking css
 - [ ] fix gallery arrow mobile
+- [ ] disable physics of whole page mobile
+- [ ] mobile menu underline appears
+- [ ] mobile header that hides the bottom page
+- [ ] click off-menu when open doesn't work on top space
 
 #### PHP Fixes
 
@@ -21,6 +25,12 @@
 #### Final stuff
 - [ ] google maps hide location or illos
 - [ ] better handling of setting default styles, not in JS preferably
+
+### Real mobile
+- [ ] scroll phsyics on bottomspace content
+- [ ] scroll-x on bottomspace content
+- [ ] spacing on mobile
+- [ ] scrolling on booking iframe
 
 #### Completed
 - [X] empty field conditionals
