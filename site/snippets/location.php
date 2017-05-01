@@ -2,7 +2,7 @@
   <div class="logoAbout">
     <svg class="logoAboutSVG" width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Mocks" stroke="none" stroke-width="1" fill="transparent" fill-rule="evenodd" stroke-linecap="square">
-            <g vector-effect="non-scaling-stroke"  id="logo-svg" transform="translate(-786.000000, -166.000000)" stroke="#006e94" stroke-width="12">
+            <g vector-effect="non-scaling-stroke"  id="logo-svg" transform="translate(-786.000000, -166.000000)" stroke="#006e94" stroke-width="8">
                 <g id="logo" transform="translate(790.500000, 170.000000)">
                     <path d="M38.6013986,0.41958042 L38.6013986,48.3693806" id="Line"></path>
                     <rect id="Rectangle-4" x="0" y="0" width="146.853147" height="120"></rect>
@@ -38,8 +38,9 @@
   <?php if($page->hasBooking()->bool() === true): ?>
     <section>
       <h3>BOOK</h3>
-      <iframe src="https://app.acuityscheduling.com/schedule.php?owner=13336369" width="100%" height="800" frameBorder="0"></iframe>
+      <iframe id='acuity' src="https://app.acuityscheduling.com/schedule.php?owner=13336369" width="100%" height="800" frameBorder="0"></iframe>
       <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
+      <div id='acuityLink'><a href='https://unnamed.acuityscheduling.com/'> <p>Book the studio here.</p> </a></div>
     </section>
   <?php endif ?>
 
@@ -100,7 +101,7 @@
           </div>
         <?php endforeach ?>
       </div>
-      <div class='expandButton'><h5>See More</h5></div>
+      <div class='expandButton'><p>See More</p></div>
     </section>
   <?php endif ?>
 
@@ -114,7 +115,7 @@
           </div>
         <?php endforeach ?>
       </div>
-      <div class='expandButton'><h5>See More</h5></div>
+      <div class='expandButton'><p>See More</p></div>
     </section>
   <?php endif ?>
 

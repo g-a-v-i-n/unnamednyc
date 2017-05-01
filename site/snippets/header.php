@@ -5,7 +5,7 @@
 	<div class="arrowBox">
 		<div class="headerPillarAndIcon">
 			<div class="headerArrowContainer">
-				<svg class="headerArrow" height="50%" version="1.1" viewbox="0 0 28 28" width="50%" xmlns="http://www.w3.org/2000/svg">
+				<svg class="headerArrow" height="40%" version="1.1" viewbox="0 0 28 28" width="50%" xmlns="http://www.w3.org/2000/svg">
 				<defs>
 					<polygon id="path-1" points="2 -3.55271368e-15 26 -3.55271368e-15 14 28" vector-effect="non-scaling-stroke"></polygon>
 					<mask fill="white" height="28" id="mask-2" maskcontentunits="userSpaceOnUse" maskunits="objectBoundingBox" vector-effect="non-scaling-stroke" width="24" x="0" y="0">

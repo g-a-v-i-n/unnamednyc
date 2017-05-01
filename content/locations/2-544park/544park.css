@@ -1,20 +1,20 @@
 /*
 location colors:
-primary: #3C7344
+primary: #606293
 bg: #FAFAFA
 */
 
 .SVGWrapper #comingSoonSVG {
-  stroke: #3C7344;
+  stroke: #606293;
 
 }
 
 #logo-svg {
-  stroke: #3C7344;
+  stroke: #606293;
 }
 
 .arrowOn {
-  fill: #3C7344;
+  fill: black;
   cursor: pointer;
 }
 
@@ -24,7 +24,7 @@ bg: #FAFAFA
 }
 
 #arrow-outline {
-  stroke: #3C7344;
+  stroke: black;
 }
 
 .mainMenu{
@@ -36,7 +36,7 @@ bg: #FAFAFA
 }
 
 .menuBorderOn{
-  border-bottom: 3px solid #3C7344;
+  border-bottom: 3px solid #606293;
   transition: border-bottom 300ms;
 }
 
@@ -46,12 +46,12 @@ bg: #FAFAFA
 }
 
 .location {
-  border-top: 3px solid  #3C7344;
+  border-top: 3px solid  #606293;
   background-color: #FAFAFA;
 }
 
 .location:last-child{
-  border-bottom: 3px solid  #3C7344;
+  border-bottom: 3px solid  #606293;
 }
 
 .header {
@@ -59,7 +59,7 @@ bg: #FAFAFA
 }
 
 .beam {
-   border: 3px solid #3C7344;
+   border: 3px solid #606293;
 }
 
 .beamOff{
@@ -67,16 +67,16 @@ bg: #FAFAFA
 }
 
 .beamOn{
-  background:  #3C7344;
+  background:  #606293;
 }
 
 .pillar{
-  border: 3px solid #3C7344;
+  border: 3px solid #606293;
   border-top: 0;
 }
 
 .topSpace{
-  border-right: 3px solid #3C7344;
+  border-right: 3px solid #606293;
   background: #FAFAFA;
 }
 
@@ -85,13 +85,13 @@ bg: #FAFAFA
 }
 
 .optionItem{
-  border-bottom: 3px solid #3C7344;
+  border-bottom: 3px solid #606293;
 }
 
 .locationItem{
-  border-top: 3px solid #3C7344;
+  border-top: 3px solid #606293;
 }
 
 .listItem{
-  border-bottom: 3px solid #3C7344;
+  border-bottom: 3px solid #606293;
 }

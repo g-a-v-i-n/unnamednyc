@@ -3,36 +3,49 @@
 ## To Do
 
 ### Features
+- [ ] hover states
 
-#### CSS Fixes
-- [ ] responsive line thicknesses in color system css
-- [ ] unnamed logo uniform stroke width
-- [ ] larger arrows for slideshow ( phil ) – enlarge height of arrow container element
+#### Booking changes
+- [ ] Drop down time-selector on date:
+  - Full-opacity background
+  - 16px type size
+- [ ] match type
 
-- [ ] booking css
-- [ ] responsive booking css
-- [ ] fix gallery arrow mobile
-- [ ] disable physics of whole page mobile
-- [ ] mobile menu underline appears
-- [ ] mobile header that hides the bottom page
-- [ ] click off-menu when open doesn't work on top space
 
-#### PHP Fixes
-
-#### JS Fixes
-- [ ] hide see more see less if the list is less than x items long
-
-#### Final stuff
-- [ ] google maps hide location or illos
-- [ ] better handling of setting default styles, not in JS preferably
-
-### Real mobile
-- [ ] scroll phsyics on bottomspace content
-- [ ] scroll-x on bottomspace content
-- [ ] spacing on mobile
-- [ ] scrolling on booking iframe
 
 #### Completed
+- [x] Use same metrics for body copy as Desktop
+- [x] Adjust for headers
+- [x] .listItem h4{ line-height:30px; }
+- [x] Make margin-bottom on <section> 32px
+- [x] H1: 16px
+- [x] P, h4, h5, h2:
+   - Line-height: 24px
+   - Font-size:16px
+- [x] H3: 12px
+- [x] Logo margin-bottom 64px
+- [x] .listItem height:48px
+- [x] .listItem h4 line-height: 20px;
+- [x] .wrap width calc(80vw-32px)
+- [x] Beam reduced to 3px w/h
+- [x] larger arrows for slideshow ( phil ) – enlarge height of arrow container element
+- [x] Lines reduced to 1px
+- [X] Change ‘Photography Studio’ to un-italic
+- [X] Change ‘Work room’ to un-italic
+
+- [x] unnamed logo uniform stroke width
+- [X] fix gallery arrow mobile
+- [x] reflow contact info on mobile to be 1 list instead of multiple columns
+- [X] show booking link on mobile
+- [X] scroll phsyics on bottomspace content
+- [X] scroll-x on bottomspace content
+- [X] spacing on mobile
+- [X] scrolling on booking iframe
+- [X] disable physics of whole page mobile
+- [X] mobile menu underline appears
+- [X] nav keys
+- [X] hide see more see less if the list is less than x items long
+- [X] colors ch ch ch chaaaanges
 - [X] empty field conditionals
 - [X] if coming soon, display coming soon svg in gallery
 - [X] close menu on click anywhere

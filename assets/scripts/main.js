@@ -80,12 +80,32 @@ $(".gallery").on("swipeRight",function(){
   e.stopPropagation();
 });
 
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+      if (topIsOpen) {
+        galleryOffset = handleMoveGallery(galleryOffset, 'left')
+      }
+      e.stopPropagation();
+    }
+    else if (e.keyCode == '39') {
+      if (topIsOpen) {
+        galleryOffset = handleMoveGallery(galleryOffset, 'right')
+      }
+      e.stopPropagation();
+    }
+
+}
 
 function opentopSpace() {
   topIsOpen = true
   if (bottomMenuState === true) {
     bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
   }
+  $(".topSpace").removeClass("topSpaceInactiveHover");
+
   // change header menu arrow
   $(".bottomSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOff").removeClass("arrowOn");
   $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn").removeClass("arrowOff");
@@ -109,6 +129,7 @@ function openbottomSpace() {
   if (topMenuState === true) {
     topMenuState = toggleMainMenu('.topSpace', topMenuState)
   }
+  $(".topSpace").removeClass("topSpaceActiveHover");
   $(".galleryArrowLeft #arrow-outline, .galleryArrowRight #arrow-outline").addClass("arrowOff");
 
   $(".galleryArrowLeft").addClass("arrowOff");
@@ -187,10 +208,10 @@ function handleMoveGallery(galleryOffset, dir) {
 function toggleCollapsableList(container, state) {
   if (state === true) {
     $(container + ' ' + "div.listItem").addClass("listHider");
-    $(container + ' ' + ".expandButton" ).html( "<h5>See More</h5>" );
+    $(container + ' ' + ".expandButton" ).html( "<p>See More</p>" );
   } else {
     $(container + ' ' + "div.listItem").removeClass("listHider");
-    $(container + ' ' + ".expandButton" ).html( "<h5>See Less</h5>" );
+    $(container + ' ' + ".expandButton" ).html( "<p>See Less</p>" );
   };
   return !state;
 }
@@ -244,3 +265,19 @@ if ($('.equipmentList .listItem').length < 6) {
 if ($('.cameraList .listItem').length < 6) {
   $('.cameraList .expandButton').css("display", "none");
 }
+
+$(".bottomSpace").hover(function(e){
+  if (topIsOpen){
+  $(".topSpace").addClass("topSpaceActiveHover")
+  }
+  }, function(){
+  $(".topSpace").removeClass("topSpaceActiveHover");
+});
+
+$(".topSpace").hover(function(e){
+  if (!topIsOpen){
+  $(".topSpace").addClass("topSpaceInactiveHover")
+  }
+  }, function(){
+  $(".topSpace").removeClass("topSpaceInactiveHover");
+});

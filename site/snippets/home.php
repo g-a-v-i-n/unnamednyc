@@ -50,7 +50,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
               </svg>
       				</div>
       			</div>
-            <div class="caption"><h3>Coming Soon<h3/></div>
+            <div class="caption"><p>Coming Soon</p></div>
 
       		</div>
       	</div>
@@ -67,9 +67,8 @@ if(isset($limit)) $locations = $locations->limit($limit);
             <div class='frame'>
               <div class="imgWrapper">
                 <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
-                </div>
-                <div class="caption"><h3><?php echo $image->caption() ?><h3/>
               </div>
+                <div class="caption"><p><?php echo $image->caption() ?></p> </div>
             </div>
           <?php $index++; endforeach ?>
       	</div>

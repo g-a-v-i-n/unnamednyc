@@ -10,7 +10,7 @@ Comingsoon: 1
 
 ----
 
-Address:
+Address: 
 
 544 Park Ave
 Bushwick, NY 11385
@@ -21,11 +21,15 @@ Type: Workroom
 
 ----
 
-Text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and video production. The studio is available both for hourly rental and by monthly membership. You can choose from three distinct shooting spaces that will accommodate your needs for any project.
+Text: 
+
+Unnamed Workroom will be a multidisciplinary workspace tailored to the needs of individual artists and small creative companies. It will provide a shop for wood and metal-working, mold-making and casting, a clean room for finishing and photographing, and an office & meeting space.
+
+Workroom will also house Unnamed Gallery.
 
 ----
 
-Spaces:
+Spaces: 
 
 ----
 
@@ -33,12 +37,11 @@ Hasbooking: 0
 
 ----
 
-Equipment:
+Equipment: 
 
 ----
 
-Cameras:
-
+Cameras: 
 
 ----
 
@@ -46,12 +49,12 @@ Cid: cid001
 
 ----
 
-Membershiptypes:
+Membershiptypes: 
 
 ----
 
-Rates:
+Rates: 
 
 ----
 
-Bookingtypes:
+Bookingtypes: 

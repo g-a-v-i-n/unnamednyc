@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Nimbus Sans';
   src: url('../../assets/fonts/NimbusSansDOT-Bold.otf') format('opentype');
@@ -35,6 +36,7 @@ body, html{
   margin:0;
   height: auto;
   white-space: nowrap;
+  -webkit-overflow-scrolling: auto;
 }
 
 h1{
@@ -42,6 +44,7 @@ h1{
   padding: 0;
   font-size: 36px;
   font-weight: 800;
+  letter-spacing: 0.02em;
 }
 
 h2{
@@ -50,13 +53,17 @@ h2{
   font-weight: 500;
   font-style: italic;
   font-size: 36px;
+  letter-spacing: 0.02em;
+
 }
 
 h3{
   margin: 0;
   padding: 0;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
+  letter-spacing: 0.075em;
+
 }
 
 h4{
@@ -64,30 +71,45 @@ h4{
   padding: 0;
   font-weight: 500;
   font-style: italic;
-  font-size: 28px;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0.025em;
 }
 
 h5{
-  line-height: 48px;
+  line-height: 40px;
+  letter-spacing: 0.025em;
   font-size: 28px;
   padding: 0;
   margin:0;
-  margin-top: 32px;
+  margin-top: 36px;
   font-weight: 500;
   font-style: normal;
 }
 
 /* Style copied in captions*/
 p{
-  line-height: 48px;
+  line-height: 40px;
+  letter-spacing: 0.025em;
   padding: 0;
   margin-bottom: 28px;
   margin-top:0;
 }
 
+.caption {
+  line-height: 40px;
+  letter-spacing: 0.025em;
+  padding: 0;
+  margin-bottom: 28px;
+  margin-top:0;
+  font-size: 28px;
+}
+
+
 a{
   text-decoration: none;
   font-size: inherit;
+  color: #1e1e1e;
 }
 
 section{
@@ -108,7 +130,7 @@ section{
 }
 
 .topSpaceWrapper{
-  color: black;
+  color: #1E1E1E;
   width: 80vw;
   height: 100vh;
   position: absolute;
@@ -122,7 +144,7 @@ section{
 }
 
 .bottomSpaceWrapper{
-  color: black;
+  color: #1E1E1E;
   width: 100vw;
   display: flex;
   justify-content: flex-end;
@@ -141,6 +163,21 @@ Main Menu
   z-index:98;
 }
 
+.siteTitle:hover h1{
+  transform: translateY(5px);
+}
+
+.siteTitle h1 {
+  transition: transform 200ms;
+}
+
+.location:hover h2{
+  transform: translateY(5px);
+}
+
+.location h2 {
+  transition: transform 200ms;
+}
 
 .siteTitle{
   position: absolute;
@@ -173,12 +210,9 @@ Main Menu
   transform: translate3d(0,0,0);
 }
 
-.location:hover h2, .siteTitle:hover h1{
-}
-
 .location a, .location h2{
   text-decoration: none;
-  color: black;
+  color: #1E1E1E;
   cursor: pointer;
 }
 
@@ -204,7 +238,7 @@ Header
 .beam{
   box-sizing: border-box;
   display: block;
-  height: 13px;
+  height: 8px;
   width: 100%;
 }
 
@@ -215,10 +249,6 @@ Header
   padding-top:0;
   padding-bottom:0;
   height: 90px; /*set to a little more than the height of the siteTitle*/
-}
-
-.arrowOn:hover{
-  cursor: pointer;
 }
 
 .headerPillarAndIcon{
@@ -259,15 +289,12 @@ Header
 }
 
 
-.pillarBox{
-}
-
 .pillar{
   transform: translateY(-3px);
   box-sizing: border-box;
   display: block;
   height: 100%;
-  width: 13px;
+  width: 8px;
   z-index: 100;
 }
 
@@ -318,6 +345,16 @@ Top Page
   height: 100%;
 }
 
+.galleryArrowRightContainer:hover{
+  cursor: pointer;
+  transform: translateX(7px);
+}
+
+.galleryArrowLeftContainer:hover{
+  cursor: pointer;
+  transform: translateX(-7px);
+}
+
 .arrowPositioner{
   position: absolute;
   display: flex;
@@ -331,16 +368,16 @@ Top Page
 
 .galleryArrowLeftContainer{
   padding-left: 10%;
-  width: 30%;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: row-reverse;
-  height: 100%;
+  height: 20%;
+  transition: 200ms;
+
 }
 
-.galleryArrowRight{
-}
 
 .galleryArrowLeft{
   transform: rotateZ(180deg);
@@ -348,11 +385,14 @@ Top Page
 
 .galleryArrowRightContainer{
   padding-right: 10%;
-  width: 30%;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 100%;
+  height: 20%;
+  transition: 200ms;
+
+
 }
 
 .gallery::-webkit-scrollbar {
@@ -430,6 +470,7 @@ bottomSpace Page
 
 .bottomSpace .content {
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   display: flex;
   justify-content: center;
   width:80vw;
@@ -451,7 +492,7 @@ bottomSpace Page
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 40px;
   margin-bottom: 50px;
 }
 
@@ -459,6 +500,7 @@ bottomSpace Page
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .connectList{
@@ -481,7 +523,7 @@ bottomSpace Page
 }
 
 .contact p, .connect p{
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #1E1E1E;
   font-style: italic;
   margin-right: 48px;
 }
@@ -513,7 +555,7 @@ bottomSpace Page
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 94px;
+  height: 74px;
 }
 
 .optionItem:last-child{
@@ -528,8 +570,8 @@ bottomSpace Page
   height: 94px;
 }
 
-.expandButton h5{
-  border-bottom: 3px solid black;
+.expandButton p{
+  border-bottom: 3px solid #1E1E1E;
   cursor: pointer;
 }
 
@@ -538,7 +580,7 @@ bottomSpace Page
   background-color: #FAFAFA;
   display: flex;
   align-items: center;
-  height: 94px;
+  height: 78px;
   transition: height 300ms;
 }
 
@@ -576,8 +618,32 @@ bottomSpace Page
 
 label .select-item {
   border: none;
-  border-top: 3px solid black;
+  border-top: 3px solid #1E1E1E;
 }
+
+#acuityLink{
+  display: none;
+  font-style: italic;
+  color: #1e1e1e;
+}
+
+#acuityLink p {
+  border-bottom: 3px solid #1E1E1E;
+  display:inline-block;
+}
+
+.topSpaceActiveHover{
+  width: 77vw;
+}
+
+.topSpaceInactiveHover{
+  width: 23vw;
+}
+
+.menuArrowHover{
+
+}
+
 
 @media only screen and (max-width: 769px) {
   h1{
@@ -588,28 +654,8 @@ label .select-item {
     font-size: 26px;
   }
 
-  h3{
-    font-size: 26px;
-  }
-
-  h4{
-    font-style: italic;
-    font-size: 26px;
-  }
-
-  h5{
-    font-size: 26px;
-    margin-top: 26px;
-  }
-
-  /* Style copied in captions*/
-  p{
-    line-height: 30px;
-    font-size: 26px;
-  }
-
   .wrap{
-    width: calc(80vw - 65px);
+    width: calc(80vw - 32px);
     margin-bottom: 130px;
   }
 
@@ -621,9 +667,17 @@ label .select-item {
     transform: translateY(35vh);
   }
 
-  .contentArrowContainer h2{
-    line-height: 0px;
+  .galleryArrowRightContainer{
+    padding-right: 5%;
+  }
+
+  .galleryArrowLeftContainer{
+    padding-left: 5%;
+  }
+
+  .galleryArrowContainer h2{
     display: block;
+    font-size: 18px;
     }
 
   .galleryArrowRight{
@@ -682,41 +736,61 @@ label .select-item {
     align-items: center;
   }
 
+  #acuity{
+    display: none;
+  }
 
+  #acuityLink{
+    display: block;
+  }
+
+
+  .listItem h4 {
+    line-height: 30px;
+  }
+
+  .galleryArrowLeftContainer, .galleryArrowRightContainer{
+    align-self: flex-end;
+    margin-bottom: 1vw;
+  }
 
 }
 
 @media only screen and (max-width: 550px) {
   h1{
-    font-size: 14px;
+    font-size: 15px;
   }
 
   h2{
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   h3{
-    font-size: 14px;
+    font-size: 12px;
   }
 
   h4{
     font-style: italic;
     font-size: 14px;
+    line-height: 24px;
   }
 
   h5{
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 14px;
+    line-height: 24px;
   }
 
   /* Style copied in captions*/
   p{
     line-height: 16px;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   section{
-    margin-bottom: 50px;
+    margin-bottom: 32px;
   }
 
   .caption{
@@ -731,12 +805,12 @@ label .select-item {
 
   .beam{
     display: block;
-    height: 3px;
+    height: 0px;
     width: 100%;
   }
 
   .pillar{
-    width: 3px;
+    width: 0px;
   }
 
   .arrowBox{
@@ -766,9 +840,27 @@ label .select-item {
 
   .location{
     height: 40px;
-
   }
 
+  .logoAbout{
+    margin-bottom: 64px;
+  }
+
+  .listItem {
+    height:48px
+  }
+
+  .optionItem {
+    height:48px
+  }
+
+  .listItem h4 {
+    line-height: 20px;
+  }
+
+  .galleryArrowLeftContainer, .galleryArrowRightContainer{
+    margin-bottom: 5vw;
+  }
 }
 
 
@@ -778,21 +870,6 @@ label .select-item {
   }
 
   h2{
-    font-size: 11px;
-  }
-
-  h3{
-    font-size: 11px;
-  }
-
-  h4{
-    font-style: italic;
-    font-size: 11px;
-  }
-
-  /* Style copied in captions*/
-  p{
-    line-height: 14px;
     font-size: 11px;
   }
 }

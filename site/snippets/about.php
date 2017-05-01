@@ -50,8 +50,8 @@
 
         <div class="locationItem">
             <a href="<?= $location->url() ?>" >
-                <h2 ><?= $location->type()->html() ?></h2>
-                <h2 ><?= $location->address()->html() ?></h2>
+                <h5 ><?= $location->type()->html() ?></h5>
+                <h4 ><?= $location->address()->html() ?></h4>
             </a>
         </div>
 

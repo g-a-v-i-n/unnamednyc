@@ -1,11 +1,20 @@
 /*
 location colors:
-primary: #006e94
+primary: #c4aa7c
 bg: #FAFAFA
 */
 
 .arrowOn {
-  fill: #006e94;
+  fill: black;
+}
+
+.SVGWrapper #comingSoonSVG {
+  stroke: #c4aa7c;
+
+}
+
+#logo-svg {
+  stroke: #c4aa7c;
 }
 
 .arrowOn:hover {
@@ -17,7 +26,7 @@ bg: #FAFAFA
 }
 
 #arrow-outline {
-  stroke: #006e94;
+  stroke: black;
 }
 
 .mainMenu{
@@ -29,7 +38,7 @@ bg: #FAFAFA
 }
 
 .menuBorderOn{
-  border-bottom: 3px solid #006e94;
+  border-bottom: 3px solid #c4aa7c;
   transition: border-bottom 300ms;
 }
 
@@ -39,12 +48,12 @@ bg: #FAFAFA
 }
 
 .location {
-  border-top: 3px solid  #006e94;
+  border-top: 3px solid  #c4aa7c;
   background-color: #FAFAFA;
 }
 
 .location:last-child{
-  border-bottom: 3px solid  #006e94;
+  border-bottom: 3px solid  #c4aa7c;
 }
 
 .header {
@@ -52,7 +61,7 @@ bg: #FAFAFA
 }
 
 .beam {
-   border: 3px solid #006e94;
+   border: 3px solid #c4aa7c;
 }
 
 .beamOff{
@@ -60,17 +69,17 @@ bg: #FAFAFA
 }
 
 .beamOn{
-  background:  #006e94;
+  background:  #c4aa7c;
 
 }
 
 .pillar{
-  border: 3px solid #006e94;
+  border: 3px solid #c4aa7c;
   border-top: 0;
 }
 
 .topSpace{
-  border-right: 3px solid #006e94;
+  border-right: 3px solid #c4aa7c;
   background: #FAFAFA;
 }
 
@@ -79,13 +88,60 @@ bg: #FAFAFA
 }
 
 .optionItem{
-  border-bottom: 3px solid #006e94;
+  border-bottom: 3px solid #c4aa7c;
 }
 
 .locationItem{
-  border-top: 3px solid #006e94;
+  border-top: 3px solid #c4aa7c;
 }
 
 .listItem{
-  border-bottom: 3px solid #006e94;
+  border-bottom: 3px solid #c4aa7c;
+}
+
+@media only screen and (max-width: 550px) {
+  #arrow-outline {
+    stroke-width: 2px;
+  }
+
+  .menuBorderOn{
+    border-bottom-width: 2px;
+  }
+
+  .menuBorderOff{
+    border-bottom-width: 2px;
+  }
+
+  .location {
+    border-top-width: 2px;
+  }
+
+  .location:last-child{
+    border-bottom-width: 2px;
+  }
+
+  .beam {
+     border-width: 2px;
+  }
+
+  .pillar{
+    border-width: 2px;
+  }
+
+  .topSpace{
+    border-right-width: 2px;
+  }
+
+  .optionItem{
+    border-bottom-width: 2px;
+  }
+
+  .locationItem{
+    border-top-width: 2px;
+  }
+
+  .listItem{
+    border-bottom-width: 2px;
+  }
+
 }
