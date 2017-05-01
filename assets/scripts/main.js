@@ -1,3 +1,4 @@
+
 var topMenuState = false;
 var bottomMenuState = false;
 var topIsOpen = true;
@@ -6,6 +7,7 @@ var index = 0;
 var camListState = false;
 var eqListState = false;
 var galleryLength = $('.galleryMover .frame').length
+
 
 $(".topSpace .beam, .topSpace .pillar").addClass("beamOn");
 $(".topSpace .headerPillarAndIcon #arrow-outline").addClass("arrowOn")
@@ -32,33 +34,41 @@ $(".content").scroll(function() {
 $('.bottomSpace').click(function(e){
   if (topIsOpen === true) {
     openbottomSpace();
-  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && bottomMenuState === true) {
+  } else if ($(e.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && bottomMenuState === true) {
     bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
   }
+  e.stopPropagation();
+
 });
 
-$(".bottomSpace").on("swipeleft",function(e){
+$('.bottomSpace').on('swipeleft',function(e){
   if (topIsOpen === true) {
     openbottomSpace();
-  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && bottomMenuState === true) {
+  } else if ($(e.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && bottomMenuState === true) {
     bottomMenuState = toggleMainMenu('.bottomSpace', bottomMenuState)
   }
+  e.stopPropagation();
 });
+
 
 $('.topSpace').click(function(e){
   if (topIsOpen === false) {
     opentopSpace();
-  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && topMenuState === true) {
+  } else if ($(e.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && topMenuState === true) {
     topMenuState = toggleMainMenu('.topSpace', topMenuState)
   }
+  e.stopPropagation();
+
 });
 
 $(".topSpace").on("swiperight",function(e){
   if (topIsOpen === false) {
     opentopSpace();
-  } else if ($(event.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && topMenuState === true) {
+  } else if ($(e.target).hasClass('location') === false && event.target.tagName.toLowerCase() !== 'h2' && topMenuState === true) {
     topMenuState = toggleMainMenu('.topSpace', topMenuState)
   }
+  e.stopPropagation();
+
 });
 
 // operate image gallery

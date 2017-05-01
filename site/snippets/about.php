@@ -34,8 +34,8 @@
   <section class="connect">
     <h3> CONNECT </h3>
     <div class="connectList">
-      <p><a href="<?= $page->Instagram() ?>">Instagram</a></p>
-      <p><a href="<?= $page->Facebook() ?>">Facebook</a></p>
+      <a href="<?= $page->Instagram() ?>"><p>Instagram</p></a>
+      <a href="<?= $page->Facebook() ?>"><p>Facebook</p></a>
     </div>
   </section>
 

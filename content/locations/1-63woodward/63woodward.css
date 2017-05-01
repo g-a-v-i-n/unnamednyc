@@ -4,6 +4,23 @@ primary: #77998f
 bg: #FAFAFA
 */
 
+a:hover{
+  color: #77998f;
+}
+
+a:hover p{
+  color: #77998f;
+  border-bottom: 3px solid #77998f;
+}
+
+.siteTitle:hover{
+  color: #77998f;
+}
+
+.location:hover h2{
+  color: #77998f;
+}
+
 #logo-svg {
   stroke: #77998f;
 }

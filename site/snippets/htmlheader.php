@@ -10,8 +10,10 @@
 
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
     <meta name="description" content="<?= $site->description()->html() ?>">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="<?php echo kirby()->urls()->assets() . '/scripts/jquery.mobile.custom.min.js' ?>"></script>
+
+
     <link rel="stylesheet" href="<?php echo kirby()->urls()->assets() . '/css/index.css' ?>">
 
     <?php foreach($page->files()->filterBy('extension', 'css') as $css): ?>

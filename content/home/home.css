@@ -4,6 +4,23 @@ primary: #c4aa7c
 bg: #FAFAFA
 */
 
+a:hover{
+  color: #c4aa7c;
+}
+
+a:hover p{
+  color: #c4aa7c;
+  border-bottom: 3px solid #c4aa7c;
+}
+
+.siteTitle:hover{
+  color: #c4aa7c;
+}
+
+.location:hover h2{
+  color: #c4aa7c;
+}
+
 .arrowOn {
   fill: black;
 }

@@ -672,7 +672,7 @@ label .select-item {
   }
 
   .wrap{
-    width: calc(80vw - 32px);
+    width: calc(80vw - 64px);
     margin-bottom: 130px;
   }
 

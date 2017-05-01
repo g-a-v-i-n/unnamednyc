@@ -4,6 +4,24 @@ primary: #606293
 bg: #FAFAFA
 */
 
+
+a:hover{
+  color: #606293;
+}
+
+a:hover p{
+  color: #606293;
+  border-bottom: 3px solid #606293;
+}
+
+.siteTitle:hover{
+  color: #606293;
+}
+
+.location:hover h2{
+  color: #606293;
+}
+
 .SVGWrapper #comingSoonSVG {
   stroke: #606293;
 
