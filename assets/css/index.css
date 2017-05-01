@@ -163,21 +163,21 @@ Main Menu
   z-index:98;
 }
 
-.siteTitle:hover h1{
-  transform: translateY(5px);
+/*.siteTitle:hover h1{
+  letter-spacing: .09em;
 }
 
 .siteTitle h1 {
-  transition: transform 200ms;
+  transition: letter-spacing 200ms;
 }
 
 .location:hover h2{
-  transform: translateY(5px);
+  letter-spacing: .09em;
 }
 
 .location h2 {
-  transition: transform 200ms;
-}
+  transition: letter-spacing 200ms;
+}*/
 
 .siteTitle{
   position: absolute;
@@ -288,6 +288,12 @@ Header
   -webkit-transform: rotate3d(0, 0, 1, 90deg);
 }
 
+.headerArrow-rotate-45{
+  transform: rotate3d(0, 0, 1, 45deg);
+  -moz-transform: rotate3d(0, 0, 1, 45deg);
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+}
+
 
 .pillar{
   transform: translateY(-3px);
@@ -325,7 +331,6 @@ Top Page
     width: 25%;
 }
 
-
 .gallery{
   flex-grow: 1;
   position: relative;
@@ -343,16 +348,29 @@ Top Page
   pointer-events: auto;
   z-index: 50;
   height: 100%;
+  transition: 200ms;
+
 }
 
-.galleryArrowRightContainer:hover{
+.galleryArrowRightContainerHover{
+  transition: 200ms;
+
+}
+
+.galleryArrowRightContainerHover:hover{
   cursor: pointer;
   transform: translateX(7px);
 }
 
-.galleryArrowLeftContainer:hover{
+.galleryArrowLeftContainerHover{
+  transition: 200ms;
+
+}
+
+.galleryArrowLeftContainerHover:hover{
   cursor: pointer;
-  transform: translateX(-7px);
+  transform: translateX(-7px) rotateZ(180deg);
+
 }
 
 .arrowPositioner{
@@ -530,7 +548,6 @@ bottomSpace Page
 
 .locationItem{
   width: 100%;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -633,11 +650,11 @@ label .select-item {
 }
 
 .topSpaceActiveHover{
-  width: 77vw;
+  width: 97%;
 }
 
 .topSpaceInactiveHover{
-  width: 23vw;
+  width: 28%;
 }
 
 .menuArrowHover{

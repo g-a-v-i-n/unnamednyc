@@ -66,7 +66,6 @@
         <div class='optionList'>
           <?php $monthly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Month-to-Month'); ?>
           <?php $halfyear = $page->membershiptypes()->toStructure()->filterBy('membershiptype', '6-Month-Commitment'); ?>
-
           <h5>Month-to-Month:</h5>
           <?php foreach($monthly as $item): ?>
             <div class="optionItem">

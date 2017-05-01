@@ -5,7 +5,7 @@ $locations = page('locations')->children()->visible();
 ?>
 
 <div class="mainMenu disable-select">
-  <div class="siteTitle">
+  <div class="siteTitle menuBorderOff">
     <?php if($page->Comingsoon()->bool()): ?>
       <h1><?= $page->menuTitle()->html() ?> (Coming Soon)</h1>
     <?php else: ?>

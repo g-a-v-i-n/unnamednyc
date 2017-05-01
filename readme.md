@@ -10,8 +10,6 @@
   - 16px type size
 - [ ] match type
 
-
-
 #### Completed
 - [X] hover states
 - [x] Use same metrics for body copy as Desktop
