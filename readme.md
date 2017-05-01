@@ -3,7 +3,6 @@
 ## To Do
 
 ### Features
-- [ ] hover states
 
 #### Booking changes
 - [ ] Drop down time-selector on date:
@@ -14,6 +13,7 @@
 
 
 #### Completed
+- [X] hover states
 - [x] Use same metrics for body copy as Desktop
 - [x] Adjust for headers
 - [x] .listItem h4{ line-height:30px; }

@@ -89,3 +89,50 @@ bg: #FAFAFA
 .listItem{
   border-bottom: 3px solid #77998f;
 }
+
+@media only screen and (max-width: 550px) {
+  #arrow-outline {
+    stroke-width: 2px;
+  }
+
+  .menuBorderOn{
+    border-bottom-width: 2px;
+  }
+
+  .menuBorderOff{
+    border-bottom-width: 2px;
+  }
+
+  .location {
+    border-top-width: 2px;
+  }
+
+  .location:last-child{
+    border-bottom-width: 2px;
+  }
+
+  .beam {
+     border-width: 2px;
+  }
+
+  .pillar{
+    border-width: 2px;
+  }
+
+  .topSpace{
+    border-right-width: 2px;
+  }
+
+  .optionItem{
+    border-bottom-width: 2px;
+  }
+
+  .locationItem{
+    border-top-width: 2px;
+  }
+
+  .listItem{
+    border-bottom-width: 2px;
+  }
+
+}
