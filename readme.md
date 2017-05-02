@@ -3,11 +3,10 @@
 ## To Do
 
 ### Wrap Up
-- [x] see more link needs hover states
-- [X] underlines on links should not change color
-- [x] i noticed that the hover state doesn’t happen if you hover over the arrow tho
-- [X] map pic instead of google maps, remove code
-- [x] google analytics
+- [ ] link to booking on mobile needs 2px line thickness and color system color
+
+- [ ] final booking changes
+- [ ] send acuity adobe typekit link for nimbus
 
 - [ ] launch
  - [ ] make admin panel acct
@@ -21,6 +20,18 @@
 - [X] match type
 
 #### Completed
+- [x] disable scroll when on topSpace
+- [x] disable pointer events on bottomSpace when on topSpace
+- [x] google maps link on map
+- [X] fix gallery arrows
+- [X] expand hover target for main menu arrow
+- [x] fix spacing issue on non-retina screens
+- [x] remove jquery mobile
+- [x] see more link needs hover states
+- [X] underlines on links should not change color
+- [x] i noticed that the hover state doesn’t happen if you hover over the arrow tho
+- [X] map pic instead of google maps, remove code
+- [x] google analytics
 - [X] hover states
 - [x] Use same metrics for body copy as Desktop
 - [x] Adjust for headers

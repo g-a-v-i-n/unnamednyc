@@ -29,9 +29,9 @@
       <h3>ADDRESS</h3>
       <div class="intro text"> <?= $page->address()->kirbytext() ?></div>
       <?php if($page->files()->has('map.svg')): ?>
-        <object class="map" data="<?php echo $page->files()->find('map.svg')->url() ?>" type="image/svg+xml">
-          <img src="yourfallback.jpg" />
-        </object>
+        <a target="_blank" href=" <?= $page->maplink() ?>" >
+        <img class="map" src="<?php echo $page->files()->find('map.svg')->url() ?>" type="image/svg+xml"/>
+      </a>
       <?php endif ?>
 
     </section>

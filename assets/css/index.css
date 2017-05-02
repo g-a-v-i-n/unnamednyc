@@ -37,6 +37,7 @@ body, html{
   height: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: auto;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 h1{
@@ -354,7 +355,6 @@ Top Page
 
 .galleryArrowRightContainerHover{
   transition: 200ms;
-
 }
 
 .galleryArrowRightContainerHover:hover{
@@ -369,7 +369,7 @@ Top Page
 
 .galleryArrowLeftContainerHover:hover{
   cursor: pointer;
-  transform: translateX(-7px) rotateZ(180deg);
+  transform: translateX(-7px);
 
 }
 
@@ -487,7 +487,7 @@ bottomSpace Page
 }
 
 .bottomSpace .content {
-  overflow-y: scroll;
+  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   display: flex;
   justify-content: center;
@@ -497,7 +497,7 @@ bottomSpace Page
 
 
 .wrap{
-  width: 60vw;
+  width: 59vw;
   max-width: 1000px;
   white-space: normal;
   margin-bottom: 180px;
@@ -860,7 +860,7 @@ label .select-item {
   }
 
   .galleryArrowLeftContainer, .galleryArrowRightContainer{
-    margin-bottom: 5vw;
+    margin-bottom: 14vw;
   }
   .wrap{
     width: calc(80vw - 32px);

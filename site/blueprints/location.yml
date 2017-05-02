@@ -26,6 +26,10 @@ fields:
 
   address:
     label: Address
+    type: text
+
+  maplink:
+    label: Link to Google maps
     type: textarea
 
   text:

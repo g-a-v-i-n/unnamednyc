@@ -17,6 +17,10 @@ Address:
 
 ----
 
+maplink: https://www.google.com/maps/place/63+Woodward+Ave,+Ridgewood,+NY+11385/@40.7131952,-73.9217743,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25ea468e2d385:0x71cf24df3d364d0f!8m2!3d40.7131952!4d-73.9195856
+
+----
+
 Type: Photography Studio
 
 ----
