@@ -28,10 +28,12 @@
     <section>
       <h3>ADDRESS</h3>
       <div class="intro text"> <?= $page->address()->kirbytext() ?></div>
-      <div class="embed-container map" onClick="style.pointerEvents='none'">
-        <iframe class='imbeddedMap' frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJhdPiaKRewokRD002Pd8kz3E&key=AIzaSyAhOx7zVO-qQPa9eq_6oqSKLgafIlgIavQ" allowfullscreen></iframe>
-        </div>
+      <?php if($page->files()->has('map.svg')): ?>
+        <object class="map" data="<?php echo $page->files()->find('map.svg')->url() ?>" type="image/svg+xml">
+          <img src="yourfallback.jpg" />
+        </object>
+      <?php endif ?>
+
     </section>
   <?php endif ?>
 

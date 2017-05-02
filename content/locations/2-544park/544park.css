@@ -11,10 +11,14 @@ a:hover{
 
 a:hover p{
   color: #606293;
-  border-bottom: 3px solid #606293;
 }
 
-.siteTitle:hover{
+
+.expandButton p:hover{
+  color: #606293;
+}
+
+.siteTitleHover{
   color: #606293;
 }
 

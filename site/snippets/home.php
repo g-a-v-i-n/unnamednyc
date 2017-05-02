@@ -64,12 +64,16 @@ if(isset($limit)) $locations = $locations->limit($limit);
       	</div>
       	<div class="galleryMover">
           <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-            <div class='frame'>
-              <div class="imgWrapper">
-                <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+            <?php if($image != $page->image('map.svg')): ?>
+              <div class='frame'>
+                <div class="imgWrapper">
+                  <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+                </div>
+                  <div class="caption"><p><?php echo $image->caption() ?></p> </div>
               </div>
-                <div class="caption"><p><?php echo $image->caption() ?></p> </div>
-            </div>
+            <?php endif ?>
+
+
           <?php $index++; endforeach ?>
       	</div>
       </div>

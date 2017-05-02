@@ -2,13 +2,23 @@
 
 ## To Do
 
-### Features
+### Wrap Up
+- [x] see more link needs hover states
+- [X] underlines on links should not change color
+- [x] i noticed that the hover state doesn’t happen if you hover over the arrow tho
+- [X] map pic instead of google maps, remove code
+- [x] google analytics
+
+- [ ] launch
+ - [ ] make admin panel acct
+ - [ ] change admin panel url
+ - [ ] set up url / cname or whatever follow some tutorial on webfaction
 
 #### Booking changes
 - [ ] Drop down time-selector on date:
   - Full-opacity background
-  - 16px type size
-- [ ] match type
+  - [ ] 16px type size
+- [X] match type
 
 #### Completed
 - [X] hover states
@@ -30,7 +40,6 @@
 - [x] Lines reduced to 1px
 - [X] Change ‘Photography Studio’ to un-italic
 - [X] Change ‘Work room’ to un-italic
-
 - [x] unnamed logo uniform stroke width
 - [X] fix gallery arrow mobile
 - [x] reflow contact info on mobile to be 1 list instead of multiple columns
