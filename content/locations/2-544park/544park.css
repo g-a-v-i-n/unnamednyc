@@ -9,6 +9,10 @@ a:hover{
   color: #606293;
 }
 
+#acuityLink p:hover {
+color: #606293;
+}
+
 a:hover p{
   color: #606293;
 }

@@ -1,25 +1,19 @@
 # Unnamed NYC Site
 
 ## To Do
+- [ ] photos from phil
 
-### Wrap Up
-- [ ] link to booking on mobile needs 2px line thickness and color system color
-
-- [ ] final booking changes
+### Meeting
 - [ ] send acuity adobe typekit link for nimbus
+- [ ] final booking changes
 
 - [ ] launch
- - [ ] make admin panel acct
- - [ ] change admin panel url
- - [ ] set up url / cname or whatever follow some tutorial on webfaction
-
-#### Booking changes
-- [ ] Drop down time-selector on date:
-  - Full-opacity background
-  - [ ] 16px type size
-- [X] match type
+- [ ] make admin panel acct
+- [ ] change admin panel url
+- [ ] set up url / cname or whatever follow some tutorial on webfaction
 
 #### Completed
+- [x] link to booking on mobile needs 2px line thickness and color system color
 - [x] disable scroll when on topSpace
 - [x] disable pointer events on bottomSpace when on topSpace
 - [x] google maps link on map
