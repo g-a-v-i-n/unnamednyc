@@ -95,6 +95,11 @@ p{
   padding: 0;
   margin-bottom: 28px;
   margin-top:0;
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
 }
 
 .caption {
@@ -128,6 +133,14 @@ section{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.enable-select {
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  user-select: auto;
 }
 
 .topSpaceWrapper{
@@ -641,10 +654,78 @@ label .select-item {
   width: 28%;
 }
 
-.menuArrowHover{
+.fourohfour{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-grow: 1;
 
 }
 
+.fourohfour h1 {
+  line-height: 50px;
+  transform-origin: center;
+  font-size: 30vw;
+  -webkit-animation:spin 120s linear infinite;
+  -moz-animation:spin 120s linear infinite;
+  animation:spin 120s linear infinite;
+  text-align: center;
+  color: #FF725C;
+}
+
+.fourOhFourMessage{
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: .2;
+}
+
+.fourOhFourMessage p {
+  border-bottom: 3px solid #1E1E1E;
+}
+
+.fourOhFourMessage p:hover {
+  color: #FF725C;
+  cursor: pointer;
+}
+
+#errorBody .header{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+#errorBody .mainMenu{
+  width: 100vw;
+  margin-left: 0;
+  pointer-events: none;
+}
+
+#errorBody .headerArrowContainer h1{
+  text-align: center;
+  padding-left: 30px;
+  color: #1E1E1E;
+  -webkit-animation:spin 30s linear infinite;
+  -moz-animation:spin 30s linear infinite;
+  animation:spin 30s linear infinite;
+
+}
+
+#errorBody .beamBox{
+  width: 100vw;
+}
+
+#errorBody {
+  width: 100vw;
+  background: #FAFAFA;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 @media only screen and (max-width: 769px) {
   h1{

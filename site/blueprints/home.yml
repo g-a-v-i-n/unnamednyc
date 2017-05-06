@@ -16,6 +16,10 @@ fields:
     label: Title
     type:  text
 
+  Menutitle:
+    label: Menu Title
+    type: text
+
   text:
     label: Body Text
     type:  textarea

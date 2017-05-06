@@ -1,48 +1,48 @@
 /*
 location colors:
-primary: #606293
+primary: #FF725C
 bg: #FAFAFA
 */
 
-
 a:hover{
-  color: #606293;
+  color: #FF725C;
 }
 
 a:hover p{
-  color: #606293;
+  color: #FF725C;
 }
 
-
 .expandButton p:hover{
-  color: #606293;
+  color: #FF725C;
 }
 
 .siteTitleHover{
-  color: #606293;
+  color: #FF725C;
 }
 
 .location:hover h2{
-  color: #606293;
-}
-
-.SVGWrapper #comingSoonSVG {
-  stroke: #606293;
-
-}
-
-#logo-svg {
-  stroke: #606293;
+  color: #FF725C;
 }
 
 .arrowOn {
   fill: black;
+}
+
+.SVGWrapper #comingSoonSVG {
+  stroke: #FF725C;
+
+}
+
+#logo-svg {
+  stroke: #FF725C;
+}
+
+.arrowOn:hover {
   cursor: pointer;
 }
 
-.arrowOff {
+.arrowOff #logo-svg  {
   fill: transparent;
-  cursor: default;
 }
 
 #arrow-outline {
@@ -58,7 +58,7 @@ a:hover p{
 }
 
 .menuBorderOn{
-  border-bottom: 3px solid #606293;
+  border-bottom: 3px solid #FF725C;
   transition: border-bottom 300ms;
 }
 
@@ -68,12 +68,12 @@ a:hover p{
 }
 
 .location {
-  border-top: 3px solid  #606293;
+  border-top: 3px solid  #FF725C;
   background-color: #FAFAFA;
 }
 
 .location:last-child{
-  border-bottom: 3px solid  #606293;
+  border-bottom: 3px solid  #FF725C;
 }
 
 .header {
@@ -81,7 +81,7 @@ a:hover p{
 }
 
 .beam {
-   border: 3px solid #606293;
+   border: 3px solid #FF725C;
 }
 
 .beamOff{
@@ -89,16 +89,17 @@ a:hover p{
 }
 
 .beamOn{
-  background:  #606293;
+  background:  #FF725C;
+
 }
 
 .pillar{
-  border: 3px solid #606293;
+  border: 3px solid #FF725C;
   border-top: 0;
 }
 
 .topSpace{
-  border-right: 3px solid #606293;
+  border-right: 3px solid #FF725C;
   background: #FAFAFA;
 }
 
@@ -107,15 +108,15 @@ a:hover p{
 }
 
 .optionItem{
-  border-bottom: 3px solid #606293;
+  border-bottom: 3px solid #FF725C;
 }
 
 .locationItem{
-  border-top: 3px solid #606293;
+  border-top: 3px solid #FF725C;
 }
 
 .listItem{
-  border-bottom: 3px solid #606293;
+  border-bottom: 3px solid #FF725C;
 }
 
 @media only screen and (max-width: 550px) {

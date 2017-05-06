@@ -69,7 +69,9 @@ fields:
         label: Type of Booking
         type: select
         options:
-          Hourly: Hourly
+          Photography: Hourly Photography
+          Video: Hourly Video
+          Event: Hourly Event
       commitment:
         label: Commitment (title)
         type: text

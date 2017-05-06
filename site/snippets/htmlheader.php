@@ -10,6 +10,10 @@
 
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
     <meta name="description" content="<?= $site->description()->html() ?>">
+    <?php if($favicon = $site->favicon()->toFile()): ?>
+      <link rel="icon" href="<?= $favicon->url() ?>" type="image/png">
+    <?php endif ?>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/hammer.min.js' ?>"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/jquery.hammer.js' ?>"></script>

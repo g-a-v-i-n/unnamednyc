@@ -1,8 +1,8 @@
-Title: Work Room #1
+Title: Unnamed Project
 
 ----
 
-Menutitle: 544 Park
+Menutitle: Unnamed Project
 
 ----
 
@@ -12,20 +12,13 @@ Comingsoon: 1
 
 Address: 
 
-544 Park Ave
-Bushwick, NY 11385
-
 ----
 
 Type: Workroom
 
 ----
 
-Text: 
-
-Unnamed Workroom will be a multidisciplinary workspace tailored to the needs of individual artists and small creative companies. It will provide a shop for wood and metal-working, mold-making and casting, a clean room for finishing and photographing, and an office & meeting space.
-
-Workroom will also house Unnamed Gallery.
+Text: Unnamed Project will be a multidisciplinary workspace tailored to the needs of individual artists and small creative companies.
 
 ----
 
@@ -58,3 +51,7 @@ Rates:
 ----
 
 Bookingtypes: 
+
+----
+
+Maplink: 

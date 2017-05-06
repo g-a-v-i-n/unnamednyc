@@ -11,23 +11,22 @@
         </g>
     </svg>
   </div>
-  <header>
-    <div class="intro text">
-      <?= $page->intro()->kirbytext() ?>
-    </div>
-  </header>
 
   <section class="text">
     <?= $page->text()->kirbytext() ?>
+    <div id='signature'>
+      <div class='emDash'></div>
+      <div><h4><?= $page->signature() ?></h4></div>
+    </div>
   </section>
   <section class="contact">
     <div class="contactItem">
       <h3> PHONE </h3>
-      <a href="tel:<?= $page->PhoneNoExtraCharacters() ?>"><?= $page->phone()->kirbytext() ?></a>
+      <a href="tel:<?= $page->PhoneNoExtraCharacters() ?>"><p><?= $page->phone() ?></p></a>
     </div>
     <div class="contactItem">
       <h3> EMAIL </h3>
-      <a href=""><?= $page->email()->kirbytext() ?></a>
+      <p ><?= $page->email() ?></p>
     </div>
   </section>
 

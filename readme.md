@@ -4,15 +4,24 @@
 - [ ] photos from phil
 
 ### Meeting
-- [ ] send acuity adobe typekit link for nimbus
-- [ ] final booking changes
 
 - [ ] launch
+- [ ] send acuity adobe typekit link for nimbus
+- [ ] final booking changes
 - [ ] make admin panel acct
 - [ ] change admin panel url
 - [ ] set up url / cname or whatever follow some tutorial on webfaction
 
 #### Completed
+- [ ] signature
+- [x] hourly booking video / hourly booking video / hourly booking events
+- [x] 404
+- [x] safari arrowOff header bug
+- [x] reroute on #/locations/ to Home
+- [x] reorder location page 1)rates 2)booking 3)address
+- [x] remove no select on email
+- [x] remove coming soon logic on menu titles
+- [x] menu border bug
 - [x] link to booking on mobile needs 2px line thickness and color system color
 - [x] disable scroll when on topSpace
 - [x] disable pointer events on bottomSpace when on topSpace

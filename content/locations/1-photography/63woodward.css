@@ -4,11 +4,6 @@ primary: #77998f
 bg: #FAFAFA
 */
 
-
-#acuityLink p:hover {
-color: #77998f;
-}
-
 a:hover{
   color: #77998f;
 }

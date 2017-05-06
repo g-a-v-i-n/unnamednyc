@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-menuTitle: Unnamed Studios
+Menutitle: Unnamed
 
 ----
 
@@ -38,4 +38,4 @@ Facebook: https://www.facebook.com/unnamednyc
 
 ----
 
-cid: cid000
+Cid: cid000

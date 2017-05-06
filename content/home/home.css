@@ -119,6 +119,19 @@ a:hover p{
   border-bottom: 3px solid #c4aa7c;
 }
 
+#signature{
+  display: flex;
+  align-items: center;
+
+}
+
+.emDash{
+  height: 3px;
+  background: #c4aa7c;
+  width: 30px;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 550px) {
   #arrow-outline {
     stroke-width: 2px;

@@ -1,8 +1,8 @@
-Title: Photography Studio
+Title: Photography
 
 ----
 
-Menutitle: 63 Woodward Ave
+Menutitle: Photography Studio
 
 ----
 
@@ -10,14 +10,11 @@ Comingsoon: 0
 
 ----
 
-Address:
-
-63 Woodward Ave
-  Ridgewood, NY 11385
+Address: 63 Woodward Ave  Ridgewood, NY 11385
 
 ----
 
-maplink: https://www.google.com/maps/place/63+Woodward+Ave,+Ridgewood,+NY+11385/@40.7131952,-73.9217743,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25ea468e2d385:0x71cf24df3d364d0f!8m2!3d40.7131952!4d-73.9195856
+Maplink: https://www.google.com/maps/place/63+Woodward+Ave,+Ridgewood,+NY+11385/@40.7131952,-73.9217743,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25ea468e2d385:0x71cf24df3d364d0f!8m2!3d40.7131952!4d-73.9195856
 
 ----
 
@@ -25,7 +22,7 @@ Type: Photography Studio
 
 ----
 
-Text: Unnamed Photography Studio is a 2000 square-foot space for photoshoots and video production. The studio is available both for hourly rental and by monthly membership. You can choose from three distinct shooting spaces that will accommodate your needs for any project.
+Text: Unnamed Photography Studio is a 2000 square-foot space for photography and video production. The studio is available by hourly rental and monthly membership. The room features three areas:
 
 ----
 
@@ -54,7 +51,7 @@ Equipment:
 -
   item: Modifiers
 -
-  item: Light Stands
+  item: C Stands and Rolling Stands
 -
   item: Pocket Wizards
 -
@@ -63,6 +60,8 @@ Equipment:
     (selected colors)
 -
   item: 10’ x 24’ Green Screen Backdrop
+-
+  item: V Flats
 -
   item: Sand Bags
 -
@@ -93,11 +92,11 @@ Cid: cid001
 
 ----
 
-hasBooking: 1
+Hasbooking: 1
 
 ----
 
-membershipTypes:
+Membershiptypes:
 
 -
   membershiptype: 6-Month-Commitment
@@ -130,17 +129,33 @@ membershipTypes:
 
 ----
 
-bookingTypes:
+Bookingtypes:
 
 -
-  bookingtype: Hourly
+  bookingtype: Photography
   commitment: Standard Rate
   rate: $50/Hour
 -
-  bookingtype: Hourly
+  bookingtype: Photography
   commitment: Half Day
   rate: $150/Half Day
 -
-  bookingtype: Hourly
+  bookingtype: Photography
   commitment: Full Day
   rate: $400/day
+-
+  bookingtype: Video
+  commitment: Full Day
+  rate: $75 / Hour
+-
+  bookingtype: Video
+  commitment: Standard Rate
+  rate: $100 / Hour
+
+----
+
+Rates:
+
+-
+  title: Video
+  rate: $75 / Hour

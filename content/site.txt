@@ -1,8 +1,8 @@
-Title: Unnamed Studios
+Title: Unnamed
 
 ----
 
-Author: Gavin Atkinson, Philippe Cao
+Author: Stella Zhong, Jacob Schuerger
 
 ----
 
@@ -11,3 +11,7 @@ Description: This is the Unnamed Studios site
 ----
 
 Copyright: © (date: Year) (link: http://unnamednyc.com text: Idex Object Limited Liability Company )
+
+----
+
+Favicon: favicon.png

@@ -1,4 +1,3 @@
-
 var topMenuState = false;
 var bottomMenuState = false;
 var topIsOpen = true;
@@ -23,11 +22,11 @@ $(".galleryArrowRightContainer").addClass("galleryArrowRightContainerHover")
 
 
 $(".content").scroll(function() {
-  if($(this).scrollTop() > 10) {
-    $(".bottomSpace .siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
-  } else if (!bottomMenuState) {
-    $(".bottomSpace .siteTitle").addClass("menuBorderOff").removeClass("menuBorderOn");
-  }
+    if($(this).scrollTop() > 10) {
+      $(".bottomSpace .siteTitle").addClass("menuBorderOn").removeClass("menuBorderOff");
+    } else if (!bottomMenuState) {
+      $(".bottomSpace .siteTitle").addClass("menuBorderOff").removeClass("menuBorderOn");
+    }
 });
 
 // open or close bottomSpace page
@@ -191,6 +190,8 @@ function toggleMainMenu(container, menuState) {
     if ($(".bottomSpace .content").scrollTop() < 10){
       $(container + " " + ".siteTitle").removeClass("menuBorderOn").addClass("menuBorderOff");
     }
+    $(".topSpace .siteTitle").addClass("menuBorderOff").removeClass("menuBorderOn");
+
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-90");
     $(container + ' ' + "svg.headerArrow").removeClass("headerArrow-rotate-45");
     for (i = 0; i < $('a.location').length / 2; i++) {
@@ -314,9 +315,11 @@ $(".topSpace").hover(function(e){
 
 // menu arrow hover
 $(".topSpace .siteTitle, .topSpace .headerArrowContainer").hover(function(e){
+  if (topIsOpen){
     $(".topSpace svg.headerArrow").addClass("headerArrow-rotate-45");
     $(".topSpace .siteTitle").addClass("siteTitleHover");
     $('.headerArrowContainer').css('cursor', 'pointer');
+  }
 
   }, function(){
     $(".topSpace svg.headerArrow").removeClass("headerArrow-rotate-45");
@@ -326,10 +329,12 @@ $(".topSpace .siteTitle, .topSpace .headerArrowContainer").hover(function(e){
 
 // menu arrow hover
 $(".bottomSpace .siteTitle, .bottomSpace .headerArrowContainer").hover(function(e){
+  if (!topIsOpen){
+
     $(".bottomSpace svg.headerArrow").addClass("headerArrow-rotate-45");
     $(".bottomSpace .siteTitle").addClass("siteTitleHover");
     $('.headerArrowContainer').css('cursor', 'pointer');
-
+}
   }, function(){
     $(".bottomSpace svg.headerArrow").removeClass("headerArrow-rotate-45");
     $(".bottomSpace .siteTitle").removeClass("siteTitleHover");

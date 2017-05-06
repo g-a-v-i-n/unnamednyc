@@ -24,16 +24,83 @@
     </section>
   <?php endif ?>
 
-  <?php if(!$page->address()->empty()): ?>
+  <?php if(!$page->bookingTypes()->empty()): ?>
+    <?php $photography = $page->bookingTypes()->toStructure()->filterBy('bookingtype', 'Photography'); ?>
+    <?php $video = $page->bookingTypes()->toStructure()->filterBy('bookingtype', 'Video'); ?>
     <section>
-      <h3>ADDRESS</h3>
-      <div class="intro text"> <?= $page->address()->kirbytext() ?></div>
-      <?php if($page->files()->has('map.svg')): ?>
-        <a target="_blank" href=" <?= $page->maplink() ?>" >
-        <img class="map" src="<?php echo $page->files()->find('map.svg')->url() ?>" type="image/svg+xml"/>
-      </a>
+      <h3>HOURLY BOOKING</h3>
+      <div class='list'>
+      <?php if($photography): ?>
+        <div class='optionList'>
+          <h5>Photography:</h5>
+          <?php foreach($photography as $item): ?>
+            <div class="optionItem">
+              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
+            </div>
+          <?php endforeach ?>
+        </div>
       <?php endif ?>
 
+      <?php if($video): ?>
+        <div class='optionList'>
+          <h5>Video:</h5>
+          <?php foreach($video as $item): ?>
+            <div class="optionItem">
+              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
+            </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+
+      <?php if($event): ?>
+        <div class='optionList'>
+          <h5>Event:</h5>
+          <?php foreach($video as $item): ?>
+            <div class="optionItem">
+              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
+            </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+
+      </div>
+    </section>
+  <?php endif ?>
+
+  <?php if(!$page->membershiptypes()->empty()): ?>
+    <?php $monthly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Month-to-Month'); ?>
+    <?php $halfyear = $page->membershiptypes()->toStructure()->filterBy('membershiptype', '6-Month-Commitment'); ?>
+    <section>
+      <h3>MEMBERSHIP</h3>
+      <div class='list'>
+        <?php if($monthly): ?>
+        <div class='optionList'>
+          <h5>Month-to-Month:</h5>
+          <?php foreach($monthly as $item): ?>
+            <div class="optionItem">
+              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
+            </div>
+          <?php endforeach ?>
+        </div>
+        <?php endif ?>
+
+        <?php if($halfyear): ?>
+        <div class='optionList'>
+          <h5>6-Month Commitment:</h5>
+          <?php foreach($halfyear as $item): ?>
+            <div class="optionItem">
+              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
+              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
+            </div>
+          <?php endforeach ?>
+        </div>
+      <?php endif ?>
+
+      </div>
     </section>
   <?php endif ?>
 
@@ -46,51 +113,18 @@
     </section>
   <?php endif ?>
 
-  <?php if(!$page->bookingTypes()->empty()): ?>
+  <?php if(!$page->address()->empty()): ?>
     <section>
-    <h3>HOURLY BOOKING</h3>
-    <div class='list'>
-      <?php $hourly = $page->bookingTypes()->toStructure()->filterBy('bookingtype', 'Hourly'); ?>
-      <?php foreach($hourly as $item): ?>
-        <div class="optionItem">
-          <h4><?php echo $item->commitment() ?></h4>
-          <h4><?php echo $item->rate() ?></h4>
-        </div>
-      <?php endforeach ?>
-    </div>
-  </section>
-  <?php endif ?>
+      <h3>ADDRESS</h3>
+      <div class="intro text"> <?= $page->address()->kirbytext() ?></div>
+      <?php if($page->files()->has('map.svg')): ?>
+        <a target="_blank" href=" <?= $page->maplink() ?>" >
+        <img class="map" src="<?php echo $page->files()->find('map.svg')->url() ?>" type="image/svg+xml"/>
+      </a>
+      <?php endif ?>
 
-  <?php if(!$page->membershiptypes()->empty()): ?>
-    <section>
-      <h3>MEMBERSHIP</h3>
-      <div class='list'>
-        <div class='optionList'>
-          <?php $monthly = $page->membershiptypes()->toStructure()->filterBy('membershiptype', 'Month-to-Month'); ?>
-          <?php $halfyear = $page->membershiptypes()->toStructure()->filterBy('membershiptype', '6-Month-Commitment'); ?>
-          <h5>Month-to-Month:</h5>
-          <?php foreach($monthly as $item): ?>
-            <div class="optionItem">
-              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
-              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
-            </div>
-          <?php endforeach ?>
-        </div>
-        <div class='optionList'>
-          <h5>6-Month Commitment:</h5>
-          <?php foreach($halfyear as $item): ?>
-            <div class="optionItem">
-              <div class="option"><h4><?php echo $item->commitment() ?></h4></div>
-              <div class="option"><h4><?php echo $item->rate() ?></h4></div>
-            </div>
-          <?php endforeach ?>
-        </div>
-      </div>
     </section>
   <?php endif ?>
-
-
-
 
   <?php if(!$page->Equipment()->empty()): ?>
     <section class='equipmentList'>

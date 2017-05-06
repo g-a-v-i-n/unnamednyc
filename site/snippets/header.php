@@ -19,6 +19,7 @@
 				</g></svg>
 			</div>
 			<div class="pillar"></div>
-		</div><?php snippet("menu") ?>
+		</div>
+		<?php snippet("menu") ?>
 	</div>
 </div>
