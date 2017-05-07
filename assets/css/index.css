@@ -706,9 +706,14 @@ label .select-item {
   pointer-events: none;
 }
 
-#errorBody .headerArrowContainer h1{
+#errorBody .headerArrowContainer {
+  min-width: 50px;
+  margin-left: 30px;
+}
+
+#errorBody .headerArrowContainer #x{
+  transform-origin: center;
   text-align: center;
-  padding-left: 30px;
   color: #1E1E1E;
   -webkit-animation:spin 30s linear infinite;
   -moz-animation:spin 30s linear infinite;
@@ -952,6 +957,11 @@ label .select-item {
   .wrap{
     width: calc(80vw - 32px);
     margin-bottom: 130px;
+  }
+
+  #errorBody .headerArrowContainer {
+    min-width: 50px;
+    margin-left: 10px;
   }
 }
 

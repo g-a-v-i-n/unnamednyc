@@ -7,7 +7,15 @@
     	<div class="arrowBox">
     		<div class="headerPillarAndIcon">
     			<div class="headerArrowContainer">
-            <h1>✖</h1>
+            <svg id="x" width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs></defs>
+                <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                    <g id="Artboard" stroke="#FF725C" stroke-width="3">
+                        <path d="M2.44782891,2.44974653 L24.8392744,24.9370728" id="Line"></path>
+                        <path d="M24.8392744,2.44974653 L2.44782891,24.9370728" id="Line"></path>
+                    </g>
+                </g>
+            </svg>
     			</div>
     			<div class="pillar beamOn"></div>
     	</div>

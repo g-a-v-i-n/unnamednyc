@@ -14,7 +14,7 @@ Copyright: © (date: Year) (link: http://unnamednyc.com text: Idex Object Limite
 
 ----
 
-Favicon: favicon2.png
+Favicon: favicon.png
 
 ----
 
