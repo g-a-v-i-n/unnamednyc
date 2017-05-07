@@ -118,6 +118,10 @@ a{
   color: #1e1e1e;
 }
 
+p a{
+  border-bottom:3px solid #1E1E1E;
+}
+
 section{
   margin-bottom: 100px;
 }
@@ -140,7 +144,6 @@ section{
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
-  user-select: auto;
 }
 
 .topSpaceWrapper{
@@ -360,7 +363,6 @@ Top Page
   align-items: center;
   width: 80vw;
   pointer-events: auto;
-  z-index: 50;
   height: 100%;
   transition: 200ms;
 
@@ -406,7 +408,7 @@ Top Page
   flex-direction: row-reverse;
   height: 20%;
   transition: 200ms;
-
+  z-index: 800;
 }
 
 
@@ -422,8 +424,7 @@ Top Page
   justify-content: flex-end;
   height: 20%;
   transition: 200ms;
-
-
+  z-index: 700;
 }
 
 .gallery::-webkit-scrollbar {
@@ -462,6 +463,7 @@ Top Page
   font-style: italic;
   text-align: center;
   margin-top: 20px;
+  z-index: 999;
 }
 
 .frame:first-child {
@@ -869,6 +871,10 @@ label .select-item {
     line-height: 16px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  p a{
+    border-bottom:2px solid #1E1E1E;
   }
 
   section{

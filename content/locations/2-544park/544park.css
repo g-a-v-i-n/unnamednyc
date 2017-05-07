@@ -36,7 +36,7 @@ a:hover p{
 }
 
 .arrowOn {
-  fill: black;
+  fill: #1E1E1E;
   cursor: pointer;
 }
 
@@ -46,7 +46,7 @@ a:hover p{
 }
 
 #arrow-outline {
-  stroke: black;
+  stroke: #1E1E1E;
 }
 
 .mainMenu{

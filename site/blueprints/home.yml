@@ -5,6 +5,9 @@ files: true
   fields:
     caption:
       label: Caption
+      type: textarea
+    alt:
+      label: Alt attribute
       type: text
 
 deletable: false

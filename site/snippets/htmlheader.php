@@ -1,11 +1,10 @@
 <!doctype html>
 <html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
   <head>
-
     <meta charset="UTF-8">
-    <meta name="description" content="Unnamed Studios is a network of rentable studio facilities for creatives">
-    <meta name="keywords" content="NYC, New York City, Studio, Rent, Photography, Workspace, Unnamed Studios, Unnamed, Studios, Spaces">
-    <meta name="author" content="Gavin Atkinson and Phil Cao">
+    <meta name="description" content="<?= $site->description() ?>">
+    <meta name="keywords" content="<?= $site->keywords() ?>">
+    <meta name="author" content="<?= $site->authors()?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
@@ -17,7 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/hammer.min.js' ?>"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/jquery.hammer.js' ?>"></script>
-
 
     <link rel="stylesheet" href="<?php echo kirby()->urls()->assets() . '/css/index.css' ?>">
 

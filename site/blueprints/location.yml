@@ -6,6 +6,9 @@ files: true
     caption:
       label: Caption
       type: text
+    alt:
+      label: Alt attribute
+      type: text
 
 deletable: true
 

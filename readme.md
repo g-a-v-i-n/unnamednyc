@@ -2,15 +2,14 @@
 
 ## To Do
 - [ ] photos from phil
+- [ ] SEO
+- [x] image alt
+- [x] link in captions
+
 
 ### Meeting
-
 - [ ] launch
-- [ ] send acuity adobe typekit link for nimbus
 - [ ] final booking changes
-- [ ] make admin panel acct
-- [ ] change admin panel url
-- [ ] set up url / cname or whatever follow some tutorial on webfaction
 
 #### Completed
 - [ ] signature

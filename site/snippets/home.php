@@ -23,7 +23,6 @@ if(isset($limit)) $locations = $locations->limit($limit);
 
 
     <?php if ($page->Comingsoon()->bool()): ?>
-
       <div class="gallery disable-select">
       	<div class="arrowPositioner">
       	</div>
@@ -41,7 +40,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
       						</mask>
       					</defs>
       					<g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1" vector-effect="non-scaling-stroke">
-      						<g id="comingSoonSVG" stroke="#FF0000" vector-effect="non-scaling-stroke">
+      						<g id="comingSoonSVG" stroke="#1E1E1E" vector-effect="non-scaling-stroke">
       							<use id="Rectangle" mask="url(#mask-22)" stroke-width="6" xlink:href="#path-12" vector-effect="non-scaling-stroke"></use>
                     <path d="M3,2 L597,398" id="Line" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
                     <path d="M597,2 L3,398" id="Line" stroke-width="3" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
@@ -67,9 +66,9 @@ if(isset($limit)) $locations = $locations->limit($limit);
             <?php if($image != $page->image('map.svg')): ?>
               <div class='frame'>
                 <div class="imgWrapper">
-                  <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" />
+                  <img src="<?= $image->url() ?>" alt="<?php echo $image->alt() ?>" />
                 </div>
-                  <div class="caption"><p><?php echo $image->caption() ?></p> </div>
+                  <div class="caption enable-select"><?php echo $image->caption()->kirbytext() ?> </div>
               </div>
             <?php endif ?>
 

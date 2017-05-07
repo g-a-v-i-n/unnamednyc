@@ -22,3 +22,7 @@ fields:
   favicon:
       label: Favicon
       type: image
+
+  keywords:
+    label: SEO keywords
+    type: textArea
