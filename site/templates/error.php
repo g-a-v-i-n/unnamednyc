@@ -30,7 +30,6 @@
       <h1>0</h1>
       <h1>4</h1>
     </div>
-
     <div class='fourOhFourMessage'>
       <a href='/'><p> Back to Unnamed Home </p></a>
     </div>
