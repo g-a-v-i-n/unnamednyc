@@ -7,7 +7,7 @@
             <polygon id="path-1" points="30 -2 54 -2 42 26"></polygon>
         </defs>
         <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-            <g id="Arrow">
+          <g id="Arrow" transform="translate(28.000000, 12.000000) rotate(-180.000000) translate(-28.000000, -12.000000) translate(0.000000, 0.000000)">
                 <g id="Group-2" transform="translate(1.000000, 0.000000)">
                     <g id="arrow" transform="translate(42.000000, 12.000000) rotate(-90.000000) translate(-42.000000, -12.000000) ">
                         <use fill="#1E1E1E" fill-rule="evenodd" xlink:href="#path-1"></use>
@@ -18,8 +18,8 @@
             </g>
         </g>
     </svg>
-
   </div>
+
   <div class='galleryArrowRightContainer'>
     <h2> Right </h2>
     <svg class='galleryArrowRight' width="57px" height="24px" viewBox="0 0 57 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

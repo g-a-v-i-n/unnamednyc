@@ -369,22 +369,29 @@ Top Page
 }
 
 .galleryArrowRightContainerHover{
-  transition: 200ms;
+  transition: transform 200ms;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: center;
 }
 
 .galleryArrowRightContainerHover:hover{
   cursor: pointer;
-  transform: translateX(7px);
+  transform: translate3d(7px,0px,0px);
 }
 
 .galleryArrowLeftContainerHover{
-  transition: 200ms;
-
+  transition: transform 200ms;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-origin: center;
 }
 
 .galleryArrowLeftContainerHover:hover{
   cursor: pointer;
-  transform: translateX(-7px);
+  transform: translate3d(-7px,0px,0px);
+  transition: transform 200ms;
+
 
 }
 
@@ -413,7 +420,6 @@ Top Page
 
 
 .galleryArrowLeft{
-  transform: rotateZ(180deg);
 }
 
 .galleryArrowRightContainer{
@@ -514,11 +520,12 @@ bottomSpace Page
 .wrap{
   width: 59vw;
   max-width: 1000px;
+  min-height: 55vh;
   white-space: normal;
-  margin-bottom: 180px;
 }
 
-.text{
+.copyright{
+  padding-bottom: 50px;
 }
 
 .logoAbout{

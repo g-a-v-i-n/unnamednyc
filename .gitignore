@@ -22,6 +22,8 @@ Icon
 
 /site/accounts/*
 !/site/accounts/index.html
+!/site/config/config.php
+
 
 # Avatars
 # ---------------

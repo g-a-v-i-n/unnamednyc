@@ -1,3 +1,4 @@
+<div>
 <div class="wrap">
   <div class="logoAbout">
     <svg class="logoAboutSVG" width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -153,12 +154,6 @@
       <div class='expandButton'><p>See More</p></div>
     </section>
   <?php endif ?>
-
-
-
-
-
-  <section class="spacer">
-  </section>
-
+</div>
+  <?php snippet("copyright") ?>
 </div>
