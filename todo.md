@@ -1,13 +1,13 @@
 # Unnamed NYC Site
 
 ## To Do
-- [ ] photos from phil
 
 ### Meeting
 - [ ] launch
 - [ ] final booking changes
 
 #### Completed
+- [x] photos from phil
 - [x] SEO
 - [x] image alt
 - [x] link in captions
