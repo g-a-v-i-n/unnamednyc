@@ -520,8 +520,14 @@ bottomSpace Page
 .wrap{
   width: 59vw;
   max-width: 1000px;
-  min-height: 55vh;
+  height: auto;
   white-space: normal;
+}
+
+.subWrap{
+  width: 100%;
+  min-height: 55vh;
+  height: auto;
 }
 
 .copyright{
@@ -781,7 +787,7 @@ label .select-item {
   }
 
   .galleryArrowLeft{
-    transform: rotateZ(180deg) scale(0.5);
+    transform: scale(0.5);
   }
 
   .headerArrow{
