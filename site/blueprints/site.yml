@@ -1,6 +1,6 @@
 title: Site
 
-pages: default
+pages: true
 
 fields:
   title:
@@ -18,10 +18,6 @@ fields:
   copyright:
     label: Copyright
     type:  textarea
-
-  favicon:
-      label: Favicon
-      type: image
 
   keywords:
     label: SEO keywords

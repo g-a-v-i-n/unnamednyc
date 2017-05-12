@@ -1,0 +1,169 @@
+/*
+location colors:
+primary: black
+bg: #FAFAFA
+*/
+.colophonIcon{
+  color: black;
+}
+a:hover{
+  color: silver;
+}
+
+a:hover p{
+  color: silver;
+}
+
+.expandButton p:hover{
+  color: black;
+}
+
+.siteTitleHover{
+  color: black;
+}
+
+.location:hover h2{
+  color: black;
+}
+
+.arrowOn {
+  fill: black;
+}
+
+.SVGWrapper #comingSoonSVG {
+  stroke: black;
+
+}
+
+#logo-svg {
+  stroke: black;
+}
+
+.arrowOn:hover {
+  cursor: pointer;
+}
+
+.arrowOff #logo-svg  {
+  fill: transparent;
+}
+
+#arrow-outline {
+  stroke: black;
+}
+
+.mainMenu{
+  background-color: #FAFAFA;
+}
+
+.siteTitle{
+  background-color: #FAFAFA;
+}
+
+.menuBorderOn{
+  border-bottom: 3px solid black;
+  transition: border-bottom 300ms;
+}
+
+.menuBorderOff{
+  border-bottom: 3px solid #FAFAFA;
+  transition: border-bottom 200ms;
+}
+
+.location {
+  border-top: 3px solid  black;
+  background-color: #FAFAFA;
+}
+
+.location:last-child{
+  border-bottom: 3px solid  black;
+}
+
+.header {
+  background-color: #FAFAFA;
+}
+
+.beam {
+   border: 3px solid black;
+}
+
+.beamOff{
+  background: #FAFAFA;
+}
+
+.beamOn{
+  background:  black;
+
+}
+
+.pillar{
+  border: 3px solid black;
+  border-top: 0;
+}
+
+.topSpace{
+  border-right: 3px solid black;
+  background: #FAFAFA;
+}
+
+.bottomSpace{
+  background-color: #FAFAFA;
+}
+
+.optionItem{
+  border-bottom: 3px solid black;
+}
+
+.locationItem{
+  border-top: 3px solid black;
+}
+
+.listItem{
+  border-bottom: 3px solid black;
+}
+
+@media only screen and (max-width: 550px) {
+  #arrow-outline {
+    stroke-width: 2px;
+  }
+
+  .menuBorderOn{
+    border-bottom-width: 2px;
+  }
+
+  .menuBorderOff{
+    border-bottom-width: 2px;
+  }
+
+  .location {
+    border-top-width: 2px;
+  }
+
+  .location:last-child{
+    border-bottom-width: 2px;
+  }
+
+  .beam {
+     border-width: 2px;
+  }
+
+  .pillar{
+    border-width: 2px;
+  }
+
+  .topSpace{
+    border-right-width: 2px;
+  }
+
+  .optionItem{
+    border-bottom-width: 2px;
+  }
+
+  .locationItem{
+    border-top-width: 2px;
+  }
+
+  .listItem{
+    border-bottom-width: 2px;
+  }
+
+}

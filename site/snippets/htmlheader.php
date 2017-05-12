@@ -1,17 +1,36 @@
 <!doctype html>
 <html lang="<?= site()->language() ? site()->language()->code() : 'en' ?>">
+<!--
+██╗   ██╗███╗   ██╗███╗   ██╗ █████╗ ███╗   ███╗███████╗██████╗     ███╗   ██╗██╗   ██╗ ██████╗
+██║   ██║████╗  ██║████╗  ██║██╔══██╗████╗ ████║██╔════╝██╔══██╗    ████╗  ██║╚██╗ ██╔╝██╔════╝
+██║   ██║██╔██╗ ██║██╔██╗ ██║███████║██╔████╔██║█████╗  ██║  ██║    ██╔██╗ ██║ ╚████╔╝ ██║
+██║   ██║██║╚██╗██║██║╚██╗██║██╔══██║██║╚██╔╝██║██╔══╝  ██║  ██║    ██║╚██╗██║  ╚██╔╝  ██║
+╚██████╔╝██║ ╚████║██║ ╚████║██║  ██║██║ ╚═╝ ██║███████╗██████╔╝    ██║ ╚████║   ██║   ╚██████╗
+ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝╚═════╝     ╚═╝  ╚═══╝   ╚═╝    ╚═════╝
+Design: Philippe Cao
+Dev: Gavin Atkinson
+ -->
   <head>
+    <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
+
     <meta charset="UTF-8">
     <meta name="description" content="<?= $site->description() ?>">
     <meta name="keywords" content="<?= $site->keywords() ?>">
     <meta name="author" content="<?= $site->authors()?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title><?= $site->title()->html() ?> | <?= $page->title()->html() ?></title>
     <meta name="description" content="<?= $site->description()->html() ?>">
-    <?php if($favicon = $site->favicon()->toFile()): ?>
-      <link rel="icon" href="<?= $favicon->url() ?>" type="image/png">
-    <?php endif ?>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo kirby()->urls()->assets() . '/icons/apple-touch-icon.png'?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo kirby()->urls()->assets() . '/icons/favicon-32x32.png'?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo kirby()->urls()->assets() . '/icons/favicon-16x16.png'?>">
+    <link rel="manifest" href="<?php echo kirby()->urls()->assets() . '/icons/manifest.json'?>">
+    <link rel="mask-icon" href="<?php echo kirby()->urls()->assets() . '/icons/safari-pinned-tab.svg '?>" color="#FAFAFA">
+    <meta name="theme-color" content="#FAFAFA">
+
+    <meta property="og:url" content="<?php echo $page->url() ?>" />
+    <meta property="og:title" content="<?= $site->title()?> | <?= $page->title()?>" />
+    <meta property="og:description" content="<?= $page->text()?>" />
+    <meta property="og:image" content="<?= $page->socialImg()?>" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/hammer.min.js' ?>"></script>

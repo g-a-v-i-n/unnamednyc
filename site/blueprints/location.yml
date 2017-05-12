@@ -1,4 +1,4 @@
-title: Home
+title: Location
 
 files: true
   sortable: true
@@ -117,3 +117,7 @@ fields:
       item:
         label: Camera Name
         type: text
+
+  socialImg:
+    label: Tile image for social network links
+    type: image

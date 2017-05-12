@@ -54,3 +54,7 @@ fields:
     label: Facebook
     type:  url
     width: 1/2
+
+  socialImg:
+    label: Tile image for social network links
+    type: image

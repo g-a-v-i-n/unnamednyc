@@ -1,5 +1,4 @@
 <div class="wrap">
-<div class="subWrap">
   <div class="logoAbout">
     <svg class="logoAboutSVG" width="156px" height="128px" viewBox="0 0 156 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Mocks" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
@@ -49,13 +48,14 @@
       <?php foreach($locations as $location): ?>
         <div class="locationItem">
             <a href="<?= $location->url() ?>" >
-                <h5 ><?= $location->type()->html() ?></h5>
+                <h5 ><?= $location->title()->html() ?></h5>
                 <h4 ><?= $location->address()->html() ?></h4>
             </a>
         </div>
       <?php $index++; endforeach ?>
     </div>
   </section>
-</div>
+
   <?php snippet("copyright") ?>
+
 </div>

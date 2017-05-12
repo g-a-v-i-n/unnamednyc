@@ -3,7 +3,14 @@
 ## To Do
 
 ### Meeting
+- [x] open-graph
+- [x] favicons
+- [x] nudge animation changes header beam width instead of overflowing
+- [x] html{} background grey
+- [x] safari hidden stuff bug
+
 - [ ] launch
+- [ ] minify
 - [ ] final booking changes
 
 #### Completed
