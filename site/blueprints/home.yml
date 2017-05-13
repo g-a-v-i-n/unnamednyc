@@ -5,7 +5,7 @@ files: true
   fields:
     caption:
       label: Caption
-      type: textarea
+      type: textArea
     alt:
       label: Alt attribute
       type: text

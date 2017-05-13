@@ -146,7 +146,7 @@
       <h3>CAMERAS FOR RENT</h3>
       <div class='list'>
         <?php foreach($page->Cameras()->yaml() as $item): ?>
-          <div class="listItem">
+          <div class="listItem listHider">
             <h4><?php echo $item['item'] ?></h4>
           </div>
         <?php endforeach ?>
