@@ -117,10 +117,17 @@ p{
 .caption {
   line-height: 40px;
   letter-spacing: 0.025em;
+
   padding: 0;
   margin-bottom: 28px;
-  margin-top:0;
+  margin-top: 8px;
+
   font-size: 28px;
+  height: 40px;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  z-index: 999;
 }
 
 
@@ -487,13 +494,6 @@ img{
   /*height: 66vh;*/
 }
 
-.caption{
-  width: 100%;
-  font-style: italic;
-  text-align: center;
-  margin-top: 20px;
-  z-index: 999;
-}
 
 .frame:first-child {
   /*margin-left: 15vw;*/
@@ -789,9 +789,9 @@ bottomSpace Page
     margin-bottom: 75px;
   }
 
-  .contentArrowContainer{
+  /*.contentArrowContainer{
     transform: translateY(35vh);
-  }
+  }*/
 
   .galleryArrowRightContainer{
     padding-right: 5%;
@@ -823,6 +823,10 @@ bottomSpace Page
 
   .beam{
     height: 5px;
+  }
+
+  .content{
+    height: calc(100vh - 36px + 90px);
   }
 
   .gallery img{
@@ -882,13 +886,52 @@ bottomSpace Page
 
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) and (orientation:landscape) {
+  .galleryArrowLeftContainer, .galleryArrowRightContainer{
+    align-self: center;
+    margin-bottom: 0;
+    margin-top: 15vh;
+
+  }
+
+  .galleryArrowLeftContainer h2, .galleryArrowRightContainer h2 {
+    display: none;
+  }
+
+  .galleryArrowLeftContainer{
+    margin-left: 0;
+    padding-left: 20px;
+  }
+
+  .galleryArrowRightContainer{
+    margin-right: 0;
+    padding-right: 20px;
+  }
+
+  .gallery img{
+    max-width: 50vw;
+    max-height:60vh;
+    width: auto;
+    height: auto;
+  }
+
+  .caption{
+    margin-bottom: 0;
+  }
+
+  .frame{
+    justify-content: flex-end;
+  }
+}
+
+
+@media only screen and (max-width: 668px) {
   h1{
-    font-size: 15px;
+    font-size: 18px;
   }
 
   h2{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 
@@ -943,6 +986,11 @@ bottomSpace Page
     width: 0px;
   }
 
+  .content{
+    height: calc(100vh - 14px + 90px);
+  }
+
+
   .arrowBox{
     padding: 10px;
     padding-top:0;
@@ -965,11 +1013,11 @@ bottomSpace Page
   }
 
   .siteTitle {
-    height: 46px;
+    height: 66px;
   }
 
   .location{
-    height: 40px;
+    height: 60px;
   }
 
   .logoAbout{
@@ -989,7 +1037,15 @@ bottomSpace Page
   }
 
   .galleryArrowLeftContainer, .galleryArrowRightContainer{
-    margin-bottom: 14vw;
+    margin-bottom: 5vh;
+  }
+
+  .galleryArrowLeftContainer{
+    margin-left: 0;
+  }
+
+  .galleryArrowRightContainer{
+    margin-right: 0;
   }
 
   .wrap{
@@ -1009,10 +1065,17 @@ bottomSpace Page
 
 @media only screen and (max-width: 350px) {
   h1{
-    font-size: 11px;
+    font-size: 13px;
   }
 
   h2{
-    font-size: 11px;
+    font-size: 13px;
+  }
+  .siteTitle {
+    height: 56px;
+  }
+
+  .location{
+    height: 50px;
   }
 }
