@@ -27,10 +27,13 @@ Dev: Gavin Atkinson
     <link rel="mask-icon" href="<?php echo kirby()->urls()->assets() . '/icons/safari-pinned-tab.svg '?>" color="#FAFAFA">
     <meta name="theme-color" content="#FAFAFA">
 
-    <meta property="og:url" content="<?php echo $page->url() ?>" />
-    <meta property="og:title" content="<?= $site->title()?> | <?= $page->title()?>" />
-    <meta property="og:description" content="<?= $page->text()?>" />
-    <meta property="og:image" content="<?= $page->socialImg()?>" />
+    <meta property="og:title" content="<?php echo html($site->title()) ?> | <?php echo html($page->title()) ?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?php echo html($site->url()) ?>" />
+    <?php if(!$page->socialImg()->empty()): ?>
+      <meta property="og:image" content="<?php echo $page->socialImg()->toFile()->url() ?>" />
+    <?php endif ?>
+    <meta property="og:description" content="<?php echo html($page->text()) ?>" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="<?php echo kirby()->urls()->assets() . '/scripts/hammer.min.js' ?>"></script>

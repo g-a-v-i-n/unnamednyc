@@ -6,7 +6,7 @@ Menutitle: Unnamed
 
 ----
 
-Text:
+Text: 
 
 Too often, artists are forced to compromise their work due to the limitations of their studio. We founded Unnamed to solve this problem. Unnamed believes that space and equipment should adapt to the needs of artists, not the other way around.
 
@@ -39,3 +39,7 @@ Facebook: https://www.facebook.com/unnamednyc
 ----
 
 Cid: cid000
+
+----
+
+Socialimg: insta11.jpg
