@@ -509,6 +509,7 @@ img{
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  min-height: 70vh;
   box-sizing: border-box;
 }
 
@@ -836,6 +837,10 @@ bottomSpace Page
     height: auto;
   }
 
+  .imgWrapper{
+    min-height: 70vh;
+  }
+
   .logoAbout{
     height: 80px;
     margin-bottom: 100px;
@@ -913,6 +918,10 @@ bottomSpace Page
     max-height:60vh;
     width: auto;
     height: auto;
+  }
+
+  .imgWrapper{
+    min-height: 60vh;
   }
 
   .caption{

@@ -1,0 +1,65 @@
+Title: Unnamed Project
+
+----
+
+Menutitle: Unnamed Project
+
+----
+
+Comingsoon: 1
+
+----
+
+Address: 
+
+----
+
+Type: Workroom
+
+----
+
+Text: 
+
+Coming soon...
+
+Unnamed Project will be a multidisciplinary workspace tailored to the needs of individual artists and small creative companies.
+
+----
+
+Spaces: 
+
+----
+
+Hasbooking: 0
+
+----
+
+Equipment: 
+
+----
+
+Cameras: 
+
+----
+
+Cid: cid001
+
+----
+
+Membershiptypes: 
+
+----
+
+Rates: 
+
+----
+
+Bookingtypes: 
+
+----
+
+Maplink: 
+
+----
+
+Socialimg: 

@@ -22,7 +22,3 @@ fields:
   keywords:
     label: SEO keywords
     type: textArea
-
-  socialImg:
-    label: Tile image for social network links
-    type: image

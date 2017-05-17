@@ -66,7 +66,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
             <?php if($image != $page->image('map.svg')): ?>
               <div class='frame'>
                 <div class="imgWrapper">
-                  <img src="<?= $image->url() ?>" alt="<?php echo $image->alt() ?>" />
+                  <img src="<?= $image->url() ?>" alt="<?php echo $image->alt() ?>" onload="fadeIn(this)" style="opacity:0"/>
                 </div>
                   <div class="caption enable-select"><?php echo $image->caption()->kirbytext() ?> </div>
               </div>

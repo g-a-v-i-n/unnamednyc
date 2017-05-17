@@ -1,0 +1,224 @@
+Title: Photography Studio
+
+----
+
+Menutitle: Photography Studio
+
+----
+
+Comingsoon: 0
+
+----
+
+Address: 63 Woodward Ave, Ridgewood, NY 11385
+
+----
+
+Maplink: https://www.google.com/maps/place/63+Woodward+Ave,+Ridgewood,+NY+11385/@40.7131952,-73.9217743,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25ea468e2d385:0x71cf24df3d364d0f!8m2!3d40.7131952!4d-73.9195856
+
+----
+
+Type: Photography Studio
+
+----
+
+Text: 
+
+Unnamed Photography Studio is a 2000 square-foot space for photography and video production. The studio is available for rental hourly and by monthly membership. The cyclorama wall is always ready for fashion shoots, music videos and portraits and the studio’s wall of south-west facing windows makes for fantastic natural light photography. 
+
+Photography rates include access to one area of the shared room, choose from: cyclorama, seamless and still life table.      
+Video rates include private use of all areas.
+
+----
+
+Spaces: 
+
+- 
+  title: Studio E
+  description: >
+    Cyclorama wall (22’w x 22’d x
+    12’h)
+- 
+  title: Studio R
+  description: >
+    400 square-foot shooting area stocked
+    with 107” background paper
+- 
+  title: Studio S
+  description: Tabletop Still-life Studio
+
+----
+
+Equipment: 
+
+- 
+  item: 3x Paul Buff E640 Monolight
+- 
+  item: 2x Paul Buff AB1600 Monolight
+- 
+  item: >
+    2x Paul Buff DB400 Monolight w/ 400w
+    Continuous LED
+- 
+  item: 1x 22" White Beauty Dish w/ Diffusion
+- 
+  item: 1x 35" Octabox
+- 
+  item: 1x 30"x60" Rectangular Softbox
+- 
+  item: 1x 14"x60" Rectangular Softbox
+- 
+  item: 2x 10"x36" Rectangular Softbox
+- 
+  item: 1x 86" Silver Parabolic Umbrella
+- 
+  item: 2x 51" White Parabolic Umbrella
+- 
+  item: 1x White Shovel Background Reflector
+- 
+  item: 2x Pocket Wizard Trigger
+- 
+  item: 2x Matthews Century-Stand
+- 
+  item: 3x Rolling Stand
+- 
+  item: "8' V-Flat set of 2 (+$20/Day)"
+- 
+  item: 52" Collapsible Reflector Silver/Gold
+- 
+  item: >
+    107” Seamless Background Paper
+    (selected colors)
+- 
+  item: 10’ x 24’ Green Screen Backdrop
+- 
+  item: Sand Bags
+- 
+  item: 10ft Ladder
+- 
+  item: Step Stool
+- 
+  item: Steamer
+- 
+  item: Wifi
+- 
+  item: Bluetooth Speaker
+- 
+  item: 52" Collapsible Reflector White
+
+----
+
+Cameras: 
+
+- 
+  item: Hasselblad V 500c/m (+$25)
+- 
+  item: Hasselblad 40mm f/4 (+$25)
+- 
+  item: Hasselblad 80mm f/2.8 (+$25)
+- 
+  item: Hasselblad 150mm f/4 (+$25)
+- 
+  item: Hasselblad 250mm f/5.6 (+$25)
+- 
+  item: 120 Film Back (+$5)
+- 
+  item: Phase One P45 Digital Back (+$150)
+- 
+  item: Phase One H25 Digital Back (+$25)
+- 
+  item: Nikon D810 Body (+$30)
+- 
+  item: Nikon F5 35mm (+$5)
+- 
+  item: Zeiss 15mm f/2.8 ZF.2 Nikon (+$25)
+- 
+  item: Nikkor 50mm f/1.8 AI (+$5)
+- 
+  item: Nikon 85mm f1.4 D (+$5)
+- 
+  item: Zeiss 135mm f/2 ZF.2 Nikon (+$20)
+- 
+  item: Wista SP 4x5 Camera (+$10)
+- 
+  item: Rodenstock 135mm f/5.6 4x5 (+$15)
+- 
+  item: Nikon 300mm f/9 4x5 (+$15)
+
+----
+
+Cid: cid001
+
+----
+
+Hasbooking: 1
+
+----
+
+Membershiptypes: 
+
+- 
+  membershiptype: 6-Month-Commitment
+  commitment: 10 Hours of Booked Time
+  rate: $275/month
+- 
+  membershiptype: 6-Month-Commitment
+  commitment: 15 Hours of Booked Time
+  rate: $350/month
+- 
+  membershiptype: Month-to-Month
+  commitment: 10 Hours of Booked Time
+  rate: $300/month
+- 
+  membershiptype: Month-to-Month
+  commitment: 15 Hours of Booked Time
+  rate: $380/month
+- 
+  membershiptype: Hourly
+  commitment: Standard Rate
+  rate: $50/Hour
+- 
+  membershiptype: Hourly
+  commitment: Half Day
+  rate: $150/Half Day
+- 
+  membershiptype: Hourly
+  commitment: Full Day
+  rate: $400/day
+
+----
+
+Bookingtypes: 
+
+- 
+  bookingtype: Photography
+  commitment: Hourly
+  rate: $50/Hour
+- 
+  bookingtype: Photography
+  commitment: 4 Hours
+  rate: $175
+- 
+  bookingtype: Photography
+  commitment: 10 Hours
+  rate: $400
+- 
+  bookingtype: Video
+  commitment: Hourly (4 Hour Minimum)
+  rate: $75/Hour
+- 
+  bookingtype: Video
+  commitment: 10 Hour
+  rate: $700
+
+----
+
+Rates: 
+
+- 
+  title: Video
+  rate: $75 / Hour
+
+----
+
+Socialimg: unnamed-studio.jpg

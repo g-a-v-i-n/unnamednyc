@@ -338,6 +338,8 @@ $(".bottomSpace .siteTitle, .bottomSpace .headerArrowContainer").hover(function(
     $(".bottomSpace svg.headerArrow").removeClass("headerArrow-rotate-45");
     $(".bottomSpace .siteTitle").removeClass("siteTitleHover");
     $('.headerArrowContainer').css('cursor', 'auto');
-
-
 });
+
+window.fadeIn = function(obj) {
+    $(obj).fadeIn(1000);
+}

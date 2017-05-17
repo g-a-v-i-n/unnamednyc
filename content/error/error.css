@@ -3,6 +3,12 @@ location colors:
 primary: #FF725C
 bg: #FAFAFA
 */
+::selection {
+  background: #FF725C; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FF725C; /* Gecko Browsers */
+}
 
 a:hover{
   color: #FF725C;
