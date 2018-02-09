@@ -23,8 +23,6 @@
       <p>Development by <a href="http://www.gav.space" /> Gavin Atkinson </a></p>
       <p>Set in <a href="https://en.wikipedia.org/wiki/Nimbus_Sans" /> Nimbus Sans </a></p>
       <p>Running on <a href="http://www.getkirby.com" /> Kirby </a></p>
-
-
     </div>
     <div class='message'>
       <p><a href='/'> Back to Unnamed Home </a></p>

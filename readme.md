@@ -1,7 +1,24 @@
-# Unnamed NYC
+# Unnamed NYC Site
+To Run: php -S localhost:8000
 
-Unnamed is a network of studio facilities for professional artists working in multiple disciplines.
+## Todo
 
-[Unnamed.nyc](http://Unnamed.nyc)
+Small Things:
+- [x] Remove Logo at top of text side page
+- [ ] layout change to Rates section
+- [ ] Color hover style
+- [x] Typescale change
 
-The site was designed and built with Kirby CMS, JQuery and Hammer.js by [Gavin Atkinson](http://www.gav.space) and [Phil Cao](http://http://www.phil-cao.com/)  in NYC, 2017.
+Medium Things
+- [ ] All section headers editable in panel
+- [ ] Page for TOU and Legal
+- [ ] Accent color on SVGs ( I actually may have already built in support for this )
+- [ ] Chinese New Year ^^^
+- [ ] New list for equipment that is not included in rental fee with price display
+- [ ] Ability to turn membership type on or off like rates
+- [ ] Video support
+- [ ] Page store open or close ( local storage? )
+
+Large things:
+- [ ] Change color in panel ( changing color in stylesheet much easier )
+- [ ] Styling the booking tool

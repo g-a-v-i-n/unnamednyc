@@ -63,10 +63,10 @@ if(isset($limit)) $locations = $locations->limit($limit);
       	</div>
       	<div class="galleryMover">
           <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-            <?php if($image != $page->image('map.svg')): ?>
+            <?php if($image != $page->image('map.png')): ?>
               <div class='frame'>
                 <div class="imgWrapper">
-                  <img src="<?= $image->url() ?>" alt="<?php echo $image->alt() ?>" onload="fadeIn(this)" style="opacity:0"/>
+                  <img src="<?= $image->url() ?>" alt="<?php echo $image->alt() ?>" onload="fadeIn(this)" style="display:none;"/>
                 </div>
                   <div class="caption enable-select"><?php echo $image->caption()->kirbytext() ?> </div>
               </div>

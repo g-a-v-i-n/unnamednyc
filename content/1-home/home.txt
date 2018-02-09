@@ -2,15 +2,15 @@ Title: Home
 
 ----
 
-Menutitle: Unnamed
+Menutitle: unnamed_
 
 ----
 
 Text: 
 
-Too often, artists are forced to compromise their work due to the limitations of their studio. We founded Unnamed to solve this problem. Unnamed believes that space and equipment should adapt to the needs of artists, not the other way around.
+unnamed_ operates interdisciplinary studio facilities for artists. We offer production resources for photography, video and sculpture. Unnamed Gallery is available for exhibitions and events. 
 
-Unnamed is a network of studio facilities for professional artists working in multiple disciplines. We work to accommodate projects of all kind. Drop us a line if you are looking for a homebase for your practice or need space to pursue a special project – we are here to help make ideas happen! (link: www.twitter.com text: twitter)
+Drop us a line if you are looking for a homebase for your practice or you need space to pursue a project - we are here to help make ideas happen!
 
 ----
 
@@ -22,11 +22,11 @@ Email: mail@unnamed.nyc
 
 ----
 
-Phone: (347) 575 2485
+Phone: (347) 575-2485
 
 ----
 
-Phonenoextracharacters: 3475752485
+Phonenoextracharacters: 
 
 ----
 
@@ -42,4 +42,4 @@ Cid: cid000
 
 ----
 
-Socialimg: insta11.jpg
+Socialimg: unnamed-studio.jpg

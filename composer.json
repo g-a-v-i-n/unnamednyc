@@ -1,0 +1,6 @@
+{
+    "require": {
+        "joyent/php-manta": "^2.0",
+        "acuityscheduling/acuityscheduling": "^0.1.9"
+    }
+}

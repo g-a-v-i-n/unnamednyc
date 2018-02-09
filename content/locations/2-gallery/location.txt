@@ -1,0 +1,128 @@
+Title: The Gallery
+
+----
+
+Menutitle: _gallery
+
+----
+
+Comingsoon: 0
+
+----
+
+Address: 46-55 Metropolitan Ave Ridgewood, NY 11385
+
+----
+
+Type: Workroom
+
+----
+
+Text: 
+
+_gallery is our satellite studio housed one block from our main location. _gallery is an 800 sqft ground-level storefront available for photo shoots, presentations and exhibitions. Behind the gallery, The Back Room is a raw industrial space for preproduction work and longterm projects. This studio can be completely blacked out for productions that require complete control of light.
+
+Hours by appointment only. Please (email: mail@unnamed.nyc text: contact) for availability.
+
+----
+
+Spaces: 
+
+- 
+  title: AMENITIES
+  description: '800sf Gallery<br>White Walls and Concrete Floor<br>14ft Ceiling<br>Storefront Entry at Street Level<br>Seamless Background Paper<br>South Facing Natural Light<br>100% Blackout Ready<br>Projection Capabilities'
+
+----
+
+Hasbooking: 0
+
+----
+
+Equipment: 
+
+- 
+  item: >
+    2x Buff DB400 320w/s monolight (400W LED
+    modeling lamp)
+- 
+  item: >
+    1x Buff DB800 320w/s monolight (400W LED
+    modeling lamp)
+- 
+  item: 1x 60" Octabox
+- 
+  item: 1x 14"x60" Rectangular Softbox
+- 
+  item: 1x 24"x30" Rectangular Softbox
+- 
+  item: 2x Pocket Wizard Triggers
+- 
+  item: >
+    2x 51" White Umbrella with Black Front
+    Spill Kill
+- 
+  item: 2x Century Stand
+- 
+  item: 2 x Triple Riser Folding Stand
+- 
+  item: Assorted folding stands
+- 
+  item: A-Clamps
+- 
+  item: Gaffer Tape
+- 
+  item: Rolling Garment Rack
+- 
+  item: Steamer
+- 
+  item: Ladder
+- 
+  item: Utility Sink
+- 
+  item: Bluetooth Speaker
+- 
+  item: Wifi
+- 
+  item: '- EQUIPMENT AVAILABLE FOR RENT -'
+- 
+  item: 'Tungsten Continuous Light Kit: Full Kit - 7 Lights ($70/day)'
+- 
+  item: 'Tungsten Continuous Light Kit: Half Kit - 4 Lights ($50/day)'
+- 
+  item: '107” Seamless Background Paper: Special Order ($25 + $25/pull)'
+- 
+  item: '107” Seamless Background Paper: Selected Colors ($25/pull)'
+- 
+  item: "8' V-Flats ($20/day)"
+- 
+  item: >
+    10’ x 24’ Green Screen Backdrop
+    ($20/day)
+
+----
+
+Cameras: 
+
+----
+
+Cid: cid001
+
+----
+
+Membershiptypes: 
+
+----
+
+Rates: 
+
+----
+
+Bookingtypes: 
+
+----
+
+Maplink: https://www.google.com/maps/search/4655+Metropolitan+Ave,+Ridgewood,+NY+11385/@40.7142228,-73.9238138,17z
+
+----
+
+Socialimg: 

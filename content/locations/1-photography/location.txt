@@ -1,8 +1,8 @@
-Title: Photography Studio
+Title: Unnamed Studio
 
 ----
 
-Menutitle: Photography Studio
+Menutitle: _studio
 
 ----
 
@@ -10,7 +10,7 @@ Comingsoon: 0
 
 ----
 
-Address: 63 Woodward Ave, Ridgewood, NY 11385
+Address: 63 Woodward Ave 2nd Floor #6300, Ridgewood, NY 11385
 
 ----
 
@@ -22,30 +22,24 @@ Type: Photography Studio
 
 ----
 
-Text: 
-
-Unnamed Photography Studio is a 2000 square-foot space for photography and video production. The studio is available for rental hourly and by monthly membership. The cyclorama wall is always ready for fashion shoots, music videos and portraits and the studio’s wall of south-west facing windows makes for fantastic natural light photography. 
-
-Photography rates include access to one area of the shared room, choose from: cyclorama, seamless and still life table.      
-Video rates include private use of all areas.
+Text: unnamed_studio is a co-working photography studio available hourly or by monthly membership. The spacious 2000 sqft room includes two shooting areas: the built-in Cyclorama wall and the Seamless area for shooting with background paper. The studio gets incredible natural light from a wall of South-West facing windows. Lighting equipment for still photography is included and kits of continuous lights are available for rent.
 
 ----
 
 Spaces: 
 
 - 
-  title: Studio E
-  description: >
-    Cyclorama wall (22’w x 22’d x
-    12’h)
+  title: AMENITIES
+  description: '22ft x 22ft Cyclorama<br>13ft Ceiling<br>400sf Seamless Backdrop Shooting Area <br>2 Makeup Stations <br>Changing Room<br>Work Sink'
 - 
-  title: Studio R
-  description: >
-    400 square-foot shooting area stocked
-    with 107” background paper
+  title: '<br><br>RATES'
+  description: ""
 - 
-  title: Studio S
-  description: Tabletop Still-life Studio
+  title: Hourly
+  description: '$75/Hour <br>(4 hour minimum)'
+- 
+  title: Daily
+  description: $650/10 Hours
 
 ----
 
@@ -56,25 +50,19 @@ Equipment:
 - 
   item: 2x Paul Buff AB1600 Monolight
 - 
-  item: >
-    2x Paul Buff DB400 Monolight w/ 400w
-    Continuous LED
-- 
   item: 1x 22" White Beauty Dish w/ Diffusion
+- 
+  item: 1x 60" Giant Octabox
 - 
   item: 1x 35" Octabox
 - 
-  item: 1x 30"x60" Rectangular Softbox
-- 
-  item: 1x 14"x60" Rectangular Softbox
-- 
-  item: 2x 10"x36" Rectangular Softbox
+  item: 2x 30"x60" Rectangular Softbox
 - 
   item: 1x 86" Silver Parabolic Umbrella
 - 
   item: 2x 51" White Parabolic Umbrella
 - 
-  item: 1x White Shovel Background Reflector
+  item: 2x White Shovel Background Reflector
 - 
   item: 2x Pocket Wizard Trigger
 - 
@@ -82,15 +70,9 @@ Equipment:
 - 
   item: 3x Rolling Stand
 - 
-  item: "8' V-Flat set of 2 (+$20/Day)"
+  item: 42" Collapsible Reflector Silver/Gold
 - 
-  item: 52" Collapsible Reflector Silver/Gold
-- 
-  item: >
-    107” Seamless Background Paper
-    (selected colors)
-- 
-  item: 10’ x 24’ Green Screen Backdrop
+  item: 42" Collapsible Reflector White
 - 
   item: Sand Bags
 - 
@@ -104,46 +86,27 @@ Equipment:
 - 
   item: Bluetooth Speaker
 - 
-  item: 52" Collapsible Reflector White
+  item: Utility Sink
+- 
+  item: '- EQUIPMENT AVAILABLE FOR RENT -'
+- 
+  item: 'Tungsten Continuous Light Kit: Full Kit - 7 Lights ($70/day)'
+- 
+  item: 'Tungsten Continuous Light Kit: Half Kit - 4 Lights ($50/day)'
+- 
+  item: '107” Seamless Background Paper: Selected Colors ($25/pull)'
+- 
+  item: >
+    10’ x 24’ Green Screen Backdrop
+    ($20/day)
+- 
+  item: "8' V-Flats ($20/day)"
+- 
+  item: '107” Seamless Background Paper: Special Order ($25 + $25/pull)'
 
 ----
 
 Cameras: 
-
-- 
-  item: Hasselblad V 500c/m (+$25)
-- 
-  item: Hasselblad 40mm f/4 (+$25)
-- 
-  item: Hasselblad 80mm f/2.8 (+$25)
-- 
-  item: Hasselblad 150mm f/4 (+$25)
-- 
-  item: Hasselblad 250mm f/5.6 (+$25)
-- 
-  item: 120 Film Back (+$5)
-- 
-  item: Phase One P45 Digital Back (+$150)
-- 
-  item: Phase One H25 Digital Back (+$25)
-- 
-  item: Nikon D810 Body (+$30)
-- 
-  item: Nikon F5 35mm (+$5)
-- 
-  item: Zeiss 15mm f/2.8 ZF.2 Nikon (+$25)
-- 
-  item: Nikkor 50mm f/1.8 AI (+$5)
-- 
-  item: Nikon 85mm f1.4 D (+$5)
-- 
-  item: Zeiss 135mm f/2 ZF.2 Nikon (+$20)
-- 
-  item: Wista SP 4x5 Camera (+$10)
-- 
-  item: Rodenstock 135mm f/5.6 4x5 (+$15)
-- 
-  item: Nikon 300mm f/9 4x5 (+$15)
 
 ----
 
@@ -159,66 +122,31 @@ Membershiptypes:
 
 - 
   membershiptype: 6-Month-Commitment
-  commitment: 10 Hours of Booked Time
-  rate: $275/month
+  commitment: 10 Hours/Month
+  rate: $300
 - 
   membershiptype: 6-Month-Commitment
-  commitment: 15 Hours of Booked Time
-  rate: $350/month
+  commitment: '<br> Memberships subject to availability. Please email for more information and to schedule an interview.'
+  rate: ""
 - 
   membershiptype: Month-to-Month
-  commitment: 10 Hours of Booked Time
-  rate: $300/month
-- 
-  membershiptype: Month-to-Month
-  commitment: 15 Hours of Booked Time
-  rate: $380/month
-- 
-  membershiptype: Hourly
-  commitment: Standard Rate
-  rate: $50/Hour
-- 
-  membershiptype: Hourly
-  commitment: Half Day
-  rate: $150/Half Day
-- 
-  membershiptype: Hourly
-  commitment: Full Day
-  rate: $400/day
+  commitment: >
+    We are no longer accepting applications
+    for Month to Month Memberships
+  rate: ""
 
 ----
 
 Bookingtypes: 
-
-- 
-  bookingtype: Photography
-  commitment: Hourly
-  rate: $50/Hour
-- 
-  bookingtype: Photography
-  commitment: 4 Hours
-  rate: $175
-- 
-  bookingtype: Photography
-  commitment: 10 Hours
-  rate: $400
-- 
-  bookingtype: Video
-  commitment: Hourly (4 Hour Minimum)
-  rate: $75/Hour
-- 
-  bookingtype: Video
-  commitment: 10 Hour
-  rate: $700
 
 ----
 
 Rates: 
 
 - 
-  title: Video
-  rate: $75 / Hour
+  title: eee
+  rate: eooo
 
 ----
 
-Socialimg: unnamed-studio.jpg
+Socialimg: unnamed917-02-1.jpg
